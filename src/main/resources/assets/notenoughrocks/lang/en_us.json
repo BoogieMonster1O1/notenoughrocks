@@ -2,5 +2,7 @@
   "block.notenoughrocks.limestone": "Limestone",
   "block.notenoughrocks.polished_limestone": "Polished Limestone",
   "block.notenoughrocks.limestone_stairs": "Limestone Stairs",
-  "block.notenoughrocks.polished_limestone_stairs": "Polished Limestone Stairs"
+  "block.notenoughrocks.polished_limestone_stairs": "Polished Limestone Stairs",
+  "block.notenoughrocks.limestone_slab": "Limestone Slab",
+  "block.notenoughrocks.polished_limestone_slab": "Polished Limestone Slab"
 }
