@@ -8,6 +8,7 @@ import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.log;
 import static net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback.event;
 import static net.minecraft.util.registry.Registry.*;
+import static org.apache.logging.log4j.Level.*;
 
 public enum NotEnoughRocks {
     INSTANCE;
@@ -16,27 +17,35 @@ public enum NotEnoughRocks {
         register(ITEM,neri("limestone"),LIMESTONE_BLOCK_ITEM);
         register(BLOCK,neri("limestone"),LIMESTONE_BLOCK);
         BIOME.forEach(LIMESTONE_BLOCK::handleBiome);
-        log(Level.INFO,"Initialized Limestone");
+        log(INFO,"Initialized Limestone");
 
         register(BLOCK,neri("polished_limestone"),POLISHED_LIMESTONE);
         register(ITEM,neri("polished_limestone"),POLISHED_LIMESTONE_ITEM);
-        log(Level.INFO,"Initialized Polished Limestone");
+        log(INFO,"Initialized Polished Limestone");
 
         register(BLOCK,neri("limestone_stairs"),LIMESTONE_STAIRS);
         register(ITEM,neri("limestone_stairs"),LIMESTONE_STAIRS_ITEM);
-        log(Level.INFO,"Initialized Limestone Stairs");
+        log(INFO,"Initialized Limestone Stairs");
 
         register(BLOCK,neri("polished_limestone_stairs"),POLISHED_LIMESTONE_STAIRS);
         register(ITEM,neri("polished_limestone_stairs"),POLISHED_LIMESTONE_STAIRS_ITEM);
-        log(Level.INFO,"Initialized Polished Limestone Stairs");
+        log(INFO,"Initialized Polished Limestone Stairs");
 
         register(BLOCK,neri("limestone_slab"),LIMESTONE_SLAB);
         register(ITEM,neri("limestone_slab"),LIMESTONE_SLAB_ITEM);
-        log(Level.INFO,"Initialized Limestone Slab");
+        log(INFO,"Initialized Limestone Slab");
 
         register(BLOCK,neri("polished_limestone_slab"),POLISHED_LIMESTONE_SLAB);
         register(ITEM,neri("polished_limestone_slab"),POLISHED_LIMESTONE_SLAB_ITEM);
-        log(Level.INFO,"Initialized Polished Limestone Slab");
+        log(INFO,"Initialized Polished Limestone Slab");
+
+        register(BLOCK,neri("limestone_wall"),LIMESTONE_WALL);
+        register(ITEM,neri("limestone_wall"),LIMESTONE_WALL_ITEM);
+        log(INFO,"Initialized Limestone Wall");
+
+        register(BLOCK,neri("polished_limestone_wall"),POLISHED_LIMESTONE_WALL);
+        register(ITEM,neri("polished_limestone_wall"),POLISHED_LIMESTONE_WALL_ITEM);
+        log(INFO,"Initialized Polished Limestone Wall");
 
         {
             event(BIOME).register((i, identifier, biome) -> {

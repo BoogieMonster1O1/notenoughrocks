@@ -6,12 +6,12 @@ import io.github.boogiemonster1o1.notenoughrocks.blocks.PolishedLimestoneStairsB
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.SlabBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
-import static net.minecraft.block.Blocks.STONE;
-import static net.minecraft.block.Blocks.STONE_SLAB;
+import static net.minecraft.block.Blocks.*;
 import static net.minecraft.item.ItemGroup.BUILDING_BLOCKS;
 
 public class Elements {
@@ -22,6 +22,8 @@ public class Elements {
         public static BlockItem POLISHED_LIMESTONE_STAIRS_ITEM = new BlockItem(POLISHED_LIMESTONE_STAIRS,new Item.Settings().group(BUILDING_BLOCKS));
         public static BlockItem LIMESTONE_SLAB_ITEM = new BlockItem(LIMESTONE_SLAB,new Item.Settings().group(BUILDING_BLOCKS));
         public static BlockItem POLISHED_LIMESTONE_SLAB_ITEM = new BlockItem(POLISHED_LIMESTONE_SLAB,new Item.Settings().group(BUILDING_BLOCKS));
+        public static BlockItem LIMESTONE_WALL_ITEM = new BlockItem(LIMESTONE_WALL,new Item.Settings().group(BUILDING_BLOCKS));
+        public static BlockItem POLISHED_LIMESTONE_WALL_ITEM = new BlockItem(POLISHED_LIMESTONE_WALL,new Item.Settings().group(BUILDING_BLOCKS));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(FabricBlockSettings.copy(STONE));
@@ -30,5 +32,7 @@ public class Elements {
         public static PolishedLimestoneStairsBlock POLISHED_LIMESTONE_STAIRS = new PolishedLimestoneStairsBlock();
         public static SlabBlock LIMESTONE_SLAB = new SlabBlock(FabricBlockSettings.copy(STONE_SLAB));
         public static SlabBlock POLISHED_LIMESTONE_SLAB = new SlabBlock(FabricBlockSettings.copy(STONE_SLAB));
+        public static WallBlock LIMESTONE_WALL = new WallBlock(FabricBlockSettings.copy(STONE_SLAB));
+        public static WallBlock POLISHED_LIMESTONE_WALL = new WallBlock(FabricBlockSettings.copy(STONE_SLAB));
     }
 }
