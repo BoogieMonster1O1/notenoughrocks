@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "notenoughrocks:block/limestone",
+    "top": "notenoughrocks:block/limestone",
+    "side": "notenoughrocks:block/limestone"
+  }
+}

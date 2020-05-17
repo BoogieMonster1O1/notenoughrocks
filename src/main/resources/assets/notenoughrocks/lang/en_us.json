@@ -1,4 +1,6 @@
 {
   "block.notenoughrocks.limestone": "Limestone",
-  "block.notenoughrocks.polished_limestone": "Polished Limestone"
+  "block.notenoughrocks.polished_limestone": "Polished Limestone",
+  "block.notenoughrocks.limestone_stairs": "Limestone Stairs",
+  "block.notenoughrocks.polished_limestone_stairs": "Polished Limestone Stairs"
 }

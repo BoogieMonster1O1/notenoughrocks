@@ -14,27 +14,32 @@ public enum NotEnoughRocks {
     INSTANCE;
     String ns = "notenoughrocks";
     void initialize(){
-        {
-            // Blocks Go Here
-            register(ITEM,new Identifier(ns,"limestone"),LIMESTONE_BLOCK_ITEM);
-            register(BLOCK,new Identifier(ns,"limestone"),LIMESTONE_BLOCK);
-            BIOME.forEach(LIMESTONE_BLOCK::handleBiome);
-            log(Level.INFO,"Initialized Limestone");
+        register(ITEM,neri("limestone"),LIMESTONE_BLOCK_ITEM);
+        register(BLOCK,neri("limestone"),LIMESTONE_BLOCK);
+        BIOME.forEach(LIMESTONE_BLOCK::handleBiome);
+        log(Level.INFO,"Initialized Limestone");
 
-            register(BLOCK,new Identifier(ns,"polished_limestone"),POLISHED_LIMESTONE);
-            register(ITEM,new Identifier(ns,"polished_limestone"),POLISHED_LIMESTONE_ITEM);
-            log(Level.INFO,"Initialized Polished Limestone");
-        }
+        register(BLOCK,neri("polished_limestone"),POLISHED_LIMESTONE);
+        register(ITEM,neri("polished_limestone"),POLISHED_LIMESTONE_ITEM);
+        log(Level.INFO,"Initialized Polished Limestone");
 
-        {
-            // Items Go Here
-        }
+        register(BLOCK,neri("limestone_stairs"),LIMESTONE_STAIRS);
+        register(ITEM,neri("limestone_stairs"),LIMESTONE_STAIRS_ITEM);
+        log(Level.INFO,"Initializes Limestone Stairs");
+
+        register(BLOCK,neri("polished_limestone_stairs"),POLISHED_LIMESTONE_STAIRS);
+        register(ITEM,neri("polished_limestone_stairs"),POLISHED_LIMESTONE_STAIRS_ITEM);
+        log(Level.INFO,"Initializes Limestone Stairs");
 
         {
             event(BIOME).register((i, identifier, biome) -> {
                 LIMESTONE_BLOCK.handleBiome(biome);
             });
         }
+    }
+
+    public Identifier neri(String path){
+        return new Identifier("notenoughrocks",path);
     }
 
     public static class InitializationError extends Error{
