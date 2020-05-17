@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "notenoughrocks:polished_limestone"
+  },
+  "result": "notenoughrocks:polished_limestone_slab",
+  "count": 2
+}

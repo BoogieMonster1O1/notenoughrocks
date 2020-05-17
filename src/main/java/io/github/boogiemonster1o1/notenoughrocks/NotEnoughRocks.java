@@ -1,18 +1,17 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
-import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.Level;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.log;
-import static net.minecraft.util.registry.Registry.*;
 import static net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback.event;
+import static net.minecraft.util.registry.Registry.*;
 
 public enum NotEnoughRocks {
     INSTANCE;
-    String ns = "notenoughrocks";
+
     void initialize(){
         register(ITEM,neri("limestone"),LIMESTONE_BLOCK_ITEM);
         register(BLOCK,neri("limestone"),LIMESTONE_BLOCK);
@@ -25,11 +24,19 @@ public enum NotEnoughRocks {
 
         register(BLOCK,neri("limestone_stairs"),LIMESTONE_STAIRS);
         register(ITEM,neri("limestone_stairs"),LIMESTONE_STAIRS_ITEM);
-        log(Level.INFO,"Initializes Limestone Stairs");
+        log(Level.INFO,"Initialized Limestone Stairs");
 
         register(BLOCK,neri("polished_limestone_stairs"),POLISHED_LIMESTONE_STAIRS);
         register(ITEM,neri("polished_limestone_stairs"),POLISHED_LIMESTONE_STAIRS_ITEM);
-        log(Level.INFO,"Initializes Limestone Stairs");
+        log(Level.INFO,"Initialized Polished Limestone Stairs");
+
+        register(BLOCK,neri("limestone_slab"),LIMESTONE_SLAB);
+        register(ITEM,neri("limestone_slab"),LIMESTONE_SLAB_ITEM);
+        log(Level.INFO,"Initialized Limestone Slab");
+
+        register(BLOCK,neri("polished_limestone_slab"),POLISHED_LIMESTONE_SLAB);
+        register(ITEM,neri("polished_limestone_slab"),POLISHED_LIMESTONE_SLAB_ITEM);
+        log(Level.INFO,"Initialized Polished Limestone Slab");
 
         {
             event(BIOME).register((i, identifier, biome) -> {
