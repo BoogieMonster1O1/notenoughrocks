@@ -12,13 +12,18 @@ import static net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback.
 
 public enum NotEnoughRocks {
     INSTANCE;
+    String ns = "notenoughrocks";
     void initialize(){
         {
             // Blocks Go Here
-            register(ITEM,new Identifier("notenoughrocks","limestone"),LIMESTONE_BLOCK_ITEM);
-            register(BLOCK,new Identifier("notenoughrocks","limestone"),LIMESTONE_BLOCK);
+            register(ITEM,new Identifier(ns,"limestone"),LIMESTONE_BLOCK_ITEM);
+            register(BLOCK,new Identifier(ns,"limestone"),LIMESTONE_BLOCK);
             BIOME.forEach(LIMESTONE_BLOCK::handleBiome);
-            log(Level.INFO,"Initialized Limestone...");
+            log(Level.INFO,"Initialized Limestone");
+
+            register(BLOCK,new Identifier(ns,"polished_limestone"),POLISHED_LIMESTONE);
+            register(ITEM,new Identifier(ns,"polished_limestone"),POLISHED_LIMESTONE_ITEM);
+            log(Level.INFO,"Initialized Polished Limestone");
         }
 
         {
