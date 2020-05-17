@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "ner",
+  "languageAdapter": "net.fabricmc.language.groovy.GroovyLanguageAdapter",
+  "version": "${version}",
+  "name": "NotEnoughRocks",
+  "description": "Rocks Mod",
+  "authors": [
+    "BoogieMonster1O1"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/notenoughrocks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.boogiemonster1o1.notenoughrocks.NERInitialize"
+    ]
+  },
+  "mixins": [
+    "notenoughrocks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  }
+}
