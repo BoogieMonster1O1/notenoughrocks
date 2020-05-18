@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "notenoughrocks:block/limestone_bricks",
+    "top": "notenoughrocks:block/limestone_bricks",
+    "side": "notenoughrocks:block/limestone_bricks"
+  }
+}

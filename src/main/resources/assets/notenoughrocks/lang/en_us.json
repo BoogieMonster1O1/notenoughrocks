@@ -6,5 +6,9 @@
   "block.notenoughrocks.limestone_slab": "Limestone Slab",
   "block.notenoughrocks.polished_limestone_slab": "Polished Limestone Slab",
   "block.notenoughrocks.limestone_wall": "Limestone Wall",
-  "block.notenoughrocks.polished_limestone_wall": "Polished Limestone Wall"
+  "block.notenoughrocks.polished_limestone_wall": "Polished Limestone Wall",
+  "block.notenoughrocks.limestone_bricks": "Limestone Bricks",
+  "block.notenoughrocks.limestone_brick_slab": "Limestone Brick Slab",
+  "block.notenoughrocks.limestone_brick_wall": "Limestone Brick Wall",
+  "block.notenoughrocks.limestone_brick_stairs": "Limestone Brick Stairs"
 }

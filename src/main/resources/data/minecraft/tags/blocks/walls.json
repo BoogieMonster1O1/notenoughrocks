@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "notenoughrocks:limestone_wall",
-    "notenoughrocks:polished_limestone_wall"
+    "notenoughrocks:polished_limestone_wall",
+    "notenoughrocks:limestone_brick_wall"
   ]
 }

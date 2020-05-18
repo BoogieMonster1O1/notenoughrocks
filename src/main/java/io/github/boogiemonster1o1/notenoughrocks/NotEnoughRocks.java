@@ -47,6 +47,22 @@ public enum NotEnoughRocks {
         register(ITEM,neri("polished_limestone_wall"),POLISHED_LIMESTONE_WALL_ITEM);
         log(INFO,"Initialized Polished Limestone Wall");
 
+        register(BLOCK,neri("limestone_bricks"),LIMESTONE_BRICKS);
+        register(ITEM,neri("limestone_bricks"),LIMESTONE_BRICKS_ITEM);
+        log(INFO,"Initialized Limestone Bricks");
+
+        register(BLOCK,neri("limestone_brick_stairs"),LIMESTONE_BRICK_STAIRS);
+        register(ITEM,neri("limestone_brick_stairs"),LIMESTONE_BRICK_STAIRS_ITEM);
+        log(INFO,"Initialized Limestone Brick Stairs");
+
+        register(BLOCK,neri("limestone_brick_slab"),LIMESTONE_BRICK_SLAB);
+        register(ITEM,neri("limestone_brick_slab"),LIMESTONE_BRICK_SLAB_ITEM);
+        log(INFO,"Initialized Limestone Brick Slab");
+
+        register(BLOCK,neri("limestone_brick_wall"),LIMESTONE_BRICK_WALL);
+        register(ITEM,neri("limestone_brick_wall"),LIMESTONE_BRICK_WALL_ITEM);
+        log(INFO,"Initialized Limestone Brick Wall");
+
         {
             event(BIOME).register((i, identifier, biome) -> {
                 LIMESTONE_BLOCK.handleBiome(biome);

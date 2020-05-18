@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "notenoughrocks:limestone"
+      "item": "notenoughrocks:limestone_bricks"
     }
   },
   "result": {
-    "item": "notenoughrocks:limestone_wall",
+    "item": "notenoughrocks:limestone_brick_wall",
     "count": 6
   }
 }

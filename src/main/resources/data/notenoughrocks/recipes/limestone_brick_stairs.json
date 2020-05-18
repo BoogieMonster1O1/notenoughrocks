@@ -2,16 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "group": "wooden_pressure_plate",
   "pattern": [
-    "###",
+    "#  ",
+    "## ",
     "###"
   ],
   "key": {
     "#": {
-      "item": "notenoughrocks:limestone"
+      "item": "notenoughrocks:limestone_bricks"
     }
   },
   "result": {
-    "item": "notenoughrocks:limestone_wall",
-    "count": 6
+    "item": "notenoughrocks:limestone_brick_stairs",
+    "count": 4
   }
 }
