@@ -1,14 +1,13 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
 import net.minecraft.util.Identifier;
-import org.apache.logging.log4j.Level;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.log;
 import static net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback.event;
 import static net.minecraft.util.registry.Registry.*;
-import static org.apache.logging.log4j.Level.*;
+import static org.apache.logging.log4j.Level.INFO;
 
 public enum NotEnoughRocks {
     INSTANCE;
