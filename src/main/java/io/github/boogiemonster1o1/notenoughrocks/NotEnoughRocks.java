@@ -7,7 +7,7 @@ import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.log;
 import static net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback.event;
 import static net.minecraft.util.registry.Registry.*;
-import static org.apache.logging.log4j.Level.INFO;
+import static org.apache.logging.log4j.Level.*;
 
 public enum NotEnoughRocks {
     INSTANCE;
