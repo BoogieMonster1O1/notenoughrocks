@@ -11,7 +11,6 @@ import static org.apache.logging.log4j.Level.INFO;
 
 public enum NotEnoughRocks {
     INSTANCE;
-
     void initialize(){
         register(ITEM,neri("limestone"),LIMESTONE_BLOCK_ITEM);
         register(BLOCK,neri("limestone"),LIMESTONE_BLOCK);
