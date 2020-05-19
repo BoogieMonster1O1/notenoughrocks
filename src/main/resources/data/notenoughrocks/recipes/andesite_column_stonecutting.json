@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "notenoughrocks:polished_andesite"
+  },
+  "result": "notenoughrocks:polished_andesite_column",
+  "count": 1
+}

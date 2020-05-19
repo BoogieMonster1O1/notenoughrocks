@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "notenoughrocks:polished_diorite"
+  },
+  "result": "notenoughrocks:polished_diorite_column",
+  "count": 1
+}
