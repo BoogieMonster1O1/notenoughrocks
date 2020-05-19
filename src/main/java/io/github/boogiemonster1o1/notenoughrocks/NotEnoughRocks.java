@@ -65,6 +65,10 @@ public enum NotEnoughRocks {
         register(ITEM,neri("polished_limestone_column"),POLISHED_LIMESTONE_COLUMN_ITEM);
         log(INFO,"Initialized Polished Limestone Column");
 
+        register(BLOCK,neri("polished_granite_column"),POLISHED_GRANITE_COLUMN);
+        register(ITEM,neri("polished_granite_column"),POLISHED_GRANITE_COLUMN_ITEM);
+        log(INFO,"Initialized Polished Granite Column");
+
         {
             event(BIOME).register((i, identifier, biome) -> {
                 LIMESTONE_BLOCK.handleBiome(biome);

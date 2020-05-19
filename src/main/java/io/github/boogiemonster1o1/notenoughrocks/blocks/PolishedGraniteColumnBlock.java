@@ -1,34 +1,24 @@
 package io.github.boogiemonster1o1.notenoughrocks.blocks;
 
-import com.mojang.datafixers.types.templates.Tag;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.tag.BlockTags;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 
-import java.util.Collection;
-
-import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.POLISHED_LIMESTONE_COLUMN;
 import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
 import static net.minecraft.block.Blocks.STONE_SLAB;
 
-public class PolishedLimestoneColumnBlock extends ColumnBlock{
-
-    public static IntProperty TYPE = IntProperty.of("type",0,3);
-
-    public PolishedLimestoneColumnBlock() {
+public class PolishedGraniteColumnBlock extends ColumnBlock{
+    public PolishedGraniteColumnBlock() {
         super(copy(STONE_SLAB));
     }
+
+    public static IntProperty TYPE = IntProperty.of("type",0,3);
 
     @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction facing, BlockState neighborState, IWorld world, BlockPos pos, BlockPos neighborPos) {

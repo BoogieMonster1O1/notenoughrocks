@@ -28,6 +28,7 @@ public class Elements {
         public static BlockItem LIMESTONE_BRICK_SLAB_ITEM = new BlockItem(LIMESTONE_BRICK_SLAB,new Item.Settings().group(BUILDING_BLOCKS));
         public static BlockItem LIMESTONE_BRICK_WALL_ITEM = new BlockItem(LIMESTONE_BRICK_WALL,new Item.Settings().group(BUILDING_BLOCKS));
         public static BlockItem POLISHED_LIMESTONE_COLUMN_ITEM = new BlockItem(POLISHED_LIMESTONE_COLUMN,new Item.Settings().group(DECORATIONS));
+        public static BlockItem POLISHED_GRANITE_COLUMN_ITEM = new BlockItem(POLISHED_GRANITE_COLUMN,new Item.Settings().group(DECORATIONS));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(FabricBlockSettings.copy(STONE));
@@ -43,5 +44,6 @@ public class Elements {
         public static SlabBlock LIMESTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(STONE_BRICK_SLAB));
         public static WallBlock LIMESTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(STONE_BRICK_WALL));
         public static PolishedLimestoneColumnBlock POLISHED_LIMESTONE_COLUMN = new PolishedLimestoneColumnBlock();
+        public static PolishedGraniteColumnBlock POLISHED_GRANITE_COLUMN = new PolishedGraniteColumnBlock();
     }
 }
