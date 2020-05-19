@@ -11,6 +11,7 @@ import static org.apache.logging.log4j.Level.*;
 
 public enum NotEnoughRocks {
     INSTANCE;
+
     void initialize(){
         register(ITEM,neri("limestone"),LIMESTONE_BLOCK_ITEM);
         register(BLOCK,neri("limestone"),LIMESTONE_BLOCK);
@@ -68,6 +69,14 @@ public enum NotEnoughRocks {
         register(BLOCK,neri("polished_granite_column"),POLISHED_GRANITE_COLUMN);
         register(ITEM,neri("polished_granite_column"),POLISHED_GRANITE_COLUMN_ITEM);
         log(INFO,"Initialized Polished Granite Column");
+
+        register(BLOCK,neri("polished_andesite_column"),POLISHED_ANDESITE_COLUMN);
+        register(ITEM,neri("polished_andesite_column"),POLISHED_ANDESITE_COLUMN_ITEM);
+        log(INFO,"Initialized Polished Andesite Column");
+
+        register(BLOCK,neri("polished_diorite_column"),POLISHED_DIORITE_COLUMN);
+        register(ITEM,neri("polished_diorite_column"),POLISHED_DIORITE_COLUMN_ITEM);
+        log(INFO,"Initialized Polished Diorite Column");
 
         {
             event(BIOME).register((i, identifier, biome) -> {
