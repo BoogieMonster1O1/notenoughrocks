@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "notenoughrocks:polished_granite"
+  },
+  "result": "notenoughrocks:polished_granite_tile",
+  "count": 4
+}
