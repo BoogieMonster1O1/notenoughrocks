@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "notenoughrocks:polished_limestone_tile",
+    "notenoughrocks:polished_granite_tile",
+    "notenoughrocks:polished_diorite_tile",
+    "notenoughrocks:polished_andesite_tile"
+  ]
+}
