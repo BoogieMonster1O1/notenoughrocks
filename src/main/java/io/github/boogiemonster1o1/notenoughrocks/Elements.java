@@ -1,9 +1,6 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
-import io.github.boogiemonster1o1.notenoughrocks.blocks.LimestoneBlock;
-import io.github.boogiemonster1o1.notenoughrocks.blocks.LimestoneBrickStairsBlock;
-import io.github.boogiemonster1o1.notenoughrocks.blocks.LimestoneStairsBlock;
-import io.github.boogiemonster1o1.notenoughrocks.blocks.PolishedLimestoneStairsBlock;
+import io.github.boogiemonster1o1.notenoughrocks.blocks.*;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.SlabBlock;
@@ -14,6 +11,7 @@ import net.minecraft.item.Item;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.item.ItemGroup.BUILDING_BLOCKS;
+import static net.minecraft.item.ItemGroup.DECORATIONS;
 
 public class Elements {
     public static class ItemS{
@@ -29,6 +27,7 @@ public class Elements {
         public static BlockItem LIMESTONE_BRICK_STAIRS_ITEM = new BlockItem(LIMESTONE_BRICK_STAIRS,new Item.Settings().group(BUILDING_BLOCKS));
         public static BlockItem LIMESTONE_BRICK_SLAB_ITEM = new BlockItem(LIMESTONE_BRICK_SLAB,new Item.Settings().group(BUILDING_BLOCKS));
         public static BlockItem LIMESTONE_BRICK_WALL_ITEM = new BlockItem(LIMESTONE_BRICK_WALL,new Item.Settings().group(BUILDING_BLOCKS));
+        public static BlockItem POLISHED_LIMESTONE_COLUMN_ITEM = new BlockItem(POLISHED_LIMESTONE_COLUMN,new Item.Settings().group(DECORATIONS));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(FabricBlockSettings.copy(STONE));
@@ -43,5 +42,6 @@ public class Elements {
         public static LimestoneBrickStairsBlock LIMESTONE_BRICK_STAIRS = new LimestoneBrickStairsBlock();
         public static SlabBlock LIMESTONE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(STONE_BRICK_SLAB));
         public static WallBlock LIMESTONE_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(STONE_BRICK_WALL));
+        public static PolishedLimestoneColumnBlock POLISHED_LIMESTONE_COLUMN = new PolishedLimestoneColumnBlock();
     }
 }
