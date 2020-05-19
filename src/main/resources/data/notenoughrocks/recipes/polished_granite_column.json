@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "pattern": [
+    "AAA",
+    " # ",
+    "AAA"
+  ],
+  "key": {
+    "#": {
+      "item": "notenoughrocks:polished_granite"
+    },
+    "A":{
+      "item": "notenoughrocks:polished_granite_slab"
+    }
+  },
+  "result": {
+    "item": "notenoughrocks:polished_granite_column",
+    "count": 4
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "type=0": { "model": "notenoughrocks:block/polished_andesite_column" },
+    "type=1": { "model": "notenoughrocks:block/polished_andesite_column_bottom"},
+    "type=2": { "model": "notenoughrocks:block/polished_andesite_column_middle"},
+    "type=3": { "model": "notenoughrocks:block/polished_andesite_column_top"}
+  }
+}

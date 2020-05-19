@@ -12,5 +12,7 @@
   "block.notenoughrocks.limestone_brick_wall": "Limestone Brick Wall",
   "block.notenoughrocks.limestone_brick_stairs": "Limestone Brick Stairs",
   "block.notenoughrocks.polished_limestone_column": "Polished Limestone Column",
-  "block.notenoughrocks.polished_granite_column": "Polished Granite Column"
+  "block.notenoughrocks.polished_granite_column": "Polished Granite Column",
+  "block.notenoughrocks.polished_diorite_column": "Polished Diorite Column",
+  "block.notenoughrocks.polished_andesite_column": "Polished Andesite Column"
 }
