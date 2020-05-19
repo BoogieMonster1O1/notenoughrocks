@@ -78,6 +78,23 @@ public enum NotEnoughRocks {
         register(ITEM,neri("polished_diorite_column"),POLISHED_DIORITE_COLUMN_ITEM);
         log(INFO,"Initialized Polished Diorite Column");
 
+        register(BLOCK,neri("polished_limestone_tile"),POLISHED_LIMESTONE_TILE);
+        register(ITEM,neri("polished_limestone_tile"),POLISHED_LIMESTONE_TILE_ITEM);
+        log(INFO,"Initialized Polished Limestone Tile");
+
+        register(BLOCK,neri("polished_granite_tile"),POLISHED_GRANITE_TILE);
+        register(ITEM,neri("polished_granite_tile"),POLISHED_GRANITE_TILE_ITEM);
+        log(INFO,"Initialized Polished Granite Tile");
+
+        register(BLOCK,neri("polished_andesite_tile"),POLISHED_ANDESITE_TILE);
+        register(ITEM,neri("polished_andesite_tile"),POLISHED_ANDESITE_TILE_ITEM);
+        log(INFO,"Initialized Polished Andesite Tile");
+
+        register(BLOCK,neri("polished_diorite_tile"),POLISHED_DIORITE_TILE);
+        register(ITEM,neri("polished_diorite_tile"),POLISHED_DIORITE_TILE_ITEM);
+        log(INFO,"Initialized Polished Diorite Tile");
+
+
         {
             event(BIOME).register((i, identifier, biome) -> {
                 LIMESTONE_BLOCK.handleBiome(biome);
