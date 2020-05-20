@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "notenoughrocks:block/polished_granite_tile",
-		"particle": "minecraft:block/polished_granite"
+		"particle": "notenoughrocks:block/polished_granite_tile"
 	},
 	"elements": [
 		{

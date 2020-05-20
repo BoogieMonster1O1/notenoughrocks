@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "notenoughrocks:block/polished_diorite_tile",
-		"particle": "minecraft:block/polished_diorite"
+		"particle": "notenoughrocks:block/polished_diorite_tile"
 	},
 	"elements": [
 		{
