@@ -8,7 +8,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item.Settings;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
-import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
+import static net.minecraft.block.AbstractBlock.Settings.copy;
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.item.ItemGroup.BUILDING_BLOCKS;
 import static net.minecraft.item.ItemGroup.DECORATIONS;

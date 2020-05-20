@@ -9,7 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.IWorld;
 
-import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
+import static net.minecraft.block.AbstractBlock.Settings.copy;
 import static net.minecraft.block.Blocks.STONE_SLAB;
 
 public class PolishedDioriteColumnBlock extends ColumnBlock{

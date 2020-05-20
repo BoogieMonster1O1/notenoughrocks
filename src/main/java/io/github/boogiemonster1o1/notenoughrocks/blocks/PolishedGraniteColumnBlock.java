@@ -8,9 +8,8 @@ import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.IWorld;
-import net.minecraft.world.World;
 
-import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
+import static net.minecraft.block.AbstractBlock.Settings.copy;
 import static net.minecraft.block.Blocks.STONE_SLAB;
 
 public class PolishedGraniteColumnBlock extends ColumnBlock{
