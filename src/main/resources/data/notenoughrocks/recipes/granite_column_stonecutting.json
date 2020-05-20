@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "notenoughrocks:polished_granite"
+    "item": "minecraft:polished_granite"
   },
   "result": "notenoughrocks:polished_granite_column",
   "count": 1

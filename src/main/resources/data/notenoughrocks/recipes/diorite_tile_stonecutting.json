@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "notenoughrocks:polished_diorite"
+    "item": "minecraft:polished_diorite"
   },
   "result": "notenoughrocks:polished_diorite_tile",
   "count": 4

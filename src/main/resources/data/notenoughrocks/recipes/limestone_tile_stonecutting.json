@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "notenoughrocks:limestone"
+    "item": "notenoughrocks:polished_limestone"
   },
-  "result": "notenoughrocks:limestone_tile",
+  "result": "notenoughrocks:polished_limestone_tile",
   "count": 4
 }
