@@ -94,6 +94,9 @@ public enum NotEnoughRocks {
         register(ITEM,neri("polished_diorite_tile"),POLISHED_DIORITE_TILE_ITEM);
         log(INFO,"Initialized Polished Diorite Tile");
 
+        register(BLOCK,neri("smooth_limestone"),SMOOTH_LIMESTONE);
+        register(ITEM,neri("smooth_limestone"),SMOOTH_LIMESTONE_ITEM);
+        log(INFO,"Initialized Smooth Limestone");
 
         {
             event(BIOME).register((i, identifier, biome) -> {
