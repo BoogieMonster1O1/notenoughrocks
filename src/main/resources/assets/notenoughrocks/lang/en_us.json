@@ -18,5 +18,8 @@
   "block.notenoughrocks.polished_limestone_tile": "Polished Limestone Tile",
   "block.notenoughrocks.polished_andesite_tile": "Polished Andesite Tile",
   "block.notenoughrocks.polished_granite_tile": "Polished Granite Tile",
-  "block.notenoughrocks.polished_diorite_tile": "Polished Diorite Tile"
+  "block.notenoughrocks.polished_diorite_tile": "Polished Diorite Tile",
+  "block.notenoughrocks.smooth_limestone": "Smooth Limestone",
+  "block.notenoughrocks.smooth_limestone_stairs": "Smooth Limestone Stairs",
+  "block.notenoughrocks.smooth_limestone_slab": "Smooth Limestone Slab"
 }

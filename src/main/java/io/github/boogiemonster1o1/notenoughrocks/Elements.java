@@ -35,7 +35,9 @@ public class Elements {
         public static BlockItem POLISHED_GRANITE_TILE_ITEM = new BlockItem(POLISHED_GRANITE_TILE,new Settings().group(DECORATIONS));
         public static BlockItem POLISHED_ANDESITE_TILE_ITEM = new BlockItem(POLISHED_ANDESITE_TILE,new Settings().group(DECORATIONS));
         public static BlockItem POLISHED_DIORITE_TILE_ITEM = new BlockItem(POLISHED_DIORITE_TILE,new Settings().group(DECORATIONS));
-        public static BlockItem SMOOTH_LIMESTONE_ITEM = new BlockItem(SMOOTH_LIMESTONE,new Settings().group(DECORATIONS));
+        public static BlockItem SMOOTH_LIMESTONE_ITEM = new BlockItem(SMOOTH_LIMESTONE,new Settings().group(BUILDING_BLOCKS));
+        public static BlockItem SMOOTH_LIMESTONE_STAIRS_ITEM = new BlockItem(SMOOTH_LIMESTONE_STAIRS,new Settings().group(BUILDING_BLOCKS));
+        public static BlockItem SMOOTH_LIMESTONE_SLAB_ITEM = new BlockItem(SMOOTH_LIMESTONE_SLAB,new Settings().group(BUILDING_BLOCKS));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(copy(STONE));
@@ -59,5 +61,7 @@ public class Elements {
         public static TileBlock POLISHED_ANDESITE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
         public static TileBlock POLISHED_DIORITE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
         public static Block SMOOTH_LIMESTONE = new Block(copy(SMOOTH_QUARTZ));
+        public static SmoothLimestoneStairsBlock SMOOTH_LIMESTONE_STAIRS = new SmoothLimestoneStairsBlock();
+        public static SlabBlock SMOOTH_LIMESTONE_SLAB = new SlabBlock(copy(SMOOTH_QUARTZ_SLAB));
     }
 }
