@@ -94,6 +94,33 @@ public enum NotEnoughRocks {
         register(ITEM,neri("polished_diorite_tile"),POLISHED_DIORITE_TILE_ITEM);
         log(INFO,"Initialized Polished Diorite Tile");
 
+        register(BLOCK,neri("smooth_limestone"),SMOOTH_LIMESTONE);
+        register(ITEM,neri("smooth_limestone"),SMOOTH_LIMESTONE_ITEM);
+        log(INFO,"Initialized Smooth Limestone");
+
+        register(BLOCK,neri("smooth_limestone_stairs"),SMOOTH_LIMESTONE_STAIRS);
+        register(ITEM,neri("smooth_limestone_stairs"),SMOOTH_LIMESTONE_STAIRS_ITEM);
+        log(INFO,"Initialized Smooth Limestone Stairs");
+
+        register(BLOCK,neri("smooth_limestone_slab"),SMOOTH_LIMESTONE_SLAB);
+        register(ITEM,neri("smooth_limestone_slab"),SMOOTH_LIMESTONE_SLAB_ITEM);
+        log(INFO,"Initialized Smooth Limestone Slab");
+
+        register(BLOCK,neri("smooth_limestone_column"),SMOOTH_LIMESTONE_COLUMN);
+        register(ITEM,neri("smooth_limestone_column"),SMOOTH_LIMESTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Smooth Limestone Column");
+
+        register(BLOCK,neri("smooth_sandstone_column"),SMOOTH_SANDSTONE_COLUMN);
+        register(ITEM,neri("smooth_sandstone_column"),SMOOTH_SANDSTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Smooth Sandstone Column");
+
+        register(BLOCK,neri("smooth_quartz_column"),SMOOTH_QUARTZ_COLUMN);
+        register(ITEM,neri("smooth_quartz_column"),SMOOTH_QUARTZ_COLUMN_ITEM);
+        log(INFO,"Initialized Smooth Quartz Column");
+
+        register(BLOCK,neri("smooth_red_sandstone_column"),SMOOTH_RED_SANDSTONE_COLUMN);
+        register(ITEM,neri("smooth_red_sandstone_column"),SMOOTH_RED_SANDSTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Smooth Red Sandstone Column");
 
         {
             event(BIOME).register((i, identifier, biome) -> {

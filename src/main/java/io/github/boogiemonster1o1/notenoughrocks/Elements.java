@@ -35,6 +35,13 @@ public class Elements {
         public static BlockItem POLISHED_GRANITE_TILE_ITEM = new BlockItem(POLISHED_GRANITE_TILE,new Settings().group(DECORATIONS));
         public static BlockItem POLISHED_ANDESITE_TILE_ITEM = new BlockItem(POLISHED_ANDESITE_TILE,new Settings().group(DECORATIONS));
         public static BlockItem POLISHED_DIORITE_TILE_ITEM = new BlockItem(POLISHED_DIORITE_TILE,new Settings().group(DECORATIONS));
+        public static BlockItem SMOOTH_LIMESTONE_ITEM = new BlockItem(SMOOTH_LIMESTONE,new Settings().group(BUILDING_BLOCKS));
+        public static BlockItem SMOOTH_LIMESTONE_STAIRS_ITEM = new BlockItem(SMOOTH_LIMESTONE_STAIRS,new Settings().group(BUILDING_BLOCKS));
+        public static BlockItem SMOOTH_LIMESTONE_SLAB_ITEM = new BlockItem(SMOOTH_LIMESTONE_SLAB,new Settings().group(BUILDING_BLOCKS));
+        public static BlockItem SMOOTH_LIMESTONE_COLUMN_ITEM = new BlockItem(SMOOTH_LIMESTONE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem SMOOTH_SANDSTONE_COLUMN_ITEM = new BlockItem(SMOOTH_SANDSTONE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem SMOOTH_QUARTZ_COLUMN_ITEM = new BlockItem(SMOOTH_QUARTZ_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem SMOOTH_RED_SANDSTONE_COLUMN_ITEM = new BlockItem(SMOOTH_RED_SANDSTONE_COLUMN,new Settings().group(DECORATIONS));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(copy(STONE));
@@ -57,5 +64,12 @@ public class Elements {
         public static TileBlock POLISHED_GRANITE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
         public static TileBlock POLISHED_ANDESITE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
         public static TileBlock POLISHED_DIORITE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
+        public static Block SMOOTH_LIMESTONE = new Block(copy(SMOOTH_QUARTZ));
+        public static SmoothLimestoneStairsBlock SMOOTH_LIMESTONE_STAIRS = new SmoothLimestoneStairsBlock();
+        public static SlabBlock SMOOTH_LIMESTONE_SLAB = new SlabBlock(copy(SMOOTH_QUARTZ_SLAB));
+        public static SmoothLimestoneColumnBlock SMOOTH_LIMESTONE_COLUMN = new SmoothLimestoneColumnBlock();
+        public static SmoothSandstoneColumnBlock SMOOTH_SANDSTONE_COLUMN = new SmoothSandstoneColumnBlock();
+        public static SmoothQuartzColumnBlock SMOOTH_QUARTZ_COLUMN = new SmoothQuartzColumnBlock();
+        public static SmoothRedSandstoneColumnBlock SMOOTH_RED_SANDSTONE_COLUMN = new SmoothRedSandstoneColumnBlock();
     }
 }

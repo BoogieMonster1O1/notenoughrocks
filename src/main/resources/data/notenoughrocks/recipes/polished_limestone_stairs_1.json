@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "wooden_pressure_plate",
   "pattern": [
     "  #",
     " ##",
@@ -8,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "notenoughrocks:limestone"
+      "item": "notenoughrocks:polished_limestone"
     }
   },
   "result": {
-    "item": "notenoughrocks:limestone_stairs",
+    "item": "notenoughrocks:polished_limestone_stairs",
     "count": 4
   }
 }
