@@ -20,9 +20,11 @@ public class SmoothSandstoneColumnBlock extends SmoothColumnBlock{
 
     private static IntProperty TYPE = IntProperty.of("type",0,3);
 
+
     public SmoothSandstoneColumnBlock() {
         super(copy(STONE_SLAB));
-        this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE,0));
+        BlockState state = this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE,0);
+        this.setDefaultState(state);
     }
 
     @Override

@@ -22,7 +22,8 @@ public class SmoothRedSandstoneColumnBlock extends SmoothColumnBlock{
 
     public SmoothRedSandstoneColumnBlock() {
         super(copy(STONE_SLAB));
-        this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE,0));
+        BlockState state = this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE,0);
+        this.setDefaultState(state);
     }
 
     @Override
