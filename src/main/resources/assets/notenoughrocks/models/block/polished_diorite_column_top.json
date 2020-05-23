@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "notenoughrocks:block/polished_diorite",
 		"1": "notenoughrocks:block/polished_diorite_borderless",
-		"particle": "notenoughrocks:block/polished_diorite"
+		"particle": "notenoughrocks:block/polished_diorite_borderless"
 	},
 	"elements": [
 		{

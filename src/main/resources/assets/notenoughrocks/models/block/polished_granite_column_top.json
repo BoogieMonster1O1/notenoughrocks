@@ -3,7 +3,7 @@
 	"textures": {
 		"0": "notenoughrocks:block/polished_granite",
 		"1": "notenoughrocks:block/polished_granite_borderless",
-		"particle": "notenoughrocks:block/polished_granite"
+		"particle": "notenoughrocks:block/polished_granite_borderless"
 	},
 	"elements": [
 		{
