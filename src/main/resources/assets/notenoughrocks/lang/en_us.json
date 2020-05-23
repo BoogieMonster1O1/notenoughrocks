@@ -23,5 +23,7 @@
   "block.notenoughrocks.smooth_limestone_stairs": "Smooth Limestone Stairs",
   "block.notenoughrocks.smooth_limestone_slab": "Smooth Limestone Slab",
   "block.notenoughrocks.smooth_limestone_column": "Smooth Limestone Column",
-  "block.notenoughrocks.smooth_sandstone_column": "Smooth Sandstone Column"
+  "block.notenoughrocks.smooth_sandstone_column": "Smooth Sandstone Column",
+  "block.notenoughrocks.smooth_quartz_column": "Smooth Quartz Column",
+  "block.notenoughrocks.smooth_red_sandstone_column": "Smooth Red Sandstone Column"
 }
