@@ -22,6 +22,7 @@ public class SmoothQuartzColumnBlock extends SmoothColumnBlock{
 
     public SmoothQuartzColumnBlock() {
         super(copy(STONE_SLAB));
+        this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE,0));
     }
 
     @Override
