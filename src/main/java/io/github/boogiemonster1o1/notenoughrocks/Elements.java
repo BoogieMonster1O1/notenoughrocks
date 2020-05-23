@@ -4,6 +4,7 @@ import io.github.boogiemonster1o1.notenoughrocks.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
+import net.minecraft.entity.mob.CreeperEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item.Settings;
 
@@ -38,6 +39,8 @@ public class Elements {
         public static BlockItem SMOOTH_LIMESTONE_ITEM = new BlockItem(SMOOTH_LIMESTONE,new Settings().group(BUILDING_BLOCKS));
         public static BlockItem SMOOTH_LIMESTONE_STAIRS_ITEM = new BlockItem(SMOOTH_LIMESTONE_STAIRS,new Settings().group(BUILDING_BLOCKS));
         public static BlockItem SMOOTH_LIMESTONE_SLAB_ITEM = new BlockItem(SMOOTH_LIMESTONE_SLAB,new Settings().group(BUILDING_BLOCKS));
+        public static BlockItem SMOOTH_LIMESTONE_COLUMN_ITEM = new BlockItem(SMOOTH_LIMESTONE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem SMOOTH_SANDSTONE_COLUMN_ITEM = new BlockItem(SMOOTH_SANDSTONE_COLUMN,new Settings().group(DECORATIONS));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(copy(STONE));
@@ -63,5 +66,7 @@ public class Elements {
         public static Block SMOOTH_LIMESTONE = new Block(copy(SMOOTH_QUARTZ));
         public static SmoothLimestoneStairsBlock SMOOTH_LIMESTONE_STAIRS = new SmoothLimestoneStairsBlock();
         public static SlabBlock SMOOTH_LIMESTONE_SLAB = new SlabBlock(copy(SMOOTH_QUARTZ_SLAB));
+        public static SmoothLimestoneColumnBlock SMOOTH_LIMESTONE_COLUMN = new SmoothLimestoneColumnBlock();
+        public static SmoothSandstoneColumnBlock SMOOTH_SANDSTONE_COLUMN = new SmoothSandstoneColumnBlock();
     }
 }

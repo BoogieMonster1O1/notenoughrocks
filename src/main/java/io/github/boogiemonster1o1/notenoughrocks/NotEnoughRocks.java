@@ -106,6 +106,14 @@ public enum NotEnoughRocks {
         register(ITEM,neri("smooth_limestone_slab"),SMOOTH_LIMESTONE_SLAB_ITEM);
         log(INFO,"Initialized Smooth Limestone Slab");
 
+        register(BLOCK,neri("smooth_limestone_column"),SMOOTH_LIMESTONE_COLUMN);
+        register(ITEM,neri("smooth_limestone_column"),SMOOTH_LIMESTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Smooth Limestone Column");
+
+        register(BLOCK,neri("smooth_sandstone_column"),SMOOTH_SANDSTONE_COLUMN);
+        register(ITEM,neri("smooth_sandstone_column"),SMOOTH_SANDSTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Smooth Sandstone Column");
+
         {
             event(BIOME).register((i, identifier, biome) -> {
                 LIMESTONE_BLOCK.handleBiome(biome);

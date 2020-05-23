@@ -21,5 +21,7 @@
   "block.notenoughrocks.polished_diorite_tile": "Polished Diorite Tile",
   "block.notenoughrocks.smooth_limestone": "Smooth Limestone",
   "block.notenoughrocks.smooth_limestone_stairs": "Smooth Limestone Stairs",
-  "block.notenoughrocks.smooth_limestone_slab": "Smooth Limestone Slab"
+  "block.notenoughrocks.smooth_limestone_slab": "Smooth Limestone Slab",
+  "block.notenoughrocks.smooth_limestone_column": "Smooth Limestone Column",
+  "block.notenoughrocks.smooth_sandstone_column": "Smooth Sandstone Column"
 }
