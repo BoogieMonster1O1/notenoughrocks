@@ -42,6 +42,21 @@ public class Elements {
         public static BlockItem SMOOTH_SANDSTONE_COLUMN_ITEM = new BlockItem(SMOOTH_SANDSTONE_COLUMN,new Settings().group(DECORATIONS));
         public static BlockItem SMOOTH_QUARTZ_COLUMN_ITEM = new BlockItem(SMOOTH_QUARTZ_COLUMN,new Settings().group(DECORATIONS));
         public static BlockItem SMOOTH_RED_SANDSTONE_COLUMN_ITEM = new BlockItem(SMOOTH_RED_SANDSTONE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem BRICK_COLUMN_ITEM = new BlockItem(BRICK_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem COBBLESTONE_COLUMN_ITEM = new BlockItem(COBBLESTONE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem STONE_COLUMN_ITEM = new BlockItem(STONE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem MOSSY_COBBLESTONE_COLUMN_ITEM = new BlockItem(MOSSY_COBBLESTONE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem STONE_BRICK_COLUMN_ITEM = new BlockItem(STONE_BRICK_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem MOSSY_STONE_BRICK_COLUMN_ITEM = new BlockItem(MOSSY_STONE_BRICK_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem ANDESITE_COLUMN_ITEM = new BlockItem(ANDESITE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem GRANITE_COLUMN_ITEM = new BlockItem(GRANITE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem DIORITE_COLUMN_ITEM = new BlockItem(DIORITE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem SANDSTONE_COLUMN_ITEM = new BlockItem(SANDSTONE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem RED_SANDSTONE_COLUMN_ITEM = new BlockItem(RED_SANDSTONE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem PRISMARINE_COLUMN_ITEM = new BlockItem(PRISMARINE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem DARK_PRISMARINE_COLUMN_ITEM = new BlockItem(DARK_PRISMARINE_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem NETHER_BRICK_COLUMN_ITEM = new BlockItem(NETHER_BRICK_COLUMN,new Settings().group(DECORATIONS));
+        public static BlockItem END_STONE_COLUMN_ITEM = new BlockItem(END_STONE_COLUMN,new Settings().group(DECORATIONS));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(copy(STONE));
@@ -71,5 +86,20 @@ public class Elements {
         public static SmoothSandstoneColumnBlock SMOOTH_SANDSTONE_COLUMN = new SmoothSandstoneColumnBlock();
         public static SmoothQuartzColumnBlock SMOOTH_QUARTZ_COLUMN = new SmoothQuartzColumnBlock();
         public static SmoothRedSandstoneColumnBlock SMOOTH_RED_SANDSTONE_COLUMN = new SmoothRedSandstoneColumnBlock();
+        public static BulkColumnBlock BRICK_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock COBBLESTONE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock STONE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock MOSSY_COBBLESTONE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock STONE_BRICK_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock MOSSY_STONE_BRICK_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock ANDESITE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock DIORITE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock GRANITE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock SANDSTONE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock RED_SANDSTONE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock PRISMARINE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock DARK_PRISMARINE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock NETHER_BRICK_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock END_STONE_COLUMN = new BulkColumnBlock();
     }
 }

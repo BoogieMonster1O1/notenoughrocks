@@ -25,5 +25,20 @@
   "block.notenoughrocks.smooth_limestone_column": "Smooth Limestone Column",
   "block.notenoughrocks.smooth_sandstone_column": "Smooth Sandstone Column",
   "block.notenoughrocks.smooth_quartz_column": "Smooth Quartz Column",
-  "block.notenoughrocks.smooth_red_sandstone_column": "Smooth Red Sandstone Column"
+  "block.notenoughrocks.smooth_red_sandstone_column": "Smooth Red Sandstone Column",
+  "block.notenoughrocks.stone_column": "Stone Column",
+  "block.notenoughrocks.cobblestone_column": "Cobblestone Column",
+  "block.notenoughrocks.brick_column": "Brick Column",
+  "block.notenoughrocks.mossy_cobblestone_column": "Mossy Cobblestone Column",
+  "block.notenoughrocks.stone_brick_column": "Stone Brick Column",
+  "block.notenoughrocks.mossy_stone_brick_column": "Mossy Stone Brick Column",
+  "block.notenoughrocks.granite_column": "Granite Column",
+  "block.notenoughrocks.diorite_column": "Diorite Column",
+  "block.notenoughrocks.andesite_column": "Andesite Column",
+  "block.notenoughrocks.red_sandstone_column": "Red Sandstone Column",
+  "block.notenoughrocks.sandstone_column": "Sandstone Column",
+  "block.notenoughrocks.prismarine_column": "Prismarine Column",
+  "block.notenoughrocks.dark_prismarine_column": "Dark Prismarine Column",
+  "block.notenoughrocks.nether_brick_column": "Nether Brick Column",
+  "block.notenoughrocks.end_stone_column": "End Stone Column"
 }

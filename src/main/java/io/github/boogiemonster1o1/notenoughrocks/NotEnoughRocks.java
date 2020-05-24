@@ -122,6 +122,66 @@ public enum NotEnoughRocks {
         register(ITEM,neri("smooth_red_sandstone_column"),SMOOTH_RED_SANDSTONE_COLUMN_ITEM);
         log(INFO,"Initialized Smooth Red Sandstone Column");
 
+        register(BLOCK,neri("stone_column"),STONE_COLUMN);
+        register(ITEM,neri("stone_column"),STONE_COLUMN_ITEM);
+        log(INFO,"Initialized Stone Column");
+
+        register(BLOCK,neri("cobblestone_column"),COBBLESTONE_COLUMN);
+        register(ITEM,neri("cobblestone_column"),COBBLESTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Cobblestone Column");
+
+        register(BLOCK,neri("brick_column"),BRICK_COLUMN);
+        register(ITEM,neri("brick_column"),BRICK_COLUMN_ITEM);
+        log(INFO,"Initialized Brick Column");
+
+        register(BLOCK,neri("mossy_cobblestone_column"),MOSSY_COBBLESTONE_COLUMN);
+        register(ITEM,neri("mossy_cobblestone_column"),MOSSY_COBBLESTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Mossy Cobblestone Column");
+
+        register(BLOCK,neri("stone_brick_column"),STONE_BRICK_COLUMN);
+        register(ITEM,neri("stone_brick_column"),STONE_BRICK_COLUMN_ITEM);
+        log(INFO,"Initialized Stone Brick Column");
+
+        register(BLOCK,neri("mossy_stone_brick_column"),MOSSY_STONE_BRICK_COLUMN);
+        register(ITEM,neri("mossy_stone_brick_column"),MOSSY_STONE_BRICK_COLUMN_ITEM);
+        log(INFO,"Initialized Mossy Stone Brick Column");
+
+        register(BLOCK,neri("granite_column"),GRANITE_COLUMN);
+        register(ITEM,neri("granite_column"),GRANITE_COLUMN_ITEM);
+        log(INFO,"Initialized Granite Column");
+
+        register(BLOCK,neri("diorite_column"),DIORITE_COLUMN);
+        register(ITEM,neri("diorite_column"),DIORITE_COLUMN_ITEM);
+        log(INFO,"Initialized Diorite Column");
+
+        register(BLOCK,neri("andesite_column"),ANDESITE_COLUMN);
+        register(ITEM,neri("andesite_column"),ANDESITE_COLUMN_ITEM);
+        log(INFO,"Initialized Andesite Column");
+
+        register(BLOCK,neri("red_sandstone_column"),RED_SANDSTONE_COLUMN);
+        register(ITEM,neri("red_sandstone_column"),RED_SANDSTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Red Sandstone Column");
+
+        register(BLOCK,neri("sandstone_column"),SANDSTONE_COLUMN);
+        register(ITEM,neri("sandstone_column"),SANDSTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Sandstone Column");
+
+        register(BLOCK,neri("prismarine_column"),PRISMARINE_COLUMN);
+        register(ITEM,neri("prismarine_column"),PRISMARINE_COLUMN_ITEM);
+        log(INFO,"Initialized Prismarine Column");
+
+        register(BLOCK,neri("dark_prismarine_column"),DARK_PRISMARINE_COLUMN);
+        register(ITEM,neri("dark_prismarine_column"),DARK_PRISMARINE_COLUMN_ITEM);
+        log(INFO,"Initialized Dark Prismarine Column");
+
+        register(BLOCK,neri("nether_brick_column"),NETHER_BRICK_COLUMN);
+        register(ITEM,neri("nether_brick_column"),NETHER_BRICK_COLUMN_ITEM);
+        log(INFO,"Initialized Nether Brick Column");
+
+        register(BLOCK,neri("end_stone_column"),END_STONE_COLUMN);
+        register(ITEM,neri("end_stone_column"),END_STONE_COLUMN_ITEM);
+        log(INFO,"Initialized End Stone Column");
+
         {
             event(BIOME).register((i, identifier, biome) -> {
                 LIMESTONE_BLOCK.handleBiome(biome);
