@@ -40,5 +40,6 @@
   "block.notenoughrocks.prismarine_column": "Prismarine Column",
   "block.notenoughrocks.dark_prismarine_column": "Dark Prismarine Column",
   "block.notenoughrocks.nether_brick_column": "Nether Brick Column",
-  "block.notenoughrocks.end_stone_column": "End Stone Column"
+  "block.notenoughrocks.end_stone_column": "End Stone Column",
+  "itemGroup.notenoughrocks.ner_group": "NotEnoughRocks"
 }
