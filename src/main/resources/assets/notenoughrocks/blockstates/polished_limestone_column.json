@@ -1,8 +1,8 @@
 {
   "variants": {
-    "type=0": { "model": "notenoughrocks:block/polished_limestone_column" },
-    "type=1": { "model": "notenoughrocks:block/polished_limestone_column_bottom"},
-    "type=2": { "model": "notenoughrocks:block/polished_limestone_column_middle"},
-    "type=3": { "model": "notenoughrocks:block/polished_limestone_column_top"}
+    "type=single": { "model": "notenoughrocks:block/polished_limestone_column" },
+    "type=bottom": { "model": "notenoughrocks:block/polished_limestone_column_bottom"},
+    "type=middle": { "model": "notenoughrocks:block/polished_limestone_column_middle"},
+    "type=top": { "model": "notenoughrocks:block/polished_limestone_column_top"}
   }
 }

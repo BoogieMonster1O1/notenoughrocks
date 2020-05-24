@@ -71,10 +71,10 @@ public class Elements {
         public static LimestoneBrickStairsBlock LIMESTONE_BRICK_STAIRS = new LimestoneBrickStairsBlock();
         public static SlabBlock LIMESTONE_BRICK_SLAB = new SlabBlock(copy(STONE_BRICK_SLAB));
         public static WallBlock LIMESTONE_BRICK_WALL = new WallBlock(copy(STONE_BRICK_WALL));
-        public static PolishedLimestoneColumnBlock POLISHED_LIMESTONE_COLUMN = new PolishedLimestoneColumnBlock();
-        public static PolishedGraniteColumnBlock POLISHED_GRANITE_COLUMN = new PolishedGraniteColumnBlock();
-        public static PolishedAndesiteColumnBlock POLISHED_ANDESITE_COLUMN = new PolishedAndesiteColumnBlock();
-        public static PolishedDioriteColumnBlock POLISHED_DIORITE_COLUMN = new PolishedDioriteColumnBlock();
+        public static BulkColumnBlock POLISHED_LIMESTONE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock POLISHED_GRANITE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock POLISHED_ANDESITE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock POLISHED_DIORITE_COLUMN = new BulkColumnBlock();
         public static TileBlock POLISHED_LIMESTONE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
         public static TileBlock POLISHED_GRANITE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
         public static TileBlock POLISHED_ANDESITE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
