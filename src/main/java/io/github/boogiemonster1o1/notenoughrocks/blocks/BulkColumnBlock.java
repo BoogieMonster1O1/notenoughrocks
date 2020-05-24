@@ -12,6 +12,7 @@ import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.tag.BlockTags;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -19,13 +20,15 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.IWorld;
 
-import static io.github.boogiemonster1o1.notenoughrocks.blocks.ColumnBlock.COLUMNS;
 import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
 import static net.minecraft.block.BlockRenderType.MODEL;
 import static net.minecraft.block.Blocks.STONE_SLAB;
 import static net.minecraft.util.shape.VoxelShapes.cuboid;
 
 public class BulkColumnBlock extends Block implements Waterloggable {
+
+    public static Identifier COLUMNS = new Identifier("minecraft","columns");
+
     public BulkColumnBlock() {
         super(copy(STONE_SLAB));
         this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE,Type.SINGLE));
