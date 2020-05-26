@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "notenoughrocks:block/polished_limestone_tile",
-		"particle": "notenoughrocks:block/polished_lim_tile"
+		"particle": "notenoughrocks:block/polished_limestone"
 	},
 	"elements": [
 		{

@@ -1,5 +1,8 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
+import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
@@ -122,12 +125,119 @@ public enum NotEnoughRocks {
         register(ITEM,neri("smooth_red_sandstone_column"),SMOOTH_RED_SANDSTONE_COLUMN_ITEM);
         log(INFO,"Initialized Smooth Red Sandstone Column");
 
-        {
+        register(BLOCK,neri("stone_column"),STONE_COLUMN);
+        register(ITEM,neri("stone_column"),STONE_COLUMN_ITEM);
+        log(INFO,"Initialized Stone Column");
+
+        register(BLOCK,neri("cobblestone_column"),COBBLESTONE_COLUMN);
+        register(ITEM,neri("cobblestone_column"),COBBLESTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Cobblestone Column");
+
+        register(BLOCK,neri("brick_column"),BRICK_COLUMN);
+        register(ITEM,neri("brick_column"),BRICK_COLUMN_ITEM);
+        log(INFO,"Initialized Brick Column");
+
+        register(BLOCK,neri("mossy_cobblestone_column"),MOSSY_COBBLESTONE_COLUMN);
+        register(ITEM,neri("mossy_cobblestone_column"),MOSSY_COBBLESTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Mossy Cobblestone Column");
+
+        register(BLOCK,neri("stone_brick_column"),STONE_BRICK_COLUMN);
+        register(ITEM,neri("stone_brick_column"),STONE_BRICK_COLUMN_ITEM);
+        log(INFO,"Initialized Stone Brick Column");
+
+        register(BLOCK,neri("mossy_stone_brick_column"),MOSSY_STONE_BRICK_COLUMN);
+        register(ITEM,neri("mossy_stone_brick_column"),MOSSY_STONE_BRICK_COLUMN_ITEM);
+        log(INFO,"Initialized Mossy Stone Brick Column");
+
+        register(BLOCK,neri("granite_column"),GRANITE_COLUMN);
+        register(ITEM,neri("granite_column"),GRANITE_COLUMN_ITEM);
+        log(INFO,"Initialized Granite Column");
+
+        register(BLOCK,neri("diorite_column"),DIORITE_COLUMN);
+        register(ITEM,neri("diorite_column"),DIORITE_COLUMN_ITEM);
+        log(INFO,"Initialized Diorite Column");
+
+        register(BLOCK,neri("andesite_column"),ANDESITE_COLUMN);
+        register(ITEM,neri("andesite_column"),ANDESITE_COLUMN_ITEM);
+        log(INFO,"Initialized Andesite Column");
+
+        register(BLOCK,neri("red_sandstone_column"),RED_SANDSTONE_COLUMN);
+        register(ITEM,neri("red_sandstone_column"),RED_SANDSTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Red Sandstone Column");
+
+        register(BLOCK,neri("sandstone_column"),SANDSTONE_COLUMN);
+        register(ITEM,neri("sandstone_column"),SANDSTONE_COLUMN_ITEM);
+        log(INFO,"Initialized Sandstone Column");
+
+        register(BLOCK,neri("prismarine_column"),PRISMARINE_COLUMN);
+        register(ITEM,neri("prismarine_column"),PRISMARINE_COLUMN_ITEM);
+        log(INFO,"Initialized Prismarine Column");
+
+        register(BLOCK,neri("dark_prismarine_column"),DARK_PRISMARINE_COLUMN);
+        register(ITEM,neri("dark_prismarine_column"),DARK_PRISMARINE_COLUMN_ITEM);
+        log(INFO,"Initialized Dark Prismarine Column");
+
+        register(BLOCK,neri("nether_brick_column"),NETHER_BRICK_COLUMN);
+        register(ITEM,neri("nether_brick_column"),NETHER_BRICK_COLUMN_ITEM);
+        log(INFO,"Initialized Nether Brick Column");
+
+        register(BLOCK,neri("end_stone_column"),END_STONE_COLUMN);
+        register(ITEM,neri("end_stone_column"),END_STONE_COLUMN_ITEM);
+        log(INFO,"Initialized End Stone Column");
+
+        { // Miscellaneous
             event(BIOME).register((i, identifier, biome) -> {
                 LIMESTONE_BLOCK.handleBiome(biome);
             });
+
+            NER = FabricItemGroupBuilder.create(INSTANCE.neri("ner_group")).icon(()->new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).appendItems(stacks->{
+                stacks.add(new ItemStack(LIMESTONE_BLOCK_ITEM));
+                stacks.add(new ItemStack(LIMESTONE_STAIRS_ITEM));
+                stacks.add(new ItemStack(LIMESTONE_SLAB_ITEM));
+                stacks.add(new ItemStack(LIMESTONE_WALL_ITEM));
+                stacks.add(new ItemStack(LIMESTONE_BRICKS_ITEM));
+                stacks.add(new ItemStack(LIMESTONE_BRICK_STAIRS_ITEM));
+                stacks.add(new ItemStack(LIMESTONE_BRICK_SLAB_ITEM));
+                stacks.add(new ItemStack(LIMESTONE_BRICK_WALL_ITEM));
+                stacks.add(new ItemStack(POLISHED_LIMESTONE_ITEM));
+                stacks.add(new ItemStack(POLISHED_LIMESTONE_STAIRS_ITEM));
+                stacks.add(new ItemStack(POLISHED_LIMESTONE_SLAB_ITEM));
+                stacks.add(new ItemStack(POLISHED_LIMESTONE_WALL_ITEM));
+                stacks.add(new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(POLISHED_LIMESTONE_TILE_ITEM));
+                stacks.add(new ItemStack(SMOOTH_LIMESTONE_ITEM));
+                stacks.add(new ItemStack(SMOOTH_LIMESTONE_STAIRS_ITEM));
+                stacks.add(new ItemStack(SMOOTH_LIMESTONE_SLAB_ITEM));
+                stacks.add(new ItemStack(SMOOTH_LIMESTONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(POLISHED_GRANITE_COLUMN_ITEM));
+                stacks.add(new ItemStack(POLISHED_ANDESITE_COLUMN_ITEM));
+                stacks.add(new ItemStack(POLISHED_DIORITE_COLUMN_ITEM));
+                stacks.add(new ItemStack(BRICK_COLUMN_ITEM));
+                stacks.add(new ItemStack(COBBLESTONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(STONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(MOSSY_COBBLESTONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(STONE_BRICK_COLUMN_ITEM));
+                stacks.add(new ItemStack(MOSSY_STONE_BRICK_COLUMN_ITEM));
+                stacks.add(new ItemStack(ANDESITE_COLUMN_ITEM));
+                stacks.add(new ItemStack(DIORITE_COLUMN_ITEM));
+                stacks.add(new ItemStack(GRANITE_COLUMN_ITEM));
+                stacks.add(new ItemStack(SANDSTONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(RED_SANDSTONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(PRISMARINE_COLUMN_ITEM));
+                stacks.add(new ItemStack(DARK_PRISMARINE_COLUMN_ITEM));
+                stacks.add(new ItemStack(NETHER_BRICK_COLUMN_ITEM));
+                stacks.add(new ItemStack(END_STONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(POLISHED_ANDESITE_TILE_ITEM));
+                stacks.add(new ItemStack(POLISHED_DIORITE_TILE_ITEM));
+                stacks.add(new ItemStack(POLISHED_GRANITE_TILE_ITEM));
+                stacks.add(new ItemStack(SMOOTH_SANDSTONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(SMOOTH_RED_SANDSTONE_COLUMN_ITEM));
+                stacks.add(new ItemStack(SMOOTH_QUARTZ_COLUMN_ITEM));
+            }).build();
         }
     }
+
+    static ItemGroup NER;
 
     public Identifier neri(String path){
         return new Identifier("notenoughrocks",path);
