@@ -185,55 +185,12 @@ public enum NotEnoughRocks {
         register(ITEM,neri("end_stone_column"),END_STONE_COLUMN_ITEM);
         log(INFO,"Initialized End Stone Column");
 
-        { // Miscellaneous
+        /*Misc*/{
             event(BIOME).register((i, identifier, biome) -> {
                 LIMESTONE_BLOCK.handleBiome(biome);
             });
 
-            NER = FabricItemGroupBuilder.create(INSTANCE.neri("ner_group")).icon(()->new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).appendItems(stacks->{
-                stacks.add(new ItemStack(LIMESTONE_BLOCK_ITEM));
-                stacks.add(new ItemStack(LIMESTONE_STAIRS_ITEM));
-                stacks.add(new ItemStack(LIMESTONE_SLAB_ITEM));
-                stacks.add(new ItemStack(LIMESTONE_WALL_ITEM));
-                stacks.add(new ItemStack(LIMESTONE_BRICKS_ITEM));
-                stacks.add(new ItemStack(LIMESTONE_BRICK_STAIRS_ITEM));
-                stacks.add(new ItemStack(LIMESTONE_BRICK_SLAB_ITEM));
-                stacks.add(new ItemStack(LIMESTONE_BRICK_WALL_ITEM));
-                stacks.add(new ItemStack(POLISHED_LIMESTONE_ITEM));
-                stacks.add(new ItemStack(POLISHED_LIMESTONE_STAIRS_ITEM));
-                stacks.add(new ItemStack(POLISHED_LIMESTONE_SLAB_ITEM));
-                stacks.add(new ItemStack(POLISHED_LIMESTONE_WALL_ITEM));
-                stacks.add(new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(POLISHED_LIMESTONE_TILE_ITEM));
-                stacks.add(new ItemStack(SMOOTH_LIMESTONE_ITEM));
-                stacks.add(new ItemStack(SMOOTH_LIMESTONE_STAIRS_ITEM));
-                stacks.add(new ItemStack(SMOOTH_LIMESTONE_SLAB_ITEM));
-                stacks.add(new ItemStack(SMOOTH_LIMESTONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(POLISHED_GRANITE_COLUMN_ITEM));
-                stacks.add(new ItemStack(POLISHED_ANDESITE_COLUMN_ITEM));
-                stacks.add(new ItemStack(POLISHED_DIORITE_COLUMN_ITEM));
-                stacks.add(new ItemStack(BRICK_COLUMN_ITEM));
-                stacks.add(new ItemStack(COBBLESTONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(STONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(MOSSY_COBBLESTONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(STONE_BRICK_COLUMN_ITEM));
-                stacks.add(new ItemStack(MOSSY_STONE_BRICK_COLUMN_ITEM));
-                stacks.add(new ItemStack(ANDESITE_COLUMN_ITEM));
-                stacks.add(new ItemStack(DIORITE_COLUMN_ITEM));
-                stacks.add(new ItemStack(GRANITE_COLUMN_ITEM));
-                stacks.add(new ItemStack(SANDSTONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(RED_SANDSTONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(PRISMARINE_COLUMN_ITEM));
-                stacks.add(new ItemStack(DARK_PRISMARINE_COLUMN_ITEM));
-                stacks.add(new ItemStack(NETHER_BRICK_COLUMN_ITEM));
-                stacks.add(new ItemStack(END_STONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(POLISHED_ANDESITE_TILE_ITEM));
-                stacks.add(new ItemStack(POLISHED_DIORITE_TILE_ITEM));
-                stacks.add(new ItemStack(POLISHED_GRANITE_TILE_ITEM));
-                stacks.add(new ItemStack(SMOOTH_SANDSTONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(SMOOTH_RED_SANDSTONE_COLUMN_ITEM));
-                stacks.add(new ItemStack(SMOOTH_QUARTZ_COLUMN_ITEM));
-            }).build();
+            NER = FabricItemGroupBuilder.create(INSTANCE.neri("ner_group")).icon(()->new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
         }
     }
 
