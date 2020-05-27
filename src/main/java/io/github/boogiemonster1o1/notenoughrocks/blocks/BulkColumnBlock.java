@@ -1,10 +1,6 @@
 package io.github.boogiemonster1o1.notenoughrocks.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockRenderType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Waterloggable;
-import net.minecraft.entity.EntityContext;
+import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.state.StateManager;
@@ -17,6 +13,7 @@ import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.IWorld;
 
@@ -39,8 +36,8 @@ public class BulkColumnBlock extends Block implements Waterloggable {
         return MODEL;
     }
 
-    @Override
-    public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityContext entityContext) {
+
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return cuboid(0.3125F,0,0.3125F,0.6875F,1,0.6875F);
     }
 
