@@ -1,7 +1,6 @@
 {
   "schemaVersion": 1,
   "id": "notenoughrocks",
-  "languageAdapter": "net.fabricmc.language.groovy.GroovyLanguageAdapter",
   "version": "${version}",
   "name": "NotEnoughRocks",
   "description": "Rocks Mod",
