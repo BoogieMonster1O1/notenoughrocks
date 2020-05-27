@@ -16,6 +16,8 @@ public enum NotEnoughRocks {
     INSTANCE;
 
     void initialize(){
+        log(WARN,"This version of NER is snapshot. Please report any bugs to the Github issue tracker.");
+
         register(ITEM,neri("limestone"),LIMESTONE_BLOCK_ITEM);
         register(BLOCK,neri("limestone"),LIMESTONE_BLOCK);
         BIOME.forEach(LIMESTONE_BLOCK::handleBiome);
