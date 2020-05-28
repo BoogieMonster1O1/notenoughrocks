@@ -43,6 +43,6 @@
   "block.notenoughrocks.end_stone_column": "End Stone Column",
   "itemGroup.notenoughrocks.ner_group": "NotEnoughRocks",
   "block.notenoughrocks.blackstone_column": "Blackstone Column",
-  "block.notenoughrocks.blackstone_brick_column": "Blackstone Brick Column",
+  "block.notenoughrocks.blackstone_brick_column": "Polished Blackstone Brick Column",
   "block.notenoughrocks.polished_blackstone_column": "Polished Blackstone Column"
 }

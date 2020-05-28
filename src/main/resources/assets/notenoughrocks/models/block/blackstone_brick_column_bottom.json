@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "minecraft:block/blackstone_brick",
-		"particle": "minecraft:block/blackstone_brick"
+		"1": "minecraft:block/polished_blackstone_bricks",
+		"particle": "minecraft:block/polished_blackstone_bricks"
 	},
 	"elements": [
 		{
