@@ -32,7 +32,7 @@
         "south": "low"
       },
       "apply": {
-        "model": "notenoughrocks:block/limestone_brick_wall_side_tall",
+        "model": "notenoughrocks:block/limestone_brick_wall_side",
         "y": 180,
         "uvlock": true
       }
@@ -42,7 +42,7 @@
         "west": "low"
       },
       "apply": {
-        "model": "notenoughrocks:block/limestone_brick_wall_side_tall",
+        "model": "notenoughrocks:block/limestone_brick_wall_side",
         "y": 270,
         "uvlock": true
       }
@@ -88,4 +88,3 @@
     }
   ]
 }
-
