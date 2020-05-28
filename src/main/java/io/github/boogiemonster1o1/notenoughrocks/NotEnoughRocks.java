@@ -16,6 +16,15 @@ public enum NotEnoughRocks {
     INSTANCE;
 
     void initialize(){
+
+        /*Misc*/{
+            event(BIOME).register((i, identifier, biome) -> {
+                LIMESTONE_BLOCK.handleBiome(biome);
+            });
+
+            NER = FabricItemGroupBuilder.create(INSTANCE.neri("ner_group")).icon(()->new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
+        }
+
         log(WARN,"This version of NER is snapshot. Please report any bugs to the Github issue tracker.");
 
         register(ITEM,neri("limestone"),LIMESTONE_BLOCK_ITEM);
@@ -153,14 +162,6 @@ public enum NotEnoughRocks {
 
         register(BLOCK,neri("polished_blackstone_column"),POLISHED_BLACKSTONE_COLUMN);
         register(ITEM,neri("polished_blackstone_column"),POLISHED_BLACKSTONE_COLUMN_ITEM);
-
-        /*Misc*/{
-            event(BIOME).register((i, identifier, biome) -> {
-                LIMESTONE_BLOCK.handleBiome(biome);
-            });
-
-            NER = FabricItemGroupBuilder.create(INSTANCE.neri("ner_group")).icon(()->new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
-        }
     }
 
     static ItemGroup NER;
