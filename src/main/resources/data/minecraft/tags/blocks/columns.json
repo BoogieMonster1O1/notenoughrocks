@@ -23,6 +23,8 @@
     "notenoughrocks:prismarine_column",
     "notenoughrocks:dark_prismarine_column",
     "notenoughrocks:nether_brick_column",
-    "notenoughrocks:end_stone_column"
+    "notenoughrocks:blackstone_column",
+    "notenoughrocks:polished_blackstone_column",
+    "notenoughrocks:blackstone_brick_column"
   ]
 }
