@@ -26,6 +26,6 @@ public class TileBlock extends Block {
 
     @Override
     public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityContext entityContext) {
-        return cuboid(0,0,0,1,0.0625F,1);
+        return cuboid(0,0,0,1,0.125F,1);
     }
 }
