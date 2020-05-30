@@ -65,8 +65,8 @@ public class BulkColumnBlock extends Block implements Waterloggable {
         BlockState aboveState = world.getBlockState(abovePos);
         Block belowBlock = belowState.getBlock();
         Block aboveBlock = aboveState.getBlock();
-        Boolean isAbove = BlockTags.getContainer().getOrCreate(COLUMNS).contains(aboveBlock);
-        Boolean isBelow = BlockTags.getContainer().getOrCreate(COLUMNS).contains(belowBlock);
+        boolean isAbove = BlockTags.getContainer().getOrCreate(COLUMNS).contains(aboveBlock);
+        boolean isBelow = BlockTags.getContainer().getOrCreate(COLUMNS).contains(belowBlock);
         if(isAbove && isBelow){
             return state.with(TYPE,Type.MIDDLE);
         }
