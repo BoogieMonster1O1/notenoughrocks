@@ -7,8 +7,6 @@ import net.minecraft.block.WallBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item.Settings;
 
-import java.util.Random;
-
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks.NER;
 import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
