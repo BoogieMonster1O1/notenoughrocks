@@ -2,7 +2,9 @@
   "required": true,
   "package": "io.github.boogiemonster1o1.notenoughrocks.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [],
+  "mixins": [
+    "FluidBlockMixin"
+  ],
   "client": [],
   "server": [],
   "injectors": {

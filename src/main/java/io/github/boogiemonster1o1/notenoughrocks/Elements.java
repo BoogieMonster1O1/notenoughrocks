@@ -1,11 +1,19 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
 import io.github.boogiemonster1o1.notenoughrocks.blocks.*;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.block.Block;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.network.ClientPlayerEntity;
+import net.minecraft.entity.player.PlayerAbilities;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item.Settings;
+import net.minecraft.util.math.Vec3d;
+
+import java.util.Random;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks.NER;
@@ -13,6 +21,8 @@ import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSetting
 import static net.minecraft.block.Blocks.*;
 
 public class Elements {
+
+    public static Random RANDOM = new Random();
 
     public static class ItemS{
         public static BlockItem LIMESTONE_BLOCK_ITEM = new BlockItem(LIMESTONE_BLOCK,new Settings().group(NER));
