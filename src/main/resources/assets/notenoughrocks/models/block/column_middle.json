@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "minecraft:block/andesite",
-		"particle": "minecraft:block/andesite"
+		"0": "notenoughrocks:block/limestone",
+		"particle": "block/andesite"
 	},
 	"elements": [
 		{
@@ -13,8 +13,8 @@
 				"east": {"uv": [0, 0, 6, 16], "texture": "#0"},
 				"south": {"uv": [0, 0, 6, 16], "texture": "#0"},
 				"west": {"uv": [0, 0, 6, 16], "texture": "#0"},
-				"up": {"uv": [0, 0, 6, 16], "texture": "#0"},
-				"down": {"uv": [0, 0, 6, 16], "texture": "#0"}
+				"up": {"uv": [0, 0, 6, 6], "texture": "#0"},
+				"down": {"uv": [0, 0, 6, 6], "texture": "#0"}
 			}
 		}
 	]

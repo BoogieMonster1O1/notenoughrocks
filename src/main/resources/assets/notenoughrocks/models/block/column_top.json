@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "minecraft:block/andesite",
-		"particle": "minecraft:block/andesite"
+		"1": "notenoughrocks:block/limestone",
+		"particle": "block/andesite"
 	},
 	"elements": [
 		{
@@ -21,12 +21,12 @@
 			"from": [2, 15, 2],
 			"to": [14, 16, 14],
 			"faces": {
-				"north": {"uv": [0, 0, 12, 1], "texture": "#1"},
-				"east": {"uv": [0, 0, 12, 1], "texture": "#1"},
-				"south": {"uv": [0, 0, 12, 1], "texture": "#1"},
-				"west": {"uv": [0, 0, 12, 1], "texture": "#1"},
-				"up": {"uv": [0, 0, 12, 1], "texture": "#1"},
-				"down": {"uv": [0, 0, 12, 1], "texture": "#1"}
+				"north": {"uv": [2, 11, 14, 12], "texture": "#1"},
+				"east": {"uv": [2, 8, 14, 9], "texture": "#1"},
+				"south": {"uv": [3, 8, 15, 9], "texture": "#1"},
+				"west": {"uv": [2, 6, 14, 7], "texture": "#1"},
+				"up": {"uv": [0, 0, 12, 12], "texture": "#1"},
+				"down": {"uv": [0, 0, 12, 11], "texture": "#1"}
 			}
 		}
 	]
