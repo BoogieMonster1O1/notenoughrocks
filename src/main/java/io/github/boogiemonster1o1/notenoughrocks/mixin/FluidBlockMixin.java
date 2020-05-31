@@ -17,9 +17,6 @@ import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.LIMESTON
 
 @Mixin(FluidBlock.class)
 public class FluidBlockMixin  {
-    @Shadow
-    private void playExtinguishSound(IWorld world, BlockPos pos){}
-
     @Inject(at=@At(value = "INVOKE",ordinal = 1,target = "Lnet/minecraft/block/FluidBlock;playExtinguishSound(Lnet/minecraft/world/IWorld;Lnet/minecraft/util/math/BlockPos;)V"),method="receiveNeighborFluids")
     public void shouldHaveBeenCalledBlendinAndNotMixin(World world, BlockPos pos, BlockState state, CallbackInfoReturnable<Boolean> cir){
         int randomNumberGeneratedFromJavaDotUtilDotRandom = new Random().nextInt(10);
