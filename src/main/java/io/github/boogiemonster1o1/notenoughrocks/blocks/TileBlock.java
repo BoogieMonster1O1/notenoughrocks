@@ -7,7 +7,6 @@ import net.minecraft.block.Waterloggable;
 import net.minecraft.entity.EntityContext;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
-import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
@@ -16,6 +15,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
 import static net.minecraft.block.BlockRenderType.MODEL;
+import static net.minecraft.state.StateManager.Builder;
 import static net.minecraft.util.shape.VoxelShapes.cuboid;
 
 public class TileBlock extends Block implements Waterloggable {
@@ -42,7 +42,7 @@ public class TileBlock extends Block implements Waterloggable {
     }
 
     @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
+    protected void appendProperties(Builder<Block, BlockState> stateManager) {
         stateManager.add(WATERLOGGED);
     }
 }
