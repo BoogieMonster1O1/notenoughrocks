@@ -152,6 +152,16 @@ public enum NotEnoughRocks {
 
         register(BLOCK,identifier("end_stone_column"),END_STONE_COLUMN);
         register(ITEM,identifier("end_stone_column"),END_STONE_COLUMN_ITEM);
+
+        register(ITEM,identifier("limestone_pickaxe"),LIMESTONE_PICKAXE);
+
+        register(ITEM,identifier("limestone_axe"),LIMESTONE_AXE);
+
+        register(ITEM,identifier("limestone_sword"),LIMESTONE_SWORD);
+
+        register(ITEM,identifier("limestone_shovel"),LIMESTONE_SHOVEL);
+
+        register(ITEM,identifier("limestone_hoe"),LIMESTONE_HOE);
     }
 
     static ItemGroup NER;
