@@ -11,6 +11,9 @@ import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.player.PlayerAbilities;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item.Settings;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ToolItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.math.Vec3d;
 
 import java.util.Random;
