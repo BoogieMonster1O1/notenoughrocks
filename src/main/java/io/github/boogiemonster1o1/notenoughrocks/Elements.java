@@ -4,9 +4,8 @@ import io.github.boogiemonster1o1.notenoughrocks.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
-import net.minecraft.item.BlockItem;
+import net.minecraft.item.*;
 import net.minecraft.item.Item.Settings;
-import net.minecraft.item.ToolItem;
 
 import static io.github.boogiemonster1o1.notenoughrocks.items.NERTools.LIMESTONE;
 import static io.github.boogiemonster1o1.notenoughrocks.items.ToolSubclass.*;
@@ -61,6 +60,9 @@ public class Elements {
         public static BlockItem END_STONE_COLUMN_ITEM = new BlockItem(END_STONE_COLUMN,new Settings().group(NER));
         public static ToolItem LIMESTONE_PICKAXE = new PickaxeSubclass(LIMESTONE,1, -2.8F,new Settings().group(NER));
         public static ToolItem LIMESTONE_AXE = new AxeSubclass(LIMESTONE,7.0F, -3.2F,new Settings().group(NER));
+        public static ToolItem LIMESTONE_SHOVEL = new ShovelItem(LIMESTONE,1.5F, -3.0F,new Settings().group(NER));
+        public static ToolItem LIMESTONE_SWORD = new SwordItem(LIMESTONE,3, -2.4F,new Settings().group(NER));
+        public static ToolItem LIMESTONE_HOE = new HoeItem(LIMESTONE,-2.0F,new Settings().group(NER));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(copy(STONE));
