@@ -2,7 +2,8 @@
 A fabric mod that adds more rocks
 
 ## License
-This mod is licensed under the GNU General Public License version 3.0. While you are allowed to distribute modified versions of this software, you are not allowed to keep it closed source, you must license it with the same license that this software is licensed under and include a copy of the license with it, and you must provide appropriate credit to the author.
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 Check out the mod on curseforge for more information.  
 
