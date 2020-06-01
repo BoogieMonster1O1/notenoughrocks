@@ -41,5 +41,10 @@
   "block.notenoughrocks.dark_prismarine_column": "Dark Prismarine Column",
   "block.notenoughrocks.nether_brick_column": "Nether Brick Column",
   "block.notenoughrocks.end_stone_column": "End Stone Column",
-  "itemGroup.notenoughrocks.ner_group": "NotEnoughRocks"
+  "itemGroup.notenoughrocks.ner_group": "NotEnoughRocks",
+  "item.notenoughrocks.limestone_pickaxe": "Limestone Pickaxe",
+  "item.notenoughrocks.limestone_axe": "Limestone Axe",
+  "item.notenoughrocks.limestone_shovel": "Limestone Shovel",
+  "item.notenoughrocks.limestone_sword": "Limestone Sword",
+  "item.notenoughrocks.limestone_hoe": "Limestone Hoe"
 }
