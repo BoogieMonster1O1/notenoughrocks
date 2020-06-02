@@ -2,6 +2,7 @@ package io.github.boogiemonster1o1.notenoughrocks;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.DefaultedList;
 import net.minecraft.util.Identifier;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
@@ -162,6 +163,9 @@ public enum NotEnoughRocks {
         register(ITEM,identifier("limestone_shovel"),LIMESTONE_SHOVEL);
 
         register(ITEM,identifier("limestone_hoe"),LIMESTONE_HOE);
+
+        register(BLOCK,identifier("marble"),MARBLE);
+        register(ITEM,identifier("marble"),MARBLE_ITEM);
     }
 
     static ItemGroup NER;
