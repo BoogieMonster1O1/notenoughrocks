@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " ##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "notenoughrocks:marble"
+    }
+  },
+  "result": {
+    "item": "notenoughrocks:marble_stairs",
+    "count": 4
+  }
+}
