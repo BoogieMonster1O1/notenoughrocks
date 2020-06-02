@@ -14,6 +14,7 @@ public class NERInitialize implements ModInitializer {
     public static final String MOD_ID = "notenoughrocks";
     public static final String MOD_NAME = "NotEnoughRocks";
 
+    @SuppressWarnings("all")
     @Override
     public void onInitialize() {
         boolean isInitialized = false;
