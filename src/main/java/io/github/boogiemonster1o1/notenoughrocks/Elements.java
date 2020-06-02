@@ -65,6 +65,7 @@ public class Elements {
         public static ToolItem LIMESTONE_HOE = new HoeItem(LIMESTONE,-2.0F,new Settings().group(NER));
         public static BlockItem MARBLE_ITEM = new BlockItem(MARBLE,new Settings().group(NER));
         public static BlockItem MARBLE_STAIRS_ITEM = new BlockItem(MARBLE_STAIRS,new Settings().group(NER));
+        public static BlockItem MARBLE_SLAB_ITEM = new BlockItem(MARBLE_SLAB,new Settings().group(NER));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(copy(STONE));
@@ -111,5 +112,6 @@ public class Elements {
         public static BulkColumnBlock END_STONE_COLUMN = new BulkColumnBlock();
         public static Block MARBLE = new Block(copy(STONE));
         public static MarbleStairsBlock MARBLE_STAIRS = new MarbleStairsBlock();
+        public static SlabBlock MARBLE_SLAB = new SlabBlock(copy(STONE_SLAB));
     }
 }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "notenoughrocks:block/marble_slab" },
+    "type=top": { "model": "notenoughrocks:block/marble_slab_top" },
+    "type=double": { "model": "notenoughrocks:block/marble" }
+  }
+}
