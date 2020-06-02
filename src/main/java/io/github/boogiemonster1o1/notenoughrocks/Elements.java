@@ -111,7 +111,7 @@ public class Elements {
         public static BulkColumnBlock DARK_PRISMARINE_COLUMN = new BulkColumnBlock();
         public static BulkColumnBlock NETHER_BRICK_COLUMN = new BulkColumnBlock();
         public static BulkColumnBlock END_STONE_COLUMN = new BulkColumnBlock();
-        public static Block MARBLE = new Block(copy(STONE));
+        public static MarbleBlock MARBLE = new MarbleBlock(copy(STONE));
         public static MarbleStairsBlock MARBLE_STAIRS = new MarbleStairsBlock();
         public static SlabBlock MARBLE_SLAB = new SlabBlock(copy(STONE_SLAB));
         public static SmoothMarbleColumnBlock MARBLE_COLUMN = new SmoothMarbleColumnBlock();
