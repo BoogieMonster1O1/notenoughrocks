@@ -2,7 +2,6 @@ package io.github.boogiemonster1o1.notenoughrocks;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.DefaultedList;
 import net.minecraft.util.Identifier;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
