@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
+import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.MOD_ID;
 import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.log;
 import static net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder.create;
 import static net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback.event;
@@ -180,7 +181,7 @@ public enum NotEnoughRocks {
     static ItemGroup NER;
 
     public Identifier identifier(String path){
-        return new Identifier("notenoughrocks",path);
+        return new Identifier(MOD_ID,path);
     }
 
     public static class InitializationError extends Error{
