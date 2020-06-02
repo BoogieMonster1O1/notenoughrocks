@@ -1,5 +1,6 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
+import io.github.boogiemonster1o1.notenoughrocks.blocks.MarbleBlock;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -20,6 +21,7 @@ public enum NotEnoughRocks {
         /*Misc*/{
             event(BIOME).register((i, identifier, biome) -> {
                 LIMESTONE_BLOCK.handleBiome(biome);
+                MARBLE.genMarble(biome);
             });
 
             NER = create(INSTANCE.identifier("ner_group")).icon(()->new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
@@ -166,6 +168,7 @@ public enum NotEnoughRocks {
 
         register(BLOCK,identifier("marble"),MARBLE);
         register(ITEM,identifier("marble"),MARBLE_ITEM);
+        BIOME.forEach(MARBLE::genMarble);
 
         register(BLOCK,identifier("marble_stairs"),MARBLE_STAIRS);
         register(ITEM,identifier("marble_stairs"),MARBLE_STAIRS_ITEM);
