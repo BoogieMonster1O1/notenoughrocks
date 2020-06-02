@@ -66,6 +66,7 @@ public class Elements {
         public static BlockItem MARBLE_ITEM = new BlockItem(MARBLE,new Settings().group(NER));
         public static BlockItem MARBLE_STAIRS_ITEM = new BlockItem(MARBLE_STAIRS,new Settings().group(NER));
         public static BlockItem MARBLE_SLAB_ITEM = new BlockItem(MARBLE_SLAB,new Settings().group(NER));
+        public static BlockItem MARBLE_COLUMN_ITEM = new BlockItem(MARBLE_COLUMN,new Settings().group(NER));
     }
     public static class BlockS{
         public static Block POLISHED_LIMESTONE = new Block(copy(STONE));
@@ -113,5 +114,6 @@ public class Elements {
         public static Block MARBLE = new Block(copy(STONE));
         public static MarbleStairsBlock MARBLE_STAIRS = new MarbleStairsBlock();
         public static SlabBlock MARBLE_SLAB = new SlabBlock(copy(STONE_SLAB));
+        public static SmoothMarbleColumnBlock MARBLE_COLUMN = new SmoothMarbleColumnBlock();
     }
 }

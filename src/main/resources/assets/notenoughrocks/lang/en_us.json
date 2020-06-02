@@ -49,5 +49,6 @@
   "item.notenoughrocks.limestone_hoe": "Limestone Hoe",
   "block.notenoughrocks.marble": "Marble",
   "block.notenoughrocks.marble_stairs": "Marble Stairs",
-  "block.notenoughrocks.marble_slab": "Marble Slab"
+  "block.notenoughrocks.marble_slab": "Marble Slab",
+  "block.notenoughrocks.marble_column": "Marble Column"
 }

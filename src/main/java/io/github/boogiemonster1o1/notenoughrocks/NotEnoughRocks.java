@@ -172,6 +172,9 @@ public enum NotEnoughRocks {
 
         register(BLOCK,identifier("marble_slab"),MARBLE_SLAB);
         register(ITEM,identifier("marble_slab"),MARBLE_SLAB_ITEM);
+
+        register(BLOCK,identifier("marble_column"),MARBLE_COLUMN);
+        register(ITEM,identifier("marble_column"),MARBLE_COLUMN_ITEM);
     }
 
     static ItemGroup NER;
