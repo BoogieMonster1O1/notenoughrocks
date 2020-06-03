@@ -3,7 +3,8 @@
   "package": "io.github.boogiemonster1o1.notenoughrocks.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "FluidBlockMixin"
+    "FluidBlockMixin",
+    "PlayerEntityMixin"
   ],
   "client": [],
   "server": [],
