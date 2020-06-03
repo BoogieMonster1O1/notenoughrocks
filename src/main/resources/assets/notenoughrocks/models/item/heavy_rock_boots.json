@@ -1,3 +1,6 @@
 {
-  "parent": "notenoughrocks:item/heavy_rock_boots"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "notenoughrocks:item/heavy_rock_boots"
+  }
 }
