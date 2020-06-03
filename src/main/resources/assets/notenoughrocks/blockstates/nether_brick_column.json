@@ -1,8 +1,16 @@
 {
   "variants": {
-    "type=single": { "model": "notenoughrocks:block/nether_brick_column" },
-    "type=bottom": { "model": "notenoughrocks:block/nether_brick_column_bottom"},
-    "type=middle": { "model": "notenoughrocks:block/nether_brick_column_middle"},
-    "type=top": { "model": "notenoughrocks:block/nether_brick_column_top"}
+    "type=single": {
+      "model": "notenoughrocks:block/nether_brick_column"
+    },
+    "type=bottom": {
+      "model": "notenoughrocks:block/nether_brick_column_bottom"
+    },
+    "type=middle": {
+      "model": "notenoughrocks:block/nether_brick_column_middle"
+    },
+    "type=top": {
+      "model": "notenoughrocks:block/nether_brick_column_top"
+    }
   }
 }

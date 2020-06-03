@@ -1,7 +1,7 @@
 {
-	"parent": "notenoughrocks:block/column_bottom",
-	"textures": {
-		"1": "notenoughrocks:block/polished_diorite_borderless",
-		"particle": "notenoughrocks:block/polished_diorite_borderless"
-	}
+  "parent": "notenoughrocks:block/column_bottom",
+  "textures": {
+    "1": "notenoughrocks:block/polished_diorite_borderless",
+    "particle": "notenoughrocks:block/polished_diorite_borderless"
+  }
 }

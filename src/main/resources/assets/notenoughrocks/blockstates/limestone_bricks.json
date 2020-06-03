@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "notenoughrocks:block/limestone_bricks" }
+    "": {
+      "model": "notenoughrocks:block/limestone_bricks"
+    }
   }
 }

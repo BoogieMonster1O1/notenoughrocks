@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "notenoughrocks:block/marble" }
+    "": {
+      "model": "notenoughrocks:block/marble"
+    }
   }
 }

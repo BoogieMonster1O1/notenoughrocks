@@ -1,7 +1,7 @@
 {
-	"parent": "notenoughrocks:block/column_middle",
-	"textures": {
-		"0": "notenoughrocks:block/polished_andesite",
-		"particle": "notenoughrocks:block/polished_andesite"
-	}
+  "parent": "notenoughrocks:block/column_middle",
+  "textures": {
+    "0": "notenoughrocks:block/polished_andesite",
+    "particle": "notenoughrocks:block/polished_andesite"
+  }
 }

@@ -1,7 +1,7 @@
 {
-	"parent": "notenoughrocks:block/column",
-	"textures": {
-		"1": "notenoughrocks:block/polished_limestone_borderless",
-		"particle": "notenoughrocks:block/polished_limestone_borderless"
-	}
+  "parent": "notenoughrocks:block/column",
+  "textures": {
+    "1": "notenoughrocks:block/polished_limestone_borderless",
+    "particle": "notenoughrocks:block/polished_limestone_borderless"
+  }
 }

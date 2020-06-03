@@ -1,7 +1,13 @@
 {
   "variants": {
-    "type=bottom": { "model": "notenoughrocks:block/limestone_slab" },
-    "type=top": { "model": "notenoughrocks:block/limestone_slab_top" },
-    "type=double": { "model": "notenoughrocks:block/limestone" }
+    "type=bottom": {
+      "model": "notenoughrocks:block/limestone_slab"
+    },
+    "type=top": {
+      "model": "notenoughrocks:block/limestone_slab_top"
+    },
+    "type=double": {
+      "model": "notenoughrocks:block/limestone"
+    }
   }
 }

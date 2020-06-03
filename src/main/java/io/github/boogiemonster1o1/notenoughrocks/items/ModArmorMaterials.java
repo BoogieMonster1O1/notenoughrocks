@@ -12,7 +12,7 @@ import static net.minecraft.recipe.Ingredient.ofItems;
 import static net.minecraft.sound.SoundEvents.ITEM_ARMOR_EQUIP_CHAIN;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    HEAVY_ROCK("heavy_rock",10,new int[]{},5, ITEM_ARMOR_EQUIP_CHAIN,1.0F, ofItems(LIMESTONE_BLOCK_ITEM, STONE));
+    HEAVY_ROCK("heavy_rock", 10, new int[]{}, 5, ITEM_ARMOR_EQUIP_CHAIN, 1.0F, ofItems(LIMESTONE_BLOCK_ITEM, STONE));
 
     public static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private final String name;
@@ -23,14 +23,14 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float toughness;
     private final Lazy<Ingredient> repairIngredient;
 
-    ModArmorMaterials(String name, int durabilityMultiplier, int[] armorValueArr, int enchantability, SoundEvent soundEvent, float toughness, Ingredient repair){
+    ModArmorMaterials(String name, int durabilityMultiplier, int[] armorValueArr, int enchantability, SoundEvent soundEvent, float toughness, Ingredient repair) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.armorValues = armorValueArr;
         this.enchantability = enchantability;
         this.equipSound = soundEvent;
         this.toughness = toughness;
-        this.repairIngredient = new Lazy<>(()->repair);
+        this.repairIngredient = new Lazy<>(() -> repair);
     }
 
     @Override

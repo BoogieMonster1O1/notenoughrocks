@@ -16,13 +16,13 @@ import net.minecraft.world.IWorld;
 import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
 import static net.minecraft.block.Blocks.STONE_SLAB;
 
-public class SmoothLimestoneColumnBlock extends SmoothColumnBlock{
+public class SmoothLimestoneColumnBlock extends SmoothColumnBlock {
 
-    private static IntProperty TYPE = IntProperty.of("type",0,3);
+    private static final IntProperty TYPE = IntProperty.of("type", 0, 3);
 
     public SmoothLimestoneColumnBlock() {
         super(copy(STONE_SLAB));
-        BlockState state = this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE,0);
+        BlockState state = this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE, 0);
         this.setDefaultState(state);
     }
 
@@ -37,27 +37,25 @@ public class SmoothLimestoneColumnBlock extends SmoothColumnBlock{
         BlockState nextState;
         Boolean belowBlockIs = BlockTags.getContainer().getOrCreate(COLUMNS).contains(belowBlock);
         Boolean aboveBlockIs = BlockTags.getContainer().getOrCreate(COLUMNS).contains(aboveBlock);
-        if(belowBlockIs && aboveBlockIs){
-            nextState = state.with(TYPE,2);
-        }
-        else if(belowBlockIs && !aboveBlockIs){
-            nextState = state.with(TYPE,3);
-        }
-        else if(!belowBlockIs && aboveBlockIs){
-            nextState = state.with(TYPE,1);
-        }
-        else{
-            nextState = state.with(TYPE,0);
+        if (belowBlockIs && aboveBlockIs) {
+            nextState = state.with(TYPE, 2);
+        } else if (belowBlockIs && !aboveBlockIs) {
+            nextState = state.with(TYPE, 3);
+        } else if (!belowBlockIs && aboveBlockIs) {
+            nextState = state.with(TYPE, 1);
+        } else {
+            nextState = state.with(TYPE, 0);
         }
         return nextState;
     }
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
-        stateManager.add(TYPE,WATERLOGGED);
+        stateManager.add(TYPE, WATERLOGGED);
     }
 
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
+
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);

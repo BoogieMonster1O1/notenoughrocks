@@ -1,5 +1,5 @@
 {
-  "parent":"notenoughrocks:block/tile",
+  "parent": "notenoughrocks:block/tile",
   "textures": {
     "0": "notenoughrocks:block/polished_diorite_tile",
     "particle": "notenoughrocks:block/polished_diorite_tile"

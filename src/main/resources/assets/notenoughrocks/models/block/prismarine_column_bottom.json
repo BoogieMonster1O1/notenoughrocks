@@ -1,7 +1,7 @@
 {
-	"parent": "notenoughrocks:block/column_bottom",
-	"textures": {
-		"1": "minecraft:block/prismarine",
-		"particle": "minecraft:block/prismarine"
-	}
+  "parent": "notenoughrocks:block/column_bottom",
+  "textures": {
+    "1": "minecraft:block/prismarine",
+    "particle": "minecraft:block/prismarine"
+  }
 }

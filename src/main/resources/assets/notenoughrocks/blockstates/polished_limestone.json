@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "notenoughrocks:block/polished_limestone" }
+    "": {
+      "model": "notenoughrocks:block/polished_limestone"
+    }
   }
 }

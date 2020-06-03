@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "notenoughrocks:block/polished_granite_tile" }
+    "": {
+      "model": "notenoughrocks:block/polished_granite_tile"
+    }
   }
 }

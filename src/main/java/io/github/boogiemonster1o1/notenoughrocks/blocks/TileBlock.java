@@ -18,7 +18,6 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.WorldView;
 
-import static net.minecraft.block.Blocks.AIR;
 import static net.minecraft.state.StateManager.Builder;
 import static net.minecraft.util.shape.VoxelShapes.cuboid;
 
@@ -28,17 +27,20 @@ public class TileBlock extends Block implements Waterloggable {
         this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false));
     }
 
-    public static Identifier TILES = new Identifier("minecraft","tiles");
+    public static Identifier TILES = new Identifier("minecraft", "tiles");
 
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
+
     @Override
     public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityContext entityContext) {
-        return cuboid(0.0F,0,0,1,0.0625F,1.0F);
+        return cuboid(0.0F, 0, 0, 1, 0.0625F, 1.0F);
     }
+
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
     }
+
     @Override
     public void appendProperties(Builder<Block, BlockState> stateManager) {
         stateManager.add(WATERLOGGED);
@@ -46,7 +48,8 @@ public class TileBlock extends Block implements Waterloggable {
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        if(BlockTags.getContainer().getOrCreate(new Identifier("minecraft","columns")).contains(world.getBlockState(pos.down()).getBlock()) || BlockTags.getContainer().getOrCreate(new Identifier("minecraft","walls")).contains(world.getBlockState(pos.down()).getBlock())) return super.canPlaceAt(state,world,pos);
+        if (BlockTags.getContainer().getOrCreate(new Identifier("minecraft", "columns")).contains(world.getBlockState(pos.down()).getBlock()) || BlockTags.getContainer().getOrCreate(new Identifier("minecraft", "walls")).contains(world.getBlockState(pos.down()).getBlock()))
+            return super.canPlaceAt(state, world, pos);
         return sideCoversSmallSquare(world, pos.down(), Direction.UP);
     }
 

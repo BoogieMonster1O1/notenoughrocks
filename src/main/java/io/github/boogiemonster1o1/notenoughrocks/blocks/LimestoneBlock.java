@@ -19,7 +19,9 @@ public class LimestoneBlock extends Block {
     public LimestoneBlock() {
         super(FabricBlockSettings.copy(Blocks.STONE));
     }
+
     public void handleBiome(Biome biome) {
-        if((biome.getCategory() != Category.NETHER && biome.getCategory() != Category.THEEND)&&(biome != MOUNTAINS)) biome.addFeature(UNDERGROUND_ORES, ORE.configure(new OreFeatureConfig(Target.NATURAL_STONE, LIMESTONE_BLOCK.getDefaultState(), 28)).createDecoratedFeature(COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 156))));
+        if ((biome.getCategory() != Category.NETHER && biome.getCategory() != Category.THEEND) && (biome != MOUNTAINS))
+            biome.addFeature(UNDERGROUND_ORES, ORE.configure(new OreFeatureConfig(Target.NATURAL_STONE, LIMESTONE_BLOCK.getDefaultState(), 28)).createDecoratedFeature(COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 156))));
     }
 }

@@ -1,7 +1,7 @@
 {
-	"parent": "notenoughrocks:block/column",
-	"textures": {
-		"1": "minecraft:block/bricks",
-		"particle": "minecraft:block/bricks"
-	}
+  "parent": "notenoughrocks:block/column",
+  "textures": {
+    "1": "minecraft:block/bricks",
+    "particle": "minecraft:block/bricks"
+  }
 }

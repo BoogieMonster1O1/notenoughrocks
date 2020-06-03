@@ -27,11 +27,11 @@ import static net.minecraft.util.shape.VoxelShapes.cuboid;
 
 public class BulkColumnBlock extends Block implements Waterloggable {
 
-    public static Identifier COLUMNS = new Identifier("minecraft","columns");
+    public static Identifier COLUMNS = new Identifier("minecraft", "columns");
 
     public BulkColumnBlock() {
         super(copy(STONE_SLAB));
-        this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE,Type.SINGLE));
+        this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false).with(TYPE, Type.SINGLE));
     }
 
     @Override
@@ -41,10 +41,10 @@ public class BulkColumnBlock extends Block implements Waterloggable {
 
     @Override
     public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityContext entityContext) {
-        return cuboid(0.3125F,0,0.3125F,0.6875F,1,0.6875F);
+        return cuboid(0.3125F, 0, 0.3125F, 0.6875F, 1, 0.6875F);
     }
 
-    public static final EnumProperty<Type> TYPE = EnumProperty.of("type",Type.class);
+    public static final EnumProperty<Type> TYPE = EnumProperty.of("type", Type.class);
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     @Override
@@ -54,7 +54,7 @@ public class BulkColumnBlock extends Block implements Waterloggable {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
-        stateManager.add(TYPE,WATERLOGGED);
+        stateManager.add(TYPE, WATERLOGGED);
     }
 
     @Override
@@ -67,17 +67,14 @@ public class BulkColumnBlock extends Block implements Waterloggable {
         Block aboveBlock = aboveState.getBlock();
         boolean isAbove = BlockTags.getContainer().getOrCreate(COLUMNS).contains(aboveBlock);
         boolean isBelow = BlockTags.getContainer().getOrCreate(COLUMNS).contains(belowBlock);
-        if(isAbove && isBelow){
-            return state.with(TYPE,Type.MIDDLE);
-        }
-        else if(!isAbove && isBelow){
-            return state.with(TYPE,Type.TOP);
-        }
-        else if(isAbove && !isBelow){
-            return state.with(TYPE,Type.BOTTOM);
-        }
-        else{
-            return state.with(TYPE,Type.SINGLE);
+        if (isAbove && isBelow) {
+            return state.with(TYPE, Type.MIDDLE);
+        } else if (!isAbove && isBelow) {
+            return state.with(TYPE, Type.TOP);
+        } else if (isAbove && !isBelow) {
+            return state.with(TYPE, Type.BOTTOM);
+        } else {
+            return state.with(TYPE, Type.SINGLE);
         }
     }
 
@@ -98,7 +95,7 @@ public class BulkColumnBlock extends Block implements Waterloggable {
         }
 
         @Override
-        public String toString(){
+        public String toString() {
             return this.name;
         }
     }

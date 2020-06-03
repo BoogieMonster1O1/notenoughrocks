@@ -1,7 +1,7 @@
 {
-	"parent": "notenoughrocks:block/column",
-	"textures": {
-		"1": "minecraft:block/end_stone_bricks",
-		"particle": "minecraft:block/end_stone_bricks"
-	}
+  "parent": "notenoughrocks:block/column",
+  "textures": {
+    "1": "minecraft:block/end_stone_bricks",
+    "particle": "minecraft:block/end_stone_bricks"
+  }
 }

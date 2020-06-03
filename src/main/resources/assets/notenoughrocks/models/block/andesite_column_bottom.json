@@ -1,7 +1,7 @@
 {
-	"parent": "notenoughrocks:block/column_bottom",
-	"textures": {
-		"1": "minecraft:block/andesite",
-		"particle": "minecraft:block/andesite"
-	}
+  "parent": "notenoughrocks:block/column_bottom",
+  "textures": {
+    "1": "minecraft:block/andesite",
+    "particle": "minecraft:block/andesite"
+  }
 }

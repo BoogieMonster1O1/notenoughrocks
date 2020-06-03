@@ -1,7 +1,7 @@
 {
-	"parent": "notenoughrocks:block/column_middle",
-	"textures": {
-		"0": "minecraft:block/mossy_stone_bricks",
-		"particle": "minecraft:block/mossy_stone_bricks"
-	}
+  "parent": "notenoughrocks:block/column_middle",
+  "textures": {
+    "0": "minecraft:block/mossy_stone_bricks",
+    "particle": "minecraft:block/mossy_stone_bricks"
+  }
 }
