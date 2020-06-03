@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "io.github.boogiemonster1o1.notenoughrocks.NERInitialize"
+    ],
+    "client": [
+      "io.github.boogiemonster1o1.notenoughrocks.client.NERClientInit"
     ]
   },
   "mixins": [
