@@ -1,6 +1,5 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
-import io.github.boogiemonster1o1.notenoughrocks.blocks.MarbleBlock;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
