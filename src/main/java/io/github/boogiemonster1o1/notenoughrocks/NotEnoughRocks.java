@@ -178,6 +178,11 @@ public enum NotEnoughRocks {
 
         register(BLOCK,identifier("marble_column"),MARBLE_COLUMN);
         register(ITEM,identifier("marble_column"),MARBLE_COLUMN_ITEM);
+
+        register(ITEM,identifier("heavy_rock_helmet"),HEAVY_ROCK_HELMET);
+        register(ITEM,identifier("heavy_rock_chestplate"),HEAVY_ROCK_CHESTPLATE);
+        register(ITEM,identifier("heavy_rock_leggings"),HEAVY_ROCK_LEGGINGS);
+        register(ITEM,identifier("heavy_rock_boots"),HEAVY_ROCK_BOOTS);
     }
 
     static ItemGroup NER;
