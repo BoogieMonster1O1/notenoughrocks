@@ -2,16 +2,17 @@ package io.github.boogiemonster1o1.notenoughrocks.items;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Lazy;
 
-import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS;
+import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.LIMESTONE_BLOCK_ITEM;
+import static net.minecraft.item.Items.STONE;
+import static net.minecraft.recipe.Ingredient.ofItems;
 import static net.minecraft.sound.SoundEvents.ITEM_ARMOR_EQUIP_CHAIN;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    HEAVY_ROCK("heavy_rock",10,new int[]{},5, ITEM_ARMOR_EQUIP_CHAIN,1.0F,Ingredient.ofItems(ItemS.LIMESTONE_BLOCK_ITEM, Items.STONE));
+    HEAVY_ROCK("heavy_rock",10,new int[]{},5, ITEM_ARMOR_EQUIP_CHAIN,1.0F, ofItems(LIMESTONE_BLOCK_ITEM, STONE));
 
     public static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private final String name;

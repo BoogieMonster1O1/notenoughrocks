@@ -10,7 +10,8 @@ import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.LIMESTONE
 import static net.minecraft.recipe.Ingredient.ofItems;
 
 public enum NERTools implements ToolMaterial {
-    LIMESTONE(1, 167, 4.8F, 1.1F, 11, ()->{return ofItems(LIMESTONE_BLOCK_ITEM);});
+    LIMESTONE(1, 167, 4.8F, 1.1F, 11, ()->{return ofItems(LIMESTONE_BLOCK_ITEM);})
+    ;
 
     private final int miningLevel;
     private final int itemDurability;
