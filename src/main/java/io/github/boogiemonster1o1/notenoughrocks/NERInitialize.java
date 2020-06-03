@@ -9,7 +9,7 @@ import static org.apache.logging.log4j.LogManager.getLogger;
 
 public class NERInitialize implements ModInitializer {
 
-    public static Logger LOGGER = getLogger();
+    public static Logger LOGGER = getLogger(NotEnoughRocks.class);
 
     public static final String MOD_ID = "notenoughrocks";
     public static final String MOD_NAME = "NotEnoughRocks";
