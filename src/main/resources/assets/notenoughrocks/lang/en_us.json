@@ -50,5 +50,10 @@
   "block.notenoughrocks.marble": "Marble",
   "block.notenoughrocks.marble_stairs": "Marble Stairs",
   "block.notenoughrocks.marble_slab": "Marble Slab",
-  "block.notenoughrocks.marble_column": "Marble Column"
+  "block.notenoughrocks.marble_column": "Marble Column",
+  "item.notenoughrocks.heavy_rock_helmet": "Heavy Rock Helmet",
+  "item.notenoughrocks.heavy_rock_chestplate": "Heavy Rock Chestplate",
+  "item.notenoughrocks.heavy_rock_leggings": "Heavy Rock Leggings",
+  "item.notenoughrocks.heavy_rock_boots": "Heavy Rock Boots"
+
 }
