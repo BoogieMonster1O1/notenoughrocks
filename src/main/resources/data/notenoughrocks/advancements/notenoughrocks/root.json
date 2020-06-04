@@ -6,11 +6,11 @@
     "title": {
       "translate": "advancement.notenoughrocks.root",
       "bold": false,
-      "color": "black"
+      "color": "white"
     },
     "description": {
       "translate": "advancement.notenoughrocks.root.description",
-      "color": "black",
+      "color": "green",
       "bold": false,
       "italic": true
     },
