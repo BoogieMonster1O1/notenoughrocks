@@ -28,7 +28,7 @@ public abstract class PlayerEntityMixin extends LivingEntity implements UpdateHe
         ItemStack legsArmor = this.getEquippedStack(EquipmentSlot.LEGS);
         ItemStack feetArmor = this.getEquippedStack(EquipmentSlot.FEET);
         if (headArmor.getItem() == HEAVY_ROCK_HELMET || chestArmor.getItem() == HEAVY_ROCK_CHESTPLATE || legsArmor.getItem() == HEAVY_ROCK_LEGGINGS || feetArmor.getItem() == HEAVY_ROCK_BOOTS) {
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 0, 1, false, false, true));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 1, 2, false, false, true));
         }
     }
     @Inject(method = "tick", at = @At(value = "RETURN"))
