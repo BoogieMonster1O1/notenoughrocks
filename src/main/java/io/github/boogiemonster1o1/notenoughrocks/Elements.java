@@ -1,6 +1,7 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
 import io.github.boogiemonster1o1.notenoughrocks.blocks.*;
+import io.github.boogiemonster1o1.notenoughrocks.items.FineRockDustItem;
 import io.github.boogiemonster1o1.notenoughrocks.items.ModArmorMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.block.SlabBlock;
@@ -76,6 +77,7 @@ public class Elements {
         public static ArmorItem HEAVY_ROCK_CHESTPLATE = new ArmorItem(ModArmorMaterials.HEAVY_ROCK, EquipmentSlot.CHEST, NER_DEFAULT);
         public static ArmorItem HEAVY_ROCK_LEGGINGS = new ArmorItem(ModArmorMaterials.HEAVY_ROCK, EquipmentSlot.LEGS, NER_DEFAULT);
         public static ArmorItem HEAVY_ROCK_BOOTS = new ArmorItem(ModArmorMaterials.HEAVY_ROCK, EquipmentSlot.FEET, NER_DEFAULT);
+        public static FineRockDustItem FINE_DUST = new FineRockDustItem(NER_DEFAULT);
     }
 
     public static class BlockS {
