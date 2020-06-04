@@ -24,7 +24,7 @@ public enum NotEnoughRocks {
                 MARBLE.genMarble(biome);
             });
 
-            NER = create(INSTANCE.identifier("ner_group")).icon(() -> new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
+            NER = create(identifier("ner_group")).icon(() -> new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
         }
 
         log(WARN, "This version of NER is a pre-release. Please report any bugs to the Github issue tracker.");
@@ -183,6 +183,8 @@ public enum NotEnoughRocks {
         register(ITEM, identifier("heavy_rock_chestplate"), HEAVY_ROCK_CHESTPLATE);
         register(ITEM, identifier("heavy_rock_leggings"), HEAVY_ROCK_LEGGINGS);
         register(ITEM, identifier("heavy_rock_boots"), HEAVY_ROCK_BOOTS);
+
+        register(ITEM, identifier("fine_dust"),FINE_DUST);
     }
 
     static ItemGroup NER;
