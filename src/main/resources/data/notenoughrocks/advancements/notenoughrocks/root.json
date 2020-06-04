@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:chest"
+    },
+    "title": {
+      "translate": "advancement.notenoughrocks.root",
+      "bold": false,
+      "color": "black"
+    },
+    "description": {
+      "translate": "advancement.notenoughrocks.root.description",
+      "color": "black",
+      "bold": false,
+      "italic": true
+    },
+    "background": "notenoughrocks:textures/block/marble.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "frame": "challenge"
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
