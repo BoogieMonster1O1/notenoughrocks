@@ -11,8 +11,8 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class FineRockDust extends Item {
-    public FineRockDust(Settings settings) {
+public class FineRockDustItem extends Item {
+    public FineRockDustItem(Settings settings) {
         super(settings);
     }
 
