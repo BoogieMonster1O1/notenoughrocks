@@ -19,6 +19,6 @@ public class FineRockDustItem extends Item {
     @Environment(EnvType.CLIENT)
     @Override
     public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
-       tooltip.add(new TranslatableText("item.notenoughrocks.fine_dist.use_dust_tooltip"));
+       tooltip.add(new TranslatableText("item.notenoughrocks.fine_dust.use_dust_tooltip"));
     }
 }
