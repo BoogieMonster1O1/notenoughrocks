@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "notenoughrocks:polished_limestone_column",
+    "notenoughrocks:polished_granite_column",
+    "notenoughrocks:polished_diorite_column",
+    "notenoughrocks:polished_andesite_column",
+    "notenoughrocks:stone_column",
+    "notenoughrocks:cobblestone_column",
+    "notenoughrocks:brick_column",
+    "notenoughrocks:mossy_cobblestone_column",
+    "notenoughrocks:stone_brick_column",
+    "notenoughrocks:mossy_stone_brick_column",
+    "notenoughrocks:granite_column",
+    "notenoughrocks:diorite_column",
+    "notenoughrocks:andesite_column",
+    "notenoughrocks:red_sandstone_column",
+    "notenoughrocks:sandstone_column",
+    "notenoughrocks:prismarine_column",
+    "notenoughrocks:dark_prismarine_column",
+    "notenoughrocks:nether_brick_column",
+    "notenoughrocks:end_stone_column",
+    "notenoughrocks:marble_column"
+  ]
+}
