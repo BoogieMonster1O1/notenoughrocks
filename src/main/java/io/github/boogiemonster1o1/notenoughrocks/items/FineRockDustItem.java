@@ -13,6 +13,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Hand;
+import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -23,7 +24,7 @@ import static net.minecraft.entity.EquipmentSlot.*;
 
 public class FineRockDustItem extends Item {
     public FineRockDustItem(Settings settings) {
-        super(settings.maxDamage(1));
+        super(settings.maxDamage(1).rarity(Rarity.RARE));
     }
 
     @Environment(EnvType.CLIENT)
