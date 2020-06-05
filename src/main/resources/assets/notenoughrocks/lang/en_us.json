@@ -58,5 +58,6 @@
   "item.notenoughrocks.fine_dust.use_dust_tooltip": "Use this to blind enemies",
   "item.notenoughrocks.fine_dust": "Atom sized Dust",
   "advancement.notenoughrocks.root": "Not Enough Rocks",
-  "advancement.notenoughrocks.root.description": "NER Advancements"
+  "advancement.notenoughrocks.root.description": "NER Advancements",
+  "item.notenoughrocks.slingshot": "Slingshot"
 }
