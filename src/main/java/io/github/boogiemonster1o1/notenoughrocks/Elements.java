@@ -3,16 +3,13 @@ package io.github.boogiemonster1o1.notenoughrocks;
 import io.github.boogiemonster1o1.notenoughrocks.blocks.*;
 import io.github.boogiemonster1o1.notenoughrocks.items.FineRockDustItem;
 import io.github.boogiemonster1o1.notenoughrocks.items.ModArmorMaterials;
-import io.github.boogiemonster1o1.notenoughrocks.items.SlingshotItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
-import net.minecraft.item.Item.Settings;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
-import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks.NER;
 import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks.NER_DEFAULT;
 import static io.github.boogiemonster1o1.notenoughrocks.items.NERTools.LIMESTONE;
 import static io.github.boogiemonster1o1.notenoughrocks.items.ToolSubclass.AxeSubclass;
@@ -78,7 +75,6 @@ public class Elements {
         public static ArmorItem HEAVY_ROCK_LEGGINGS = new ArmorItem(ModArmorMaterials.HEAVY_ROCK, EquipmentSlot.LEGS, NER_DEFAULT);
         public static ArmorItem HEAVY_ROCK_BOOTS = new ArmorItem(ModArmorMaterials.HEAVY_ROCK, EquipmentSlot.FEET, NER_DEFAULT);
         public static FineRockDustItem FINE_DUST = new FineRockDustItem(NER_DEFAULT);
-        public static SlingshotItem SLINGSHOT = new SlingshotItem(NER_DEFAULT);
     }
 
     public static class BlockS {

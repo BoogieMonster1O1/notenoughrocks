@@ -187,8 +187,6 @@ public enum NotEnoughRocks {
         register(ITEM, identifier("heavy_rock_boots"), HEAVY_ROCK_BOOTS);
 
         register(ITEM, identifier("fine_dust"),FINE_DUST);
-
-        register(ITEM, identifier("slingshot"),SLINGSHOT);
     }
 
     public static ItemGroup NER = create(identifier("ner_group")).icon(() -> new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();;
