@@ -56,9 +56,5 @@
   "item.notenoughrocks.heavy_rock_leggings": "Heavy Rock Leggings",
   "item.notenoughrocks.heavy_rock_boots": "Heavy Rock Boots",
   "item.notenoughrocks.fine_dust.use_dust_tooltip": "Use this to blind enemies",
-  "item.notenoughrocks.fine_dust": "Atom sized Dust",
-  "advancement.notenoughrocks.root": "Not Enough Rocks",
-  "advancement.notenoughrocks.root.description": "NER Advancements",
-  "advancement.notenoughrocks.craft_columns": "Cool looking Columns",
-  "advancement.notenoughrocks.craft_columns.description": "Craft some Columns"
+  "item.notenoughrocks.fine_dust": "Atom sized Dust"
 }
