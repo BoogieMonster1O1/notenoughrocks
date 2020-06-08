@@ -32,5 +32,6 @@ public class NERClient implements ClientModInitializer {
         double y = playerPos.getY();
         double z = playerPos.getZ();
         getInstance().particleManager.addParticle(ParticleTypes.EXPLOSION, x, y, z, 0.0D, 0.1D, 0.0D);
+        LOGGER.info("Recieved Particle Packet");
     }
 }
