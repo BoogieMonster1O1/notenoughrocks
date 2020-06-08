@@ -14,7 +14,7 @@ import static net.minecraft.recipe.Ingredient.ofItems;
 import static net.minecraft.sound.SoundEvents.ITEM_ARMOR_EQUIP_CHAIN;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    HEAVY_ROCK("heavy_rock", 10, new int[]{3, 5, 7, 2}, 5, ITEM_ARMOR_EQUIP_CHAIN, 1.0F, ()-> ofItems(LIMESTONE_BLOCK_ITEM, STONE));
+    HEAVY_ROCK("heavy_rock", 10, new int[]{3, 5, 7, 2}, 5, ITEM_ARMOR_EQUIP_CHAIN, 1.0F, () -> ofItems(LIMESTONE_BLOCK_ITEM, STONE));
 
     public static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private final String name;

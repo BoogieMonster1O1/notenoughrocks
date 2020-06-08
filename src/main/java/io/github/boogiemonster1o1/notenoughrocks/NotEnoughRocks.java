@@ -1,9 +1,7 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tag.Tag;
 import net.minecraft.util.Identifier;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
@@ -12,10 +10,9 @@ import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.MOD_ID;
 import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.log;
 import static net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder.create;
 import static net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback.event;
-import static net.minecraft.tag.ItemTags.getContainer;
+import static net.minecraft.item.Item.Settings;
 import static net.minecraft.util.registry.Registry.*;
 import static org.apache.logging.log4j.Level.WARN;
-import static net.minecraft.item.Item.Settings;
 
 public enum NotEnoughRocks {
     INSTANCE;
@@ -33,7 +30,7 @@ public enum NotEnoughRocks {
 
         register(ITEM, identifier("limestone"), LIMESTONE_BLOCK_ITEM);
         register(BLOCK, identifier("limestone"), LIMESTONE_BLOCK);
-        BIOME.forEach(LIMESTONE_BLOCK::handleBiome);
+        BIOME.forEach(LIMESTONE_BLOCK::genLimestone);
 
         register(BLOCK, identifier("polished_limestone"), POLISHED_LIMESTONE);
         register(ITEM, identifier("polished_limestone"), POLISHED_LIMESTONE_ITEM);
@@ -186,12 +183,12 @@ public enum NotEnoughRocks {
         register(ITEM, identifier("heavy_rock_leggings"), HEAVY_ROCK_LEGGINGS);
         register(ITEM, identifier("heavy_rock_boots"), HEAVY_ROCK_BOOTS);
 
-        register(ITEM, identifier("fine_dust"),FINE_DUST);
+        register(ITEM, identifier("fine_dust"), FINE_DUST);
     }
 
-    public static ItemGroup NER = create(identifier("ner_group")).icon(() -> new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();;
-    public static Settings NER_DEFAULT = new Settings().group(NER);
-    public static Tag<Item> ROCK_PROJECTILES_TAG =  getContainer().getOrCreate(new Identifier("notenoughrocks","rock_projectiles"));
+    public static final ItemGroup NER = create(identifier("ner_group")).icon(() -> new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
+    public static final Settings NER_DEFAULT = new Settings().group(NER);
+    public static final Identifier PLAY_DUST_PARTICLE = identifier("play_dust_particle");
 
     public static Identifier identifier(String path) {
         return new Identifier(MOD_ID, path);

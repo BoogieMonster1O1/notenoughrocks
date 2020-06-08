@@ -21,6 +21,7 @@ public abstract class PlayerEntityMixin extends LivingEntity implements UpdateHe
     public PlayerEntityMixin(EntityType<? extends LivingEntity> type, World world) {
         super(type, world);
     }
+
     @Override
     public void updateHeavyRockArmor() {
         ItemStack headArmor = this.getEquippedStack(EquipmentSlot.HEAD);
@@ -31,8 +32,9 @@ public abstract class PlayerEntityMixin extends LivingEntity implements UpdateHe
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 1, 2, false, false, true));
         }
     }
+
     @Inject(method = "tick", at = @At(value = "RETURN"))
-    public void tickTheHeavyRockArmorToo(CallbackInfo ci){
-        ((UpdateHeavyRockArmor)this).updateHeavyRockArmor();
+    public void tickTheHeavyRockArmorToo(CallbackInfo ci) {
+        ((UpdateHeavyRockArmor) this).updateHeavyRockArmor();
     }
 }
