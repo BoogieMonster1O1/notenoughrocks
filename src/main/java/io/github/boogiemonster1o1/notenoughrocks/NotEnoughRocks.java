@@ -24,7 +24,7 @@ public enum NotEnoughRocks {
         /*Misc*/
         {
             event(BIOME).register((i, identifier, biome) -> {
-                LIMESTONE_BLOCK.handleBiome(biome);
+                LIMESTONE_BLOCK.genLimestone(biome);
                 MARBLE.genMarble(biome);
             });
         }
