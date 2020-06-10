@@ -16,11 +16,11 @@ public class LocateCommandMixin {
     @Inject(method = "register", at = @At(value = "RETURN"))
     private static void onRegister(CommandDispatcher<ServerCommandSource> dispatcher, CallbackInfo info) {
         dispatcher.register(literal("locate").requires(source -> source.hasPermissionLevel(2))
-                .then(literal("stone_workshop").executes(ctx -> execute(ctx.getSource(), "stone_workshop"))));
+                .then(literal("Stone_Workshop").executes(ctx -> execute(ctx.getSource(), "stone_workshop"))));
     }
 
     @Shadow
     private static int execute(ServerCommandSource source, String name) {
-        throw new RuntimeException("not supposed to happen");
+        throw new RuntimeException(new IllegalArgumentException(new Throwable()));
     }
 }

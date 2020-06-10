@@ -70,7 +70,7 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
         }
     }
     public static class StoneWorkshopGenerator{
-        public static final Identifier id = new Identifier("igloo/top");
+        public static final Identifier id = new Identifier("notenoughrocks","stone_workshop/stone_workshop");
 
         public static void addParts(StructureManager structureManager, BlockPos blockPos, BlockRotation rotation, List<StructurePiece> list_1, Random random, DefaultFeatureConfig defaultFeatureConfig) {
             list_1.add(new StoneWorkshopGenerator.Piece(structureManager, id, blockPos, rotation));
@@ -82,7 +82,7 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
             private final Identifier identifier;
 
             public Piece(StructureManager structureManager, Identifier identifier, BlockPos pos, BlockRotation rotation){
-                super(NotEnoughRocks.STONE_WORKSHOP_PIECE,0);
+                super(NotEnoughRocks.STONE_WORKSHOP_PIECE,16);
                 this.rotation = rotation;
                 this.identifier = identifier;
                 this.pos = pos;
@@ -111,12 +111,11 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
             public boolean generate(IWorld world, ChunkGenerator<?> generator, Random random, BlockBox box, ChunkPos pos) {
                 int yHeight = world.getTopY(Heightmap.Type.WORLD_SURFACE_WG, this.pos.getX() + 8, this.pos.getZ() + 8);
                 this.pos = this.pos.add(0, yHeight - 1, 0);
-                return  super.generate(world, generator, random, box, pos);
+                return super.generate(world, generator, random, box, pos);
             }
 
             @Override
-            protected void handleMetadata(String metadata, BlockPos pos, IWorld world, Random random, BlockBox boundingBox) {
-            }
+            public void handleMetadata(String metadata, BlockPos pos, IWorld world, Random random, BlockBox boundingBox) {}
         }
     }
 }
