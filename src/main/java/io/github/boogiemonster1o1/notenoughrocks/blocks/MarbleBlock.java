@@ -9,6 +9,8 @@ import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
+import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.MARBLE;
+
 public class MarbleBlock extends Block {
     public MarbleBlock(Settings settings) {
         super(settings);
@@ -20,7 +22,7 @@ public class MarbleBlock extends Block {
             biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Feature.ORE.configure(
                     new OreFeatureConfig(
                             OreFeatureConfig.Target.NATURAL_STONE,
-                            Blocks.NETHER_QUARTZ_ORE.getDefaultState(),
+                            MARBLE.getDefaultState(),
                             18))
                     .createDecoratedFeature(Decorator.COUNT_RANGE.configure(config)));
         }

@@ -1,8 +1,18 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
+import io.github.boogiemonster1o1.notenoughrocks.structure.StoneWorkshopStructure;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.structure.StructurePieceType;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
+import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.feature.DefaultFeatureConfig;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.FeatureConfig;
+import net.minecraft.world.gen.feature.StructureFeature;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
@@ -184,11 +194,22 @@ public enum NotEnoughRocks {
         register(ITEM, identifier("heavy_rock_boots"), HEAVY_ROCK_BOOTS);
 
         register(ITEM, identifier("fine_dust"), FINE_DUST);
+
+        for(Biome biome: BIOME){
+            if(biome == Biomes.PLAINS){
+                biome.addFeature(GenerationStep.Feature.SURFACE_STRUCTURES,STONE_WORKSHOP_FEATURE.configure(FeatureConfig.DEFAULT));
+            }
+        }
+        Feature.STRUCTURES.put("stone_workshop",STONE_WORKSHOP_STRUCTURE);
+
     }
 
     public static final ItemGroup NER = create(identifier("ner_group")).icon(() -> new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
     public static final Settings NER_DEFAULT = new Settings().group(NER);
     public static final Identifier PLAY_DUST_PARTICLE = identifier("play_dust_particle");
+    public static final StructurePieceType STONE_WORKSHOP_PIECE = Registry.register(STRUCTURE_PIECE, new Identifier("notenoughrocks","stone_workshop_piece"), StoneWorkshopStructure.StoneWorkshopGenerator.Piece::new);
+    public static final StructureFeature<DefaultFeatureConfig> STONE_WORKSHOP_FEATURE = Registry.register(FEATURE,new Identifier("notenoughrocks","stone_workshop_feature"), new StoneWorkshopStructure());
+    public static final StructureFeature<?> STONE_WORKSHOP_STRUCTURE = Registry.register(STRUCTURE_FEATURE,new Identifier("notenoughrocks","stone_workshop_structure"), STONE_WORKSHOP_FEATURE);
 
     public static Identifier identifier(String path) {
         return new Identifier(MOD_ID, path);
