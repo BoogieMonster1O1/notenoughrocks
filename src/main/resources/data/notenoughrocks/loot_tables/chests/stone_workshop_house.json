@@ -1,1 +1,71 @@
-{}
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 3,
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "notenoughrocks:marble",
+          "weight": 5,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "weight": 4,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:limestone",
+          "weight": 3,
+          "quality": 3
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "bonus_rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "notenoughrocks:smooth_sandstone_column",
+          "weight": 3,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "notenoughrocks:smooth_quartz_column",
+          "weight": 2,
+          "quality": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "notenoughrocks:smooth_quartz",
+          "weight": 2,
+          "quality": 4
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "bonus_rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "notenoughrocks:fine_dust",
+          "weight": 4,
+          "quality": 5
+        }
+      ]
+    }
+  ]
+}
