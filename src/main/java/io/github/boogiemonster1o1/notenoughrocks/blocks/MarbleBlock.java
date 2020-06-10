@@ -1,7 +1,6 @@
 package io.github.boogiemonster1o1.notenoughrocks.blocks;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.decorator.Decorator;
