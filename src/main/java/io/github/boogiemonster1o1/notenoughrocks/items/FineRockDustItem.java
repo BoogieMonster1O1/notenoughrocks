@@ -47,8 +47,8 @@ public class FineRockDustItem extends Item {
         Item legsArmor = user.getEquippedStack(LEGS).getItem();
         Item feetArmor = user.getEquippedStack(FEET).getItem();
         if (headArmor == HEAVY_ROCK_HELMET || chestArmor == HEAVY_ROCK_CHESTPLATE || legsArmor == HEAVY_ROCK_LEGGINGS || feetArmor == HEAVY_ROCK_BOOTS) {
-            if (!entity.hasStatusEffect(BLINDNESS)) {
-                entity.addStatusEffect(new StatusEffectInstance(BLINDNESS, 10));
+            if (!entity.hasStatusEffect(BLINDNESS) && !user.getEntityWorld().isClient) {
+                entity.addStatusEffect(new StatusEffectInstance(BLINDNESS, 120));
                 stack.decrement(1);
                 user.playSound(BLOCK_FIRE_EXTINGUISH, 1.0f, new Random().nextFloat());
                 Stream<PlayerEntity> allPlayers = watching(entity);
