@@ -52,10 +52,10 @@ public class FineRockDustItem extends Item {
                 stack.decrement(1);
                 user.playSound(BLOCK_FIRE_EXTINGUISH, 1.0f, new Random().nextFloat());
                 Stream<PlayerEntity> allPlayers = watching(entity);
-                PacketByteBuf clientData = new PacketByteBuf(buffer());
                 double entityPosX = entity.getX();
                 double entityPosY = entity.getY();
                 double entityPosZ = entity.getZ();
+                PacketByteBuf clientData = new PacketByteBuf(buffer());
                 clientData.writeBlockPos(new BlockPos(entityPosX, entityPosY, entityPosZ));
                 allPlayers.forEach(player -> INSTANCE.sendToPlayer(player, PLAY_DUST_PARTICLE, clientData));
             }

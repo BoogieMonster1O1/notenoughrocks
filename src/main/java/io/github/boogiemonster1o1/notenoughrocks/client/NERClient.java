@@ -6,7 +6,9 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.network.ClientSidePacketRegistry;
 import net.fabricmc.fabric.api.network.PacketContext;
 import net.minecraft.util.PacketByteBuf;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.Vec3i;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -27,10 +29,10 @@ public class NERClient implements ClientModInitializer {
     }
 
     public void playDustParticle(PacketContext context, PacketByteBuf bBuf) {
-        Vec3d playerPos = context.getPlayer().getPos();
-        double x = playerPos.getX();
-        double y = playerPos.getY();
-        double z = playerPos.getZ();
+        BlockPos packetBlock = bBuf.readBlockPos();
+        double x = packetBlock.getX();
+        double y = packetBlock.getY();
+        double z = packetBlock.getZ();
         getInstance().particleManager.addParticle(EXPLOSION, x, y, z, 0.0D, 0.1D, 0.0D);
         LOGGER.info("Recieved Particle Packet");
     }
