@@ -2,7 +2,7 @@ package io.github.boogiemonster1o1.notenoughrocks;
 
 import io.github.boogiemonster1o1.notenoughrocks.blocks.*;
 import io.github.boogiemonster1o1.notenoughrocks.items.FineRockDustItem;
-import io.github.boogiemonster1o1.notenoughrocks.items.ModArmorMaterials;
+import io.github.boogiemonster1o1.notenoughrocks.items.NERArmor;
 import net.minecraft.block.Block;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
@@ -70,10 +70,10 @@ public class Elements {
         public static BlockItem MARBLE_STAIRS_ITEM = new BlockItem(MARBLE_STAIRS, NER_DEFAULT);
         public static BlockItem MARBLE_SLAB_ITEM = new BlockItem(MARBLE_SLAB, NER_DEFAULT);
         public static BlockItem MARBLE_COLUMN_ITEM = new BlockItem(MARBLE_COLUMN, NER_DEFAULT);
-        public static ArmorItem HEAVY_ROCK_HELMET = new ArmorItem(ModArmorMaterials.HEAVY_ROCK, EquipmentSlot.HEAD, NER_DEFAULT);
-        public static ArmorItem HEAVY_ROCK_CHESTPLATE = new ArmorItem(ModArmorMaterials.HEAVY_ROCK, EquipmentSlot.CHEST, NER_DEFAULT);
-        public static ArmorItem HEAVY_ROCK_LEGGINGS = new ArmorItem(ModArmorMaterials.HEAVY_ROCK, EquipmentSlot.LEGS, NER_DEFAULT);
-        public static ArmorItem HEAVY_ROCK_BOOTS = new ArmorItem(ModArmorMaterials.HEAVY_ROCK, EquipmentSlot.FEET, NER_DEFAULT);
+        public static ArmorItem HEAVY_ROCK_HELMET = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.HEAD, NER_DEFAULT);
+        public static ArmorItem HEAVY_ROCK_CHESTPLATE = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.CHEST, NER_DEFAULT);
+        public static ArmorItem HEAVY_ROCK_LEGGINGS = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.LEGS, NER_DEFAULT);
+        public static ArmorItem HEAVY_ROCK_BOOTS = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.FEET, NER_DEFAULT);
         public static FineRockDustItem FINE_DUST = new FineRockDustItem(NER_DEFAULT);
     }
 
