@@ -206,8 +206,8 @@ public enum NotEnoughRocks {
 
         register(ITEM, identifier("fine_dust"), FINE_DUST);
 
-        register(BLOCK,identifier("advanced_stonecutter"),ADVANCED_STONECUTTER);
-        register(ITEM,identifier("advanced_stonecutter"),ADVANCED_STONECUTTER_ITEM);
+        register(BLOCK, identifier("advanced_stonecutter"), ADVANCED_STONECUTTER);
+        register(ITEM, identifier("advanced_stonecutter"), ADVANCED_STONECUTTER_ITEM);
 
         for (Biome biome : BIOME) {
             if (biome == Biomes.PLAINS) {
