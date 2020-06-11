@@ -60,29 +60,30 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
 
         @Override
         public void initialize(ChunkGenerator<?> chunkGenerator, StructureManager structureManager, int x, int z, Biome biome) {
-            DefaultFeatureConfig defaultFeatureConfig = chunkGenerator.getStructureConfig(biome,NotEnoughRocks.STONE_WORKSHOP_FEATURE);
+            DefaultFeatureConfig defaultFeatureConfig = chunkGenerator.getStructureConfig(biome, NotEnoughRocks.STONE_WORKSHOP_FEATURE);
             int xx = x * 16;
             int zz = z * 16;
             BlockPos startingPos = new BlockPos(xx, 0, zz);
             BlockRotation rotation = BlockRotation.values()[this.random.nextInt(BlockRotation.values().length)];
-            addParts(structureManager,startingPos,rotation,this.children,this.random,defaultFeatureConfig);
+            addParts(structureManager, startingPos, rotation, this.children, this.random, defaultFeatureConfig);
             this.setBoundingBoxFromChildren();
         }
     }
-    public static class StoneWorkshopGenerator{
-        public static final Identifier id = new Identifier("notenoughrocks","stone_workshop/stone_workshop");
+
+    public static class StoneWorkshopGenerator {
+        public static final Identifier id = new Identifier("notenoughrocks", "stone_workshop/stone_workshop");
 
         public static void addParts(StructureManager structureManager, BlockPos blockPos, BlockRotation rotation, List<StructurePiece> list_1, Random random, DefaultFeatureConfig defaultFeatureConfig) {
             list_1.add(new StoneWorkshopGenerator.Piece(structureManager, id, blockPos, rotation));
         }
 
-        public static class Piece extends SimpleStructurePiece{
+        public static class Piece extends SimpleStructurePiece {
 
             private final BlockRotation rotation;
             private final Identifier identifier;
 
-            public Piece(StructureManager structureManager, Identifier identifier, BlockPos pos, BlockRotation rotation){
-                super(NotEnoughRocks.STONE_WORKSHOP_PIECE,16);
+            public Piece(StructureManager structureManager, Identifier identifier, BlockPos pos, BlockRotation rotation) {
+                super(NotEnoughRocks.STONE_WORKSHOP_PIECE, 16);
                 this.rotation = rotation;
                 this.identifier = identifier;
                 this.pos = pos;
@@ -90,7 +91,7 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
             }
 
             public Piece(StructureManager structureManager, CompoundTag tag) {
-                super(NotEnoughRocks.STONE_WORKSHOP_PIECE,tag);
+                super(NotEnoughRocks.STONE_WORKSHOP_PIECE, tag);
                 this.identifier = new Identifier(tag.getString("Template"));
                 this.rotation = BlockRotation.valueOf(tag.getString("Rot"));
                 this.setStructureData(structureManager);
@@ -115,7 +116,8 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
             }
 
             @Override
-            public void handleMetadata(String metadata, BlockPos pos, IWorld world, Random random, BlockBox boundingBox) {}
+            public void handleMetadata(String metadata, BlockPos pos, IWorld world, Random random, BlockBox boundingBox) {
+            }
         }
     }
 }

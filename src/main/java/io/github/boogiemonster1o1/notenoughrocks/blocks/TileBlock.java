@@ -22,14 +22,13 @@ import static net.minecraft.state.StateManager.Builder;
 import static net.minecraft.util.shape.VoxelShapes.cuboid;
 
 public class TileBlock extends Block implements Waterloggable {
+    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
+    public static Identifier TILES = new Identifier("minecraft", "tiles");
+
     public TileBlock(Settings settings) {
         super(settings);
         this.setDefaultState(this.stateManager.getDefaultState().with(WATERLOGGED, false));
     }
-
-    public static Identifier TILES = new Identifier("minecraft", "tiles");
-
-    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     @Override
     public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityContext entityContext) {

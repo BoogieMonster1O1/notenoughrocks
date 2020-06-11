@@ -75,6 +75,7 @@ public class Elements {
         public static ArmorItem HEAVY_ROCK_LEGGINGS = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.LEGS, NER_DEFAULT);
         public static ArmorItem HEAVY_ROCK_BOOTS = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.FEET, NER_DEFAULT);
         public static FineRockDustItem FINE_DUST = new FineRockDustItem(NER_DEFAULT);
+        public static BlockItem ADVANCED_STONECUTTER_ITEM = new BlockItem(ADVANCED_STONECUTTER, NER_DEFAULT);
     }
 
     public static class BlockS {
@@ -124,5 +125,6 @@ public class Elements {
         public static MarbleStairsBlock MARBLE_STAIRS = new MarbleStairsBlock();
         public static SlabBlock MARBLE_SLAB = new SlabBlock(copy(STONE_SLAB));
         public static SmoothMarbleColumnBlock MARBLE_COLUMN = new SmoothMarbleColumnBlock();
+        public static AdvancedStonecutterBlock ADVANCED_STONECUTTER = new AdvancedStonecutterBlock();
     }
 }
