@@ -27,6 +27,8 @@ import static net.minecraft.util.shape.VoxelShapes.cuboid;
 
 public class BulkColumnBlock extends Block implements Waterloggable {
 
+    public static final EnumProperty<Type> TYPE = EnumProperty.of("type", Type.class);
+    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     public static Identifier COLUMNS = new Identifier("minecraft", "columns");
 
     public BulkColumnBlock() {
@@ -43,9 +45,6 @@ public class BulkColumnBlock extends Block implements Waterloggable {
     public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityContext entityContext) {
         return cuboid(0.3125F, 0, 0.3125F, 0.6875F, 1, 0.6875F);
     }
-
-    public static final EnumProperty<Type> TYPE = EnumProperty.of("type", Type.class);
-    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     @Override
     public FluidState getFluidState(BlockState state) {

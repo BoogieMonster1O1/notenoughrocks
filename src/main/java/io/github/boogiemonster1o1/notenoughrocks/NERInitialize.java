@@ -14,6 +14,10 @@ public class NERInitialize implements ModInitializer {
     public static final String MOD_ID = "notenoughrocks";
     public static final String MOD_NAME = "NotEnoughRocks";
 
+    public static void log(Level level, String message) {
+        LOGGER.log(level, "[" + MOD_NAME + "] " + message);
+    }
+
     @SuppressWarnings("all")
     @Override
     public void onInitialize() {
@@ -22,9 +26,5 @@ public class NERInitialize implements ModInitializer {
         if (isInitialized) throw new InitializationError("NER Initializer Ran Twice! Shutting down...");
         NotEnoughRocks.INSTANCE.initialize();
         isInitialized = true;
-    }
-
-    public static void log(Level level, String message) {
-        LOGGER.log(level, "[" + MOD_NAME + "] " + message);
     }
 }

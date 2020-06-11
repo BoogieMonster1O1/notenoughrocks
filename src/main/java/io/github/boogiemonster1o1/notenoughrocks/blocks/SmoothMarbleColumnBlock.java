@@ -18,6 +18,7 @@ import static net.minecraft.block.Blocks.STONE_SLAB;
 
 public class SmoothMarbleColumnBlock extends SmoothColumnBlock {
 
+    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
     private static final IntProperty TYPE = IntProperty.of("type", 0, 3);
 
     public SmoothMarbleColumnBlock() {
@@ -53,8 +54,6 @@ public class SmoothMarbleColumnBlock extends SmoothColumnBlock {
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
         stateManager.add(TYPE, WATERLOGGED);
     }
-
-    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     @Override
     public FluidState getFluidState(BlockState state) {
