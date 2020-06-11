@@ -1,5 +1,6 @@
 package io.github.boogiemonster1o1.notenoughrocks.structure;
 
+import io.github.boogiemonster1o1.notenoughrocks.NERInitialize;
 import io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.structure.*;
@@ -30,7 +31,7 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
 
     @Override
     protected int getSeedModifier() {
-        return 0;
+        return 65536;
     }
 
     @Override
@@ -40,12 +41,12 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
 
     @Override
     public String getName() {
-        return null;
+        return NERInitialize.MOD_ID.concat(":Stone_Workshop");
     }
 
     @Override
     public int getRadius() {
-        return 0;
+        return 8;
     }
 
     public static class StoneWorkshopStart extends StructureStart {
@@ -78,7 +79,6 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
         }
 
         public static class Piece extends SimpleStructurePiece {
-
             private final BlockRotation rotation;
             private final Identifier identifier;
 
