@@ -1,5 +1,5 @@
 # notenoughrocks
-A fabric mod that adds more rocks
+A fabric mod that adds rocks and rock themed stuff
 
 ## License
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
