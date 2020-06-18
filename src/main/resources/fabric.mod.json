@@ -18,7 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.boogiemonster1o1.notenoughrocks.NERInitialize"
+      "io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks"
     ],
     "client": [
       "io.github.boogiemonster1o1.notenoughrocks.client.NERClient"
