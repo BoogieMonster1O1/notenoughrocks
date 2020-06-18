@@ -3,7 +3,9 @@ package io.github.boogiemonster1o1.notenoughrocks;
 import io.github.boogiemonster1o1.notenoughrocks.blocks.*;
 import io.github.boogiemonster1o1.notenoughrocks.items.FineRockDustItem;
 import io.github.boogiemonster1o1.notenoughrocks.items.NERArmor;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.entity.EquipmentSlot;
@@ -80,14 +82,14 @@ public class Elements {
     public static class BlockS {
         public static Block POLISHED_LIMESTONE = new Block(copy(STONE));
         public static LimestoneBlock LIMESTONE_BLOCK = new LimestoneBlock();
-        public static LimestoneStairsBlock LIMESTONE_STAIRS = new LimestoneStairsBlock();
-        public static PolishedLimestoneStairsBlock POLISHED_LIMESTONE_STAIRS = new PolishedLimestoneStairsBlock();
+        public static StairsBlockAccess LIMESTONE_STAIRS = new StairsBlockAccess(LIMESTONE_BLOCK.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_STAIRS));
+        public static StairsBlockAccess POLISHED_LIMESTONE_STAIRS = new StairsBlockAccess(POLISHED_LIMESTONE.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_STAIRS));
         public static SlabBlock LIMESTONE_SLAB = new SlabBlock(copy(STONE_SLAB));
         public static SlabBlock POLISHED_LIMESTONE_SLAB = new SlabBlock(copy(STONE_SLAB));
         public static WallBlock LIMESTONE_WALL = new WallBlock(copy(COBBLESTONE_WALL));
         public static WallBlock POLISHED_LIMESTONE_WALL = new WallBlock(copy(COBBLESTONE_WALL));
         public static Block LIMESTONE_BRICKS = new Block(copy(STONE_BRICKS));
-        public static LimestoneBrickStairsBlock LIMESTONE_BRICK_STAIRS = new LimestoneBrickStairsBlock();
+        public static StairsBlockAccess LIMESTONE_BRICK_STAIRS = new StairsBlockAccess(LIMESTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_STAIRS));
         public static SlabBlock LIMESTONE_BRICK_SLAB = new SlabBlock(copy(STONE_BRICK_SLAB));
         public static WallBlock LIMESTONE_BRICK_WALL = new WallBlock(copy(STONE_BRICK_WALL));
         public static BulkColumnBlock POLISHED_LIMESTONE_COLUMN = new BulkColumnBlock();
@@ -99,7 +101,7 @@ public class Elements {
         public static TileBlock POLISHED_ANDESITE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
         public static TileBlock POLISHED_DIORITE_TILE = new TileBlock(copy(HEAVY_WEIGHTED_PRESSURE_PLATE));
         public static Block SMOOTH_LIMESTONE = new Block(copy(SMOOTH_QUARTZ));
-        public static SmoothLimestoneStairsBlock SMOOTH_LIMESTONE_STAIRS = new SmoothLimestoneStairsBlock();
+        public static StairsBlockAccess SMOOTH_LIMESTONE_STAIRS = new StairsBlockAccess(SMOOTH_LIMESTONE.getDefaultState(), FabricBlockSettings.copy(Blocks.STONE_STAIRS));
         public static SlabBlock SMOOTH_LIMESTONE_SLAB = new SlabBlock(copy(SMOOTH_QUARTZ_SLAB));
         public static SmoothLimestoneColumnBlock SMOOTH_LIMESTONE_COLUMN = new SmoothLimestoneColumnBlock();
         public static SmoothSandstoneColumnBlock SMOOTH_SANDSTONE_COLUMN = new SmoothSandstoneColumnBlock();
