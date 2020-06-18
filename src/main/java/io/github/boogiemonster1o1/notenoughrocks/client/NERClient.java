@@ -8,7 +8,7 @@ import net.fabricmc.fabric.api.network.PacketContext;
 import net.minecraft.util.PacketByteBuf;
 import net.minecraft.util.math.BlockPos;
 
-import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks..LOGGER;
+import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks.LOGGER;
 import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks.PLAY_DUST_PARTICLE;
 import static net.minecraft.client.MinecraftClient.getInstance;
 import static net.minecraft.particle.ParticleTypes.EXPLOSION;

@@ -2,13 +2,13 @@ package io.github.boogiemonster1o1.notenoughrocks;
 
 import io.github.boogiemonster1o1.notenoughrocks.structure.StoneWorkshopStructure;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.structure.StructurePieceType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.DefaultFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
@@ -19,14 +19,12 @@ import org.apache.logging.log4j.Logger;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
 import static net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder.create;
-import static net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback.event;
 import static net.minecraft.item.Item.Settings;
 import static net.minecraft.util.registry.Registry.*;
 import static org.apache.logging.log4j.Level.WARN;
 import static org.apache.logging.log4j.LogManager.getLogger;
 
-public enum NotEnoughRocks implements ModInitializer {
-    INSTANCE;
+public class NotEnoughRocks implements ModInitializer {
 
     public static final String MOD_ID = "notenoughrocks";
     public static final String MOD_NAME = "NotEnoughRocks";
@@ -43,14 +41,6 @@ public enum NotEnoughRocks implements ModInitializer {
     }
 
     public void onInitialize() {
-        /*Misc*/
-        {
-            event(BIOME).register((i, identifier, biome) -> {
-                LIMESTONE_BLOCK.genLimestone(biome);
-                MARBLE.genMarble(biome);
-            });
-        }
-
         LOGGER.log(WARN, "This version of NER is a pre-release. Please report any bugs to the Github issue tracker.");
 
         register(ITEM, identifier("limestone"), LIMESTONE_BLOCK_ITEM);
@@ -214,17 +204,12 @@ public enum NotEnoughRocks implements ModInitializer {
         register(ITEM, identifier("advanced_stonecutter"), ADVANCED_STONECUTTER_ITEM);
 
         for (Biome biome : BIOME) {
-            if (biome == Biomes.PLAINS) {
-                biome.addFeature(GenerationStep.Feature.SURFACE_STRUCTURES, STONE_WORKSHOP_FEATURE.configure(FeatureConfig.DEFAULT));
-            }
+            biome.addFeature(GenerationStep.Feature.SURFACE_STRUCTURES, STONE_WORKSHOP_FEATURE.configure(FeatureConfig.DEFAULT));
         }
         Feature.STRUCTURES.put("stone_workshop", STONE_WORKSHOP_STRUCTURE);
-
-    }
-
-    public static class InitializationError extends Error {
-        InitializationError(String message) {
-            super(message);
-        }
+        RegistryEntryAddedCallback.event(BIOME).register((i, identifier, biome) -> {
+            LIMESTONE_BLOCK.genLimestone(biome);
+            MARBLE.genMarble(biome);
+        });
     }
 }
