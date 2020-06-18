@@ -7,5 +7,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 Check out the mod on curseforge for more information.  
 
-#### Build Status
+### Attribution
+Credits to Team Reborn, who wrote Reborn core's custom ore generation code, which I use in this mod.
+
 [![Build Status](https://travis-ci.com/BoogieMonster1O1/notenoughrocks.svg?branch=master)](https://travis-ci.com/BoogieMonster1O1/notenoughrocks)
