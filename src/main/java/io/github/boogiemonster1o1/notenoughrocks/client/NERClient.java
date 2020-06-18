@@ -5,6 +5,8 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.network.ClientSidePacketRegistry;
 import net.fabricmc.fabric.api.network.PacketContext;
+import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.RenderLayers;
 import net.minecraft.util.PacketByteBuf;
 import net.minecraft.util.math.BlockPos;
 
@@ -28,6 +30,6 @@ public class NERClient implements ClientModInitializer {
         double y = packetBlock.getY();
         double z = packetBlock.getZ();
         getInstance().particleManager.addParticle(EXPLOSION, x, y, z, 0.0D, 0.1D, 0.0D);
-        LOGGER.debug("Recieved Explosion Particle Packet");
+        LOGGER.debug("Received Explosion Particle Packet");
     }
 }
