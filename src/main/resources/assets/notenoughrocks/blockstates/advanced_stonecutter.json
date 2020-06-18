@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "notenoughrocks:block/advanced_stonecutter" },
-    "facing=south": { "model": "notenoughrocks:block/advanced_stonecutter", "y": 180 },
-    "facing=west": { "model": "notenoughrocks:block/advanced_stonecutter", "y": 270 },
-    "facing=east": { "model": "notenoughrocks:block/advanced_stonecutter", "y": 90 }
-  }
-}
