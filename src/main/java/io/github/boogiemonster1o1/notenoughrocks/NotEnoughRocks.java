@@ -200,6 +200,9 @@ public class NotEnoughRocks implements ModInitializer {
 
         register(ITEM, identifier("fine_dust"), FINE_DUST);
 
+        register(BLOCK,identifier("crushed_limestone"),CRUSHED_LIMESTONE);
+        register(ITEM,identifier("crushed_limestone"),CRUSHED_LIMESTONE_ITEM);
+
         for (Biome biome : BIOME) {
             biome.addFeature(GenerationStep.Feature.SURFACE_STRUCTURES, STONE_WORKSHOP_FEATURE.configure(FeatureConfig.DEFAULT));
         }
