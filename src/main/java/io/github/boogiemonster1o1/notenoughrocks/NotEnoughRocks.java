@@ -1,6 +1,7 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
 import io.github.boogiemonster1o1.notenoughrocks.structure.StoneWorkshopStructure;
+import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.structure.StructurePieceType;
@@ -13,20 +14,23 @@ import net.minecraft.world.gen.feature.DefaultFeatureConfig;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.FeatureConfig;
 import net.minecraft.world.gen.feature.StructureFeature;
+import org.apache.logging.log4j.Logger;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
-import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.MOD_ID;
-import static io.github.boogiemonster1o1.notenoughrocks.NERInitialize.log;
 import static net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder.create;
 import static net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback.event;
 import static net.minecraft.item.Item.Settings;
 import static net.minecraft.util.registry.Registry.*;
 import static org.apache.logging.log4j.Level.WARN;
+import static org.apache.logging.log4j.LogManager.getLogger;
 
-public enum NotEnoughRocks {
+public enum NotEnoughRocks implements ModInitializer {
     INSTANCE;
 
+    public static final String MOD_ID = "notenoughrocks";
+    public static final String MOD_NAME = "NotEnoughRocks";
+    public static final Logger LOGGER = getLogger(NotEnoughRocks.class);
     public static final ItemGroup NER = create(identifier("ner_group")).icon(() -> new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
     public static final Settings NER_DEFAULT = new Settings().group(NER);
     public static final Identifier PLAY_DUST_PARTICLE = identifier("play_dust_particle");
@@ -38,7 +42,7 @@ public enum NotEnoughRocks {
         return new Identifier(MOD_ID, path);
     }
 
-    void initialize() {
+    public void onInitialize() {
         /*Misc*/
         {
             event(BIOME).register((i, identifier, biome) -> {
@@ -47,7 +51,7 @@ public enum NotEnoughRocks {
             });
         }
 
-        log(WARN, "This version of NER is a pre-release. Please report any bugs to the Github issue tracker.");
+        LOGGER.log(WARN, "This version of NER is a pre-release. Please report any bugs to the Github issue tracker.");
 
         register(ITEM, identifier("limestone"), LIMESTONE_BLOCK_ITEM);
         register(BLOCK, identifier("limestone"), LIMESTONE_BLOCK);

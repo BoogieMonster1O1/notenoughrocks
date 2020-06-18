@@ -1,6 +1,5 @@
 package io.github.boogiemonster1o1.notenoughrocks.structure;
 
-import io.github.boogiemonster1o1.notenoughrocks.NERInitialize;
 import io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.structure.*;
@@ -41,7 +40,7 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
 
     @Override
     public String getName() {
-        return NERInitialize.MOD_ID.concat(":Stone_Workshop");
+        return NotEnoughRocks.MOD_ID.concat(":Stone_Workshop");
     }
 
     @Override
