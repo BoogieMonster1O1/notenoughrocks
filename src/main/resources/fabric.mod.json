@@ -22,6 +22,9 @@
     ],
     "client": [
       "io.github.boogiemonster1o1.notenoughrocks.client.NERClient"
+    ],
+    "server": [
+      "io.github.boogiemonster1o1.notenoughrocks.server.NERServer"
     ]
   },
   "mixins": [
