@@ -8,7 +8,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
@@ -18,6 +17,8 @@ import static io.github.boogiemonster1o1.notenoughrocks.items.ToolSubclass.AxeSu
 import static io.github.boogiemonster1o1.notenoughrocks.items.ToolSubclass.PickaxeSubclass;
 import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
 import static net.minecraft.block.Blocks.*;
+import static net.minecraft.entity.EquipmentSlot.CHEST;
+import static net.minecraft.entity.EquipmentSlot.*;
 
 public class Elements {
     public static class ItemS {
@@ -72,11 +73,12 @@ public class Elements {
         public static BlockItem MARBLE_STAIRS_ITEM = new BlockItem(MARBLE_STAIRS, NER_DEFAULT);
         public static BlockItem MARBLE_SLAB_ITEM = new BlockItem(MARBLE_SLAB, NER_DEFAULT);
         public static BlockItem MARBLE_COLUMN_ITEM = new BlockItem(MARBLE_COLUMN, NER_DEFAULT);
-        public static ArmorItem HEAVY_ROCK_HELMET = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.HEAD, NER_DEFAULT);
-        public static ArmorItem HEAVY_ROCK_CHESTPLATE = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.CHEST, NER_DEFAULT);
-        public static ArmorItem HEAVY_ROCK_LEGGINGS = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.LEGS, NER_DEFAULT);
-        public static ArmorItem HEAVY_ROCK_BOOTS = new ArmorItem(NERArmor.HEAVY_ROCK, EquipmentSlot.FEET, NER_DEFAULT);
+        public static ArmorItem HEAVY_ROCK_HELMET = new ArmorItem(NERArmor.HEAVY_ROCK, HEAD, NER_DEFAULT);
+        public static ArmorItem HEAVY_ROCK_CHESTPLATE = new ArmorItem(NERArmor.HEAVY_ROCK, CHEST, NER_DEFAULT);
+        public static ArmorItem HEAVY_ROCK_LEGGINGS = new ArmorItem(NERArmor.HEAVY_ROCK, LEGS, NER_DEFAULT);
+        public static ArmorItem HEAVY_ROCK_BOOTS = new ArmorItem(NERArmor.HEAVY_ROCK, FEET, NER_DEFAULT);
         public static FineRockDustItem FINE_DUST = new FineRockDustItem(NER_DEFAULT);
+        public static BlockItem CRUSHED_LIMESTONE_ITEM = new BlockItem(CRUSHED_LIMESTONE,NER_DEFAULT);
     }
 
     public static class BlockS {
@@ -126,5 +128,6 @@ public class Elements {
         public static MarbleStairsBlock MARBLE_STAIRS = new MarbleStairsBlock();
         public static SlabBlock MARBLE_SLAB = new SlabBlock(copy(STONE_SLAB));
         public static SmoothMarbleColumnBlock MARBLE_COLUMN = new SmoothMarbleColumnBlock();
+        public static CrushedLimestoneBlock CRUSHED_LIMESTONE = new CrushedLimestoneBlock();
     }
 }
