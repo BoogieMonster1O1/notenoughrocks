@@ -31,7 +31,7 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
 
     @Override
     protected int getSeedModifier() {
-        return 65536;
+        return 165745295;
     }
 
     @Override
@@ -46,7 +46,7 @@ public class StoneWorkshopStructure extends AbstractTempleFeature<DefaultFeature
 
     @Override
     public int getRadius() {
-        return 8;
+        return 3;
     }
 
     public static class StoneWorkshopStart extends StructureStart {

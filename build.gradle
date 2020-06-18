@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.4.24'
+	id 'fabric-loom' version '0.4.26'
 	id 'maven-publish'
 }
 
@@ -24,7 +24,11 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
+	//Fabric API
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	//Annotation
+	implementation "javax.annotation:javax.annotation-api:${project.annotation_version}"
 }
 
 processResources {

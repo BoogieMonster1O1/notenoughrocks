@@ -1,13 +1,13 @@
 package io.github.boogiemonster1o1.notenoughrocks.blocks;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.LIMESTONE_BLOCK;
+import static net.minecraft.block.Block.Settings.copy;
+import static net.minecraft.block.Blocks.STONE;
 import static net.minecraft.world.biome.Biome.Category.NETHER;
 import static net.minecraft.world.biome.Biome.Category.THEEND;
 import static net.minecraft.world.biome.Biomes.MOUNTAINS;
@@ -18,7 +18,7 @@ import static net.minecraft.world.gen.feature.OreFeatureConfig.Target.NATURAL_ST
 
 public class LimestoneBlock extends Block {
     public LimestoneBlock() {
-        super(FabricBlockSettings.copy(Blocks.STONE));
+        super(copy(STONE));
     }
 
     public void genLimestone(Biome biome) {
