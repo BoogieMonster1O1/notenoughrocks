@@ -1,6 +1,7 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.biomes.v1.FabricBiomes;
 import net.fabricmc.fabric.api.biomes.v1.OverworldBiomes;
 import net.fabricmc.fabric.api.biomes.v1.OverworldClimate;
 import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
@@ -13,6 +14,7 @@ import org.apache.logging.log4j.Logger;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.LIMESTONE_RIFTS;
+import static io.github.boogiemonster1o1.notenoughrocks.Elements.LIMESTONE_RIFTS_EDGE;
 import static net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder.create;
 import static net.minecraft.item.Item.Settings;
 import static org.apache.logging.log4j.Level.WARN;
@@ -193,6 +195,7 @@ public class NotEnoughRocks implements ModInitializer {
         Registry.register(Registry.ITEM,identifier("crushed_limestone"),CRUSHED_LIMESTONE_ITEM);
 
         OverworldBiomes.addContinentalBiome(LIMESTONE_RIFTS, OverworldClimate.TEMPERATE,0.10);
+        OverworldBiomes.addEdgeBiome(LIMESTONE_RIFTS,LIMESTONE_RIFTS_EDGE,0.04);
 
         Registry.BIOME.forEach((biome)->{
             LIMESTONE_BLOCK.genLimestone(biome);
