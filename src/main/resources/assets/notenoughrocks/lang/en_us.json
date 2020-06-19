@@ -57,5 +57,6 @@
   "item.notenoughrocks.heavy_rock_boots": "Heavy Rock Boots",
   "item.notenoughrocks.fine_dust.use_dust_tooltip": "Use this to blind enemies",
   "item.notenoughrocks.fine_dust": "Atom sized Dust",
-  "block.notenoughrocks.crushed_limestone": "Crushed Limestone"
+  "block.notenoughrocks.crushed_limestone": "Crushed Limestone",
+  "biome.notenoughrocks.limestone_rifts": "Limestone Rifts"
 }
