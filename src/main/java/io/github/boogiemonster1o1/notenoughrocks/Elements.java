@@ -70,7 +70,7 @@ public class Elements {
         public static ToolItem LIMESTONE_AXE = new AxeSubclass(LIMESTONE, 7.0F, -3.2F, NER_DEFAULT);
         public static ToolItem LIMESTONE_SHOVEL = new ShovelItem(LIMESTONE, 1.5F, -3.0F, NER_DEFAULT);
         public static ToolItem LIMESTONE_SWORD = new SwordItem(LIMESTONE, 3, -2.4F, NER_DEFAULT);
-        public static ToolItem LIMESTONE_HOE = new HoeSubclass(LIMESTONE,1.4F, -2.0F, NER_DEFAULT);
+        public static ToolItem LIMESTONE_HOE = new HoeSubclass(LIMESTONE,1, -2.0F, NER_DEFAULT);
         public static BlockItem MARBLE_ITEM = new BlockItem(MARBLE, NER_DEFAULT);
         public static BlockItem MARBLE_STAIRS_ITEM = new BlockItem(MARBLE_STAIRS, NER_DEFAULT);
         public static BlockItem MARBLE_SLAB_ITEM = new BlockItem(MARBLE_SLAB, NER_DEFAULT);
