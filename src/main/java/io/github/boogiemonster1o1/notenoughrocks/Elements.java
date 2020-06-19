@@ -6,10 +6,7 @@ import io.github.boogiemonster1o1.notenoughrocks.items.NERArmor;
 import io.github.boogiemonster1o1.notenoughrocks.world.LimestoneRiftsBiome;
 import io.github.boogiemonster1o1.notenoughrocks.world.LimestoneRiftsEdgeBiome;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.WallBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.*;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -139,6 +136,23 @@ public class Elements {
         public static BulkColumnBlock BLACKSTONE_COLUMN = new BulkColumnBlock();
         public static BulkColumnBlock BLACKSTONE_BRICK_COLUMN = new BulkColumnBlock();
         public static BulkColumnBlock POLISHED_BLACKSTONE_COLUMN = new BulkColumnBlock();
+        public static ReinforcedGlassBlock BLACK_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.BLACK);
+        public static ReinforcedGlassBlock BLUE_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.BLUE);
+        public static ReinforcedGlassBlock BROWN_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.BROWN);
+        public static ReinforcedGlassBlock CYAN_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.CYAN);
+        public static ReinforcedGlassBlock GRAY_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.GRAY);
+        public static ReinforcedGlassBlock GREEN_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.GREEN);
+        public static ReinforcedGlassBlock LIGHT_BLUE_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.LIGHT_BLUE);
+        public static ReinforcedGlassBlock LIGHT_GRAY_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.LIGHT_GRAY);
+        public static ReinforcedGlassBlock LIME_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.LIME);
+        public static ReinforcedGlassBlock MAGENTA_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.MAGENTA);
+        public static ReinforcedGlassBlock ORANGE_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.ORANGE);
+        public static ReinforcedGlassBlock PINK_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.PINK);
+        public static ReinforcedGlassBlock PURPLE_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.PURPLE);
+        public static ReinforcedGlassBlock RED_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.RED);
+        public static ReinforcedGlassBlock REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.AIR);
+        public static ReinforcedGlassBlock WHITE_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.WHITE);
+        public static ReinforcedGlassBlock YELLOW_REINFORCED_GLASS = new ReinforcedGlassBlock(MaterialColor.YELLOW);
     }
 
     public static final Biome LIMESTONE_RIFTS;

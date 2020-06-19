@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "notenoughrocks:reinforced_glass",
+    "notenoughrocks:black_reinforced_glass",
+    "notenoughrocks:blue_reinforced_glass",
+    "notenoughrocks:brown_reinforced_glass",
+    "notenoughrocks:cyan_reinforced_glass",
+    "notenoughrocks:gray_reinforced_glass",
+    "notenoughrocks:green_reinforced_glass",
+    "notenoughrocks:light_blue_reinforced_glass",
+    "notenoughrocks:light_gray_reinforced_glass",
+    "notenoughrocks:lime_reinforced_glass",
+    "notenoughrocks:magenta_reinforced_glass",
+    "notenoughrocks:orange_reinforced_glass",
+    "notenoughrocks:pink_reinforced_glass",
+    "notenoughrocks:purple_reinforced_glass",
+    "notenoughrocks:red_reinforced_glass",
+    "notenoughrocks:white_reinforced_glass",
+    "notenoughrocks:yellow_reinforced_glass"
+  ]
+}

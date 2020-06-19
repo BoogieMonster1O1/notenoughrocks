@@ -1,15 +1,20 @@
 package io.github.boogiemonster1o1.notenoughrocks;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.biomes.v1.FabricBiomes;
 import net.fabricmc.fabric.api.biomes.v1.OverworldBiomes;
 import net.fabricmc.fabric.api.biomes.v1.OverworldClimate;
 import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
+import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Pair;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
@@ -28,6 +33,8 @@ public class NotEnoughRocks implements ModInitializer {
     public static final ItemGroup NER = create(identifier("ner_group")).icon(() -> new ItemStack(POLISHED_LIMESTONE_COLUMN_ITEM)).build();
     public static final Settings NER_DEFAULT = new Settings().group(NER);
     public static final Identifier PLAY_DUST_PARTICLE = identifier("play_dust_particle");
+    public static final Identifier PLAY_GLASS_BREAK_PARTICLE = identifier("play_glass_break_particle");
+    public static final ArrayList<Pair<Block,String>> REINFORCED_GLASS_BLOCKS;
 
     public static Identifier identifier(String path) {
         return new Identifier(MOD_ID, path);
@@ -206,6 +213,8 @@ public class NotEnoughRocks implements ModInitializer {
         OverworldBiomes.addContinentalBiome(LIMESTONE_RIFTS, OverworldClimate.TEMPERATE,0.10);
         OverworldBiomes.addEdgeBiome(LIMESTONE_RIFTS,LIMESTONE_RIFTS_EDGE,0.04);
 
+        this.registerReinforcedGlass(REINFORCED_GLASS_BLOCKS);
+
         Registry.BIOME.forEach((biome)->{
             LIMESTONE_BLOCK.genLimestone(biome);
             MARBLE.genMarble(biome);
@@ -214,5 +223,33 @@ public class NotEnoughRocks implements ModInitializer {
             LIMESTONE_BLOCK.genLimestone(biome);
             MARBLE.genMarble(biome);
         });
+    }
+
+    public void registerReinforcedGlass(List<Pair<Block,String>> dataPair){
+        dataPair.forEach((pair)->{
+            Registry.register(Registry.BLOCK,identifier(pair.getRight()),pair.getLeft());
+            Registry.register(Registry.ITEM,identifier(pair.getRight()),new BlockItem(pair.getLeft(),NER_DEFAULT));
+        });
+    }
+
+    static{
+        REINFORCED_GLASS_BLOCKS = new ArrayList<>();
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(REINFORCED_GLASS,"reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(BLACK_REINFORCED_GLASS,"black_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(BLUE_REINFORCED_GLASS,"blue_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(BROWN_REINFORCED_GLASS,"brown_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(CYAN_REINFORCED_GLASS,"cyan_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(GRAY_REINFORCED_GLASS,"gray_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(GREEN_REINFORCED_GLASS,"green_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(LIGHT_BLUE_REINFORCED_GLASS,"light_blue_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(LIGHT_GRAY_REINFORCED_GLASS,"light_gray_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(LIME_REINFORCED_GLASS,"lime_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(MAGENTA_REINFORCED_GLASS,"magenta_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(ORANGE_REINFORCED_GLASS,"orange_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(PINK_REINFORCED_GLASS,"pink_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(PURPLE_REINFORCED_GLASS,"purple_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(RED_REINFORCED_GLASS,"red_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(WHITE_REINFORCED_GLASS,"white_reinforced_glass"));
+        REINFORCED_GLASS_BLOCKS.add(new Pair<>(YELLOW_REINFORCED_GLASS,"yellow_reinforced_glass"));
     }
 }

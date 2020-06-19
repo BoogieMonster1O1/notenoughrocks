@@ -15,6 +15,7 @@ import static net.minecraft.block.Blocks.*;
 
 @Mixin(DeadBushBlock.class)
 public class DeadBushBlockMixin {
+    @SuppressWarnings("all")
     @Inject(method = "canPlantOnTop", at = @At(value = "INVOKE",ordinal = 0,target = "Lnet/minecraft/block/BlockState;getBlock()Lnet/minecraft/block/Block;"),cancellable = true)
     public void plantOnCrushedLimestone(BlockState floor, BlockView view, BlockPos pos, CallbackInfoReturnable<Boolean> cir){
         Block block1 = floor.getBlock();
