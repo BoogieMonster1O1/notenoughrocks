@@ -6,7 +6,7 @@ import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.LIMESTONE_BLOCK;
-import static net.minecraft.block.Block.Settings.copy;
+import static net.minecraft.block.AbstractBlock.Settings.copy;
 import static net.minecraft.block.Blocks.STONE;
 import static net.minecraft.world.biome.Biome.Category.NETHER;
 import static net.minecraft.world.biome.Biome.Category.THEEND;

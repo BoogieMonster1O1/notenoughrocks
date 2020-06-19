@@ -7,6 +7,6 @@ import net.minecraft.block.Material;
 
 public class CrushedLimestoneBlock extends FallingBlock {
     public CrushedLimestoneBlock() {
-        super(FabricBlockSettings.of(Material.SAND).resistance(2f).hardness(0.2f).breakByTool(FabricToolTags.SHOVELS));
+        super(FabricBlockSettings.of(Material.AGGREGATE).resistance(2f).hardness(0.2f).breakByTool(FabricToolTags.SHOVELS));
     }
 }

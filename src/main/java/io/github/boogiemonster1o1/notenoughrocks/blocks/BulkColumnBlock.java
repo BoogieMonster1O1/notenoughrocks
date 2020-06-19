@@ -1,10 +1,6 @@
 package io.github.boogiemonster1o1.notenoughrocks.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockRenderType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Waterloggable;
-import net.minecraft.entity.EntityContext;
+import net.minecraft.block.*;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.state.StateManager;
@@ -18,7 +14,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.IWorld;
+import net.minecraft.world.WorldAccess;
 
 import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
 import static net.minecraft.block.BlockRenderType.MODEL;
@@ -42,7 +38,7 @@ public class BulkColumnBlock extends Block implements Waterloggable {
     }
 
     @Override
-    public VoxelShape getOutlineShape(BlockState blockState, BlockView blockView, BlockPos blockPos, EntityContext entityContext) {
+    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return cuboid(0.3125F, 0, 0.3125F, 0.6875F, 1, 0.6875F);
     }
 
@@ -55,9 +51,8 @@ public class BulkColumnBlock extends Block implements Waterloggable {
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
         stateManager.add(TYPE, WATERLOGGED);
     }
-
     @Override
-    public BlockState getStateForNeighborUpdate(BlockState state, Direction facing, BlockState neighborState, IWorld world, BlockPos pos, BlockPos neighborPos) {
+    public BlockState getStateForNeighborUpdate(BlockState state, Direction facing, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
         BlockPos belowPos = pos.down(1);
         BlockPos abovePos = pos.up(1);
         BlockState belowState = world.getBlockState(belowPos);
