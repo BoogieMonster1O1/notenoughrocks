@@ -62,5 +62,6 @@
   "biome.notenoughrocks.limestone_rifts_edge": "Limestone Rifts Edge",
   "block.notenoughrocks.blackstone_column": "Blackstone Column",
   "block.notenoughrocks.blackstone_brick_column": "Polished Blackstone Brick Column",
-  "block.notenoughrocks.polished_blackstone_column": "Polished Blackstone Column"
+  "block.notenoughrocks.polished_blackstone_column": "Polished Blackstone Column",
+  "gui.notenoughrocks.config.title": "Coming soon!"
 }

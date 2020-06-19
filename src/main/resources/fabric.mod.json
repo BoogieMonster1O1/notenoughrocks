@@ -3,13 +3,13 @@
   "id": "notenoughrocks",
   "version": "${version}",
   "name": "NotEnoughRocks",
-  "description": "Rocks Mod",
+  "description": "Rock Themed Mod",
   "authors": [
     "BoogieMonster1O1"
   ],
   "contributors": [],
   "contact": {
-    "homepage": "https://github.com/BoogieMonster1O1/notenoughrocks",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/not-enough-rocks",
     "sources": "https://github.com/BoogieMonster1O1/notenoughrocks",
     "issues": "https://github.com/boogieMonster1O1/notenoughrocks/issues"
   },
@@ -25,6 +25,9 @@
     ],
     "server": [
       "io.github.boogiemonster1o1.notenoughrocks.server.NERServer"
+    ],
+    "modmenu": [
+      "io.github.boogiemonster1o1.notenoughrocks.client.ModMenuImpl"
     ]
   },
   "mixins": [

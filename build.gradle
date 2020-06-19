@@ -24,6 +24,9 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
+	//ModMenu
+	modImplementation "io.github.prospector:modmenu:${project.modmenu_version}"
+
 	//Fabric API
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
