@@ -1,9 +1,7 @@
 package io.github.boogiemonster1o1.notenoughrocks.mixin;
 
-import io.github.boogiemonster1o1.notenoughrocks.Elements;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.DeadBushBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;

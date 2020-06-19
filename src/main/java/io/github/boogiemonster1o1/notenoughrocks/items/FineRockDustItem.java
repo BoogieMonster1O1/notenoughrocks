@@ -8,10 +8,11 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.util.PacketByteBuf;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -41,7 +42,7 @@ public class FineRockDustItem extends Item {
     }
 
     @Override
-    public boolean useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
+    public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
         Item headArmor = user.getEquippedStack(HEAD).getItem();
         Item chestArmor = user.getEquippedStack(CHEST).getItem();
         Item legsArmor = user.getEquippedStack(LEGS).getItem();
@@ -60,7 +61,7 @@ public class FineRockDustItem extends Item {
                 allPlayers.forEach(player -> INSTANCE.sendToPlayer(player, PLAY_DUST_PARTICLE, clientData));
             }
         }
-        return true;
+        return ActionResult.SUCCESS;
     }
 
     @Override

@@ -14,7 +14,7 @@ import static net.minecraft.recipe.Ingredient.ofItems;
 import static net.minecraft.sound.SoundEvents.ITEM_ARMOR_EQUIP_CHAIN;
 
 public enum NERArmor implements ArmorMaterial {
-    HEAVY_ROCK("heavy_rock", 10, new int[]{3, 5, 7, 2}, 5, ITEM_ARMOR_EQUIP_CHAIN, 1.0F, () -> ofItems(LIMESTONE_BLOCK_ITEM, STONE));
+    HEAVY_ROCK("heavy_rock", 10, new int[]{3, 5, 7, 2}, 5, ITEM_ARMOR_EQUIP_CHAIN, 1.0F, () -> ofItems(LIMESTONE_BLOCK_ITEM, STONE),0.0f);
 
     public static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
     private final String name;
@@ -24,8 +24,9 @@ public enum NERArmor implements ArmorMaterial {
     private final SoundEvent equipSound;
     private final float toughness;
     private final Lazy<Ingredient> repairIngredient;
+    private final float knockbackResistance;
 
-    NERArmor(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, Supplier<Ingredient> repairIngredient) {
+    NERArmor(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, Supplier<Ingredient> repairIngredient,float knockbackResistance) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
@@ -33,6 +34,7 @@ public enum NERArmor implements ArmorMaterial {
         this.equipSound = equipSound;
         this.toughness = toughness;
         this.repairIngredient = new Lazy<>(repairIngredient);
+        this.knockbackResistance = knockbackResistance;
     }
 
     @Override
@@ -68,5 +70,10 @@ public enum NERArmor implements ArmorMaterial {
     @Override
     public float getToughness() {
         return this.toughness;
+    }
+
+    @Override
+    public float getKnockbackResistance() {
+        return this.knockbackResistance;
     }
 }

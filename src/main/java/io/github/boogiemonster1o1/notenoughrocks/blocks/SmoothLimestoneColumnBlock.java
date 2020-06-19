@@ -11,7 +11,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.world.IWorld;
+import net.minecraft.world.WorldAccess;
 
 import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
 import static net.minecraft.block.Blocks.STONE_SLAB;
@@ -28,7 +28,7 @@ public class SmoothLimestoneColumnBlock extends SmoothColumnBlock {
     }
 
     @Override
-    public BlockState getStateForNeighborUpdate(BlockState state, Direction facing, BlockState neighborState, IWorld world, BlockPos pos, BlockPos neighborPos) {
+    public BlockState getStateForNeighborUpdate(BlockState state, Direction facing, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
         BlockPos belowPos = pos.down(1);
         BlockPos abovePos = pos.up(1);
         BlockState belowState = world.getBlockState(belowPos);

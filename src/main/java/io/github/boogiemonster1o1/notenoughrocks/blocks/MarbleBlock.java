@@ -1,16 +1,16 @@
 package io.github.boogiemonster1o1.notenoughrocks.blocks;
 
-import io.github.boogiemonster1o1.notenoughrocks.world.CustomOreFeature;
-import io.github.boogiemonster1o1.notenoughrocks.world.CustomOreFeatureConfig;
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.OreFeature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
+import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.LIMESTONE_BLOCK;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.MARBLE;
+import static net.minecraft.world.gen.GenerationStep.Feature.UNDERGROUND_ORES;
+import static net.minecraft.world.gen.decorator.Decorator.COUNT_RANGE;
+import static net.minecraft.world.gen.feature.Feature.ORE;
+import static net.minecraft.world.gen.feature.OreFeatureConfig.Target.NATURAL_STONE;
 
 public class MarbleBlock extends Block {
     public MarbleBlock(Settings settings) {
@@ -19,14 +19,7 @@ public class MarbleBlock extends Block {
 
     public void genMarble(Biome biome) {
         if (biome.getCategory() != Biome.Category.THEEND && biome.getCategory() != Biome.Category.NETHER) {
-            RangeDecoratorConfig config = new RangeDecoratorConfig(6, 0, 0, 156);
-            biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES,
-                    new ConfiguredFeature<OreFeatureConfig, OreFeature>(
-                            new CustomOreFeature(CustomOreFeatureConfig::deserialize),
-                            new CustomOreFeatureConfig(
-                                    null,
-                                    MARBLE.getDefaultState(),
-                                    12)));
+            biome.addFeature(UNDERGROUND_ORES, ORE.configure(new OreFeatureConfig(NATURAL_STONE, MARBLE.getDefaultState(), 28)).createDecoratedFeature(COUNT_RANGE.configure(new RangeDecoratorConfig(10, 0, 0, 156))));
         }
     }
 }
