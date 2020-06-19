@@ -83,6 +83,9 @@ public class Elements {
         public static ArmorItem HEAVY_ROCK_BOOTS = new ArmorItem(NERArmor.HEAVY_ROCK, FEET, NER_DEFAULT);
         public static FineRockDustItem FINE_DUST = new FineRockDustItem(NER_DEFAULT);
         public static BlockItem CRUSHED_LIMESTONE_ITEM = new BlockItem(CRUSHED_LIMESTONE,NER_DEFAULT);
+        public static BlockItem BLACKSTONE_COLUMN_ITEM = new BlockItem(BLACKSTONE_COLUMN,NER_DEFAULT);
+        public static BlockItem BLACKSTONE_BRICK_COLUMN_ITEM = new BlockItem(BLACKSTONE_BRICK_COLUMN,NER_DEFAULT);
+        public static BlockItem POLISHED_BLACKSTONE_COLUMN_ITEM = new BlockItem(POLISHED_BLACKSTONE_COLUMN,NER_DEFAULT);
     }
 
     public static class BlockS {
@@ -133,6 +136,9 @@ public class Elements {
         public static SlabBlock MARBLE_SLAB = new SlabBlock(copy(STONE_SLAB));
         public static SmoothMarbleColumnBlock MARBLE_COLUMN = new SmoothMarbleColumnBlock();
         public static CrushedLimestoneBlock CRUSHED_LIMESTONE = new CrushedLimestoneBlock();
+        public static BulkColumnBlock BLACKSTONE_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock BLACKSTONE_BRICK_COLUMN = new BulkColumnBlock();
+        public static BulkColumnBlock POLISHED_BLACKSTONE_COLUMN = new BulkColumnBlock();
     }
 
     public static final Biome LIMESTONE_RIFTS;
