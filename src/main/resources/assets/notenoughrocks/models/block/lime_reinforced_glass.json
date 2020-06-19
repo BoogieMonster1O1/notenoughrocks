@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "notenoughrocks:block/lime_reinforced_glass"
+  }
+}

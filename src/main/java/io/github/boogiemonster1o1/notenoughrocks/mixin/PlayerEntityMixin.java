@@ -35,6 +35,6 @@ public abstract class PlayerEntityMixin extends LivingEntity implements UpdateHe
 
     @Inject(method = "tick", at = @At(value = "RETURN"))
     public void tickTheHeavyRockArmorToo(CallbackInfo ci) {
-        ((UpdateHeavyRockArmor) this).updateHeavyRockArmor();
+        ((UpdateHeavyRockArmor)this).updateHeavyRockArmor();
     }
 }
