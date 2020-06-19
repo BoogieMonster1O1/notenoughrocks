@@ -3,20 +3,21 @@ package io.github.boogiemonster1o1.notenoughrocks;
 import io.github.boogiemonster1o1.notenoughrocks.blocks.*;
 import io.github.boogiemonster1o1.notenoughrocks.items.FineRockDustItem;
 import io.github.boogiemonster1o1.notenoughrocks.items.NERArmor;
-import io.github.boogiemonster1o1.notenoughrocks.items.ToolSubclass;
-import io.github.boogiemonster1o1.notenoughrocks.items.ToolSubclass.HoeSubclass;
+import io.github.boogiemonster1o1.notenoughrocks.world.LimestoneRiftsBiome;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.item.*;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.world.biome.Biome;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks.NER_DEFAULT;
+import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks.identifier;
 import static io.github.boogiemonster1o1.notenoughrocks.items.NERTools.LIMESTONE;
-import static io.github.boogiemonster1o1.notenoughrocks.items.ToolSubclass.AxeSubclass;
-import static io.github.boogiemonster1o1.notenoughrocks.items.ToolSubclass.PickaxeSubclass;
+import static io.github.boogiemonster1o1.notenoughrocks.items.ToolSubclass.*;
 import static net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings.copy;
 import static net.minecraft.block.Blocks.*;
 import static net.minecraft.entity.EquipmentSlot.CHEST;
@@ -70,7 +71,7 @@ public class Elements {
         public static ToolItem LIMESTONE_AXE = new AxeSubclass(LIMESTONE, 7.0F, -3.2F, NER_DEFAULT);
         public static ToolItem LIMESTONE_SHOVEL = new ShovelItem(LIMESTONE, 1.5F, -3.0F, NER_DEFAULT);
         public static ToolItem LIMESTONE_SWORD = new SwordItem(LIMESTONE, 3, -2.4F, NER_DEFAULT);
-        public static ToolItem LIMESTONE_HOE = new HoeSubclass(LIMESTONE,1, -2.0F, NER_DEFAULT);
+        public static ToolItem LIMESTONE_HOE = new HoeSubclass(LIMESTONE,0, -2.0F, NER_DEFAULT);
         public static BlockItem MARBLE_ITEM = new BlockItem(MARBLE, NER_DEFAULT);
         public static BlockItem MARBLE_STAIRS_ITEM = new BlockItem(MARBLE_STAIRS, NER_DEFAULT);
         public static BlockItem MARBLE_SLAB_ITEM = new BlockItem(MARBLE_SLAB, NER_DEFAULT);
@@ -132,4 +133,11 @@ public class Elements {
         public static SmoothMarbleColumnBlock MARBLE_COLUMN = new SmoothMarbleColumnBlock();
         public static CrushedLimestoneBlock CRUSHED_LIMESTONE = new CrushedLimestoneBlock();
     }
+
+    public static final Biome LIMESTONE_RIFTS;
+
+    static {
+        LIMESTONE_RIFTS = Registry.register(Registry.BIOME, identifier("limestone_rifts"), new LimestoneRiftsBiome());
+    }
+
 }
