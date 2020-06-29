@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "notenoughrocks:blac_reinforced_glass"
+          "name": "notenoughrocks:black_reinforced_glass"
         }
       ],
       "conditions": [

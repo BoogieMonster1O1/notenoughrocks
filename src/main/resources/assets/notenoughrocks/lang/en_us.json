@@ -63,5 +63,21 @@
   "block.notenoughrocks.blackstone_column": "Blackstone Column",
   "block.notenoughrocks.blackstone_brick_column": "Polished Blackstone Brick Column",
   "block.notenoughrocks.polished_blackstone_column": "Polished Blackstone Column",
-  "gui.notenoughrocks.config.title": "Coming soon!"
+  "block.notenoughrocks.reinforced_glass": "Reinforced Glass",
+  "block.notenoughrocks.black_reinforced_glass": "Black Reinforced Glass",
+  "block.notenoughrocks.blue_reinforced_glass": "Blue Reinforced Glass",
+  "block.notenoughrocks.brown_reinforced_glass": "Brown Reinforced Glass",
+  "block.notenoughrocks.cyan_reinforced_glass": "Cyan Reinforced Glass",
+  "block.notenoughrocks.gray_reinforced_glass": "Gray Reinforced Glass",
+  "block.notenoughrocks.green_reinforced_glass": "Green Reinforced Glass",
+  "block.notenoughrocks.light_blue_reinforced_glass": "Light Blue Reinforced Glass",
+  "block.notenoughrocks.light_gray_reinforced_glass": "Light Gray Reinforced Glass",
+  "block.notenoughrocks.lime_reinforced_glass": "Lime Reinforced Glass",
+  "block.notenoughrocks.magenta_reinforced_glass": "Magenta Reinforced Glass",
+  "block.notenoughrocks.orange_reinforced_glass": "Orange Reinforced Glass",
+  "block.notenoughrocks.pink_reinforced_glass": "Pink Reinforced Glass",
+  "block.notenoughrocks.purple_reinforced_glass": "Purple Reinforced Glass",
+  "block.notenoughrocks.red_reinforced_glass": "Red Reinforced Glass",
+  "block.notenoughrocks.white_reinforced_glass": "White Reinforced Glass",
+  "block.notenoughrocks.yellow_reinforced_glass": "Yellow Reinforced Glass"
 }
