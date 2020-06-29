@@ -211,9 +211,10 @@ public class NotEnoughRocks implements ModInitializer {
         Registry.register(Registry.BLOCK,identifier("polished_blackstone_column"),POLISHED_BLACKSTONE_COLUMN);
         Registry.register(Registry.ITEM,identifier("polished_blackstone_column"),POLISHED_BLACKSTONE_COLUMN_ITEM);
 
-        OverworldBiomes.addContinentalBiome(LIMESTONE_RIFTS, OverworldClimate.TEMPERATE,0.06);
+        OverworldBiomes.addContinentalBiome(LIMESTONE_RIFTS, OverworldClimate.DRY,0.06);
         OverworldBiomes.addEdgeBiome(LIMESTONE_RIFTS,LIMESTONE_RIFTS_EDGE,0.03);
         OverworldBiomes.addContinentalBiome(CRUSHED_LIMESTONE_DESERT,OverworldClimate.DRY,0.04);
+        OverworldBiomes.addHillsBiome(LIMESTONE_RIFTS,WOODY_LIMESTONE_RIFTS,0.02);
 
         this.registerReinforcedGlass(REINFORCED_GLASS_BLOCKS);
 
