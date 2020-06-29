@@ -17,10 +17,9 @@ import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
+import static io.github.boogiemonster1o1.notenoughrocks.Elements.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.*;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.ItemS.*;
-import static io.github.boogiemonster1o1.notenoughrocks.Elements.LIMESTONE_RIFTS;
-import static io.github.boogiemonster1o1.notenoughrocks.Elements.LIMESTONE_RIFTS_EDGE;
 import static net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder.create;
 import static net.minecraft.item.Item.Settings;
 import static org.apache.logging.log4j.Level.WARN;
@@ -211,8 +210,9 @@ public class NotEnoughRocks implements ModInitializer {
         Registry.register(Registry.BLOCK,identifier("polished_blackstone_column"),POLISHED_BLACKSTONE_COLUMN);
         Registry.register(Registry.ITEM,identifier("polished_blackstone_column"),POLISHED_BLACKSTONE_COLUMN_ITEM);
 
-        OverworldBiomes.addContinentalBiome(LIMESTONE_RIFTS, OverworldClimate.TEMPERATE,0.10);
-        OverworldBiomes.addEdgeBiome(LIMESTONE_RIFTS,LIMESTONE_RIFTS_EDGE,0.04);
+        OverworldBiomes.addContinentalBiome(LIMESTONE_RIFTS, OverworldClimate.TEMPERATE,0.06);
+        OverworldBiomes.addEdgeBiome(LIMESTONE_RIFTS,LIMESTONE_RIFTS_EDGE,0.03);
+        OverworldBiomes.addContinentalBiome(CRUSHED_LIMESTONE_DESERT,OverworldClimate.DRY,0.04);
 
         this.registerReinforcedGlass(REINFORCED_GLASS_BLOCKS);
 
