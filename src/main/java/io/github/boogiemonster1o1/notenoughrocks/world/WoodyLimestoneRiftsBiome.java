@@ -1,6 +1,5 @@
 package io.github.boogiemonster1o1.notenoughrocks.world;
 
-import net.fabricmc.fabric.api.biomes.v1.FabricBiomes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.sound.BiomeMoodSound;
@@ -12,11 +11,11 @@ import net.minecraft.world.gen.surfacebuilder.TernarySurfaceConfig;
 
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.CRUSHED_LIMESTONE;
 import static io.github.boogiemonster1o1.notenoughrocks.Elements.BlockS.LIMESTONE_BLOCK;
-import static net.minecraft.block.Blocks.GRAVEL;
+import static net.minecraft.block.Blocks.GRASS_BLOCK;
 
 public class WoodyLimestoneRiftsBiome extends Biome {
     public WoodyLimestoneRiftsBiome() {
-        super(new Settings().configureSurfaceBuilder(SurfaceBuilder.DEFAULT, new TernarySurfaceConfig(CRUSHED_LIMESTONE.getDefaultState(),LIMESTONE_BLOCK.getDefaultState(), GRAVEL.getDefaultState())).precipitation(Biome.Precipitation.RAIN).category(Category.DESERT).depth(0.24F).scale(2F).temperature(2F).downfall(0).parent(null).effects(new BiomeEffects.Builder().waterColor(4159204).waterFogColor(329011).fogColor(12638463).moodSound(BiomeMoodSound.CAVE).build()));
+        super(new Settings().configureSurfaceBuilder(SurfaceBuilder.DEFAULT, new TernarySurfaceConfig(GRASS_BLOCK.getDefaultState(),LIMESTONE_BLOCK.getDefaultState(), CRUSHED_LIMESTONE.getDefaultState())).precipitation(Biome.Precipitation.RAIN).category(Category.DESERT).depth(0.24F).scale(2F).temperature(2F).downfall(0).parent(null).effects(new BiomeEffects.Builder().waterColor(4159204).waterFogColor(329011).fogColor(12638463).moodSound(BiomeMoodSound.CAVE).build()));
 
         this.addStructureFeature(StructureFeature.MINESHAFT.configure(new MineshaftFeatureConfig(0.004D, MineshaftFeature.Type.NORMAL)));
         this.addStructureFeature(StructureFeature.STRONGHOLD.configure(FeatureConfig.DEFAULT));
