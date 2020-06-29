@@ -5,6 +5,7 @@ import io.github.boogiemonster1o1.notenoughrocks.items.FineRockDustItem;
 import io.github.boogiemonster1o1.notenoughrocks.items.NERArmor;
 import io.github.boogiemonster1o1.notenoughrocks.world.LimestoneRiftsBiome;
 import io.github.boogiemonster1o1.notenoughrocks.world.LimestoneRiftsEdgeBiome;
+import io.github.boogiemonster1o1.notenoughrocks.world.WoodyLimestoneRiftsBiome;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
@@ -158,11 +159,13 @@ public class Elements {
     public static final Biome LIMESTONE_RIFTS;
     public static final Biome LIMESTONE_RIFTS_EDGE;
     public static final Biome CRUSHED_LIMESTONE_DESERT;
+    public static final Biome WOODY_LIMESTONE_RIFTS;
 
     static {
         LIMESTONE_RIFTS = Registry.register(Registry.BIOME, identifier("limestone_rifts"), new LimestoneRiftsBiome());
         LIMESTONE_RIFTS_EDGE = Registry.register(Registry.BIOME, identifier("limestone_rifts_edge"), new LimestoneRiftsEdgeBiome());
         CRUSHED_LIMESTONE_DESERT = Registry.register(Registry.BIOME,identifier("crushed_limestone_desert"), new LimestoneRiftsEdgeBiome());
+        WOODY_LIMESTONE_RIFTS = Registry.register(Registry.BIOME,identifier("woody_limestone_rifts"),new WoodyLimestoneRiftsBiome());
     }
 
 }
