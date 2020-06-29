@@ -5,6 +5,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.network.ClientSidePacketRegistry;
+import net.fabricmc.fabric.api.network.PacketConsumer;
 import net.fabricmc.fabric.api.network.PacketContext;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.network.PacketByteBuf;
@@ -22,6 +23,7 @@ public class NERClient implements ClientModInitializer {
         LOGGER.info("Detected Client");
         ClientSidePacketRegistry.INSTANCE.register(PLAY_DUST_PARTICLE, this::playDustParticle);
         ClientSidePacketRegistry.INSTANCE.register(PLAY_GLASS_BREAK_PARTICLE,this::playGlassBreakParticle);
+        ClientSidePacketRegistry.INSTANCE.register(PLAY_DUST_APPEARS_PARTICLE, this::playDustAppearsParticle);
         REINFORCED_GLASS_BLOCKS.forEach((block)-> BlockRenderLayerMap.INSTANCE.putBlock(block.getLeft(), RenderLayer.getTranslucent()));
     }
 
@@ -41,5 +43,14 @@ public class NERClient implements ClientModInitializer {
         double z = packetBlock.getZ();
         getInstance().particleManager.addParticle(AMBIENT_ENTITY_EFFECT, x, y, z, 0.0D, 0.5D, 0.0D);
         LOGGER.debug("Received Glass break Particle Packet");
+    }
+
+    public void playDustAppearsParticle(PacketContext context, PacketByteBuf bBuf){
+        BlockPos packetBlock = bBuf.readBlockPos();
+        double x = packetBlock.getX();
+        double y = packetBlock.getY();
+        double z = packetBlock.getZ();
+        getInstance().particleManager.addParticle(AMBIENT_ENTITY_EFFECT, x, y, z, 0.0D, 0.5D, 0.0D);
+        LOGGER.debug("Received Dust Appeared Particle Packet");
     }
 }

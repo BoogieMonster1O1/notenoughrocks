@@ -34,6 +34,7 @@ public class NotEnoughRocks implements ModInitializer {
     public static final Settings NER_DEFAULT = new Settings().group(NER);
     public static final Identifier PLAY_DUST_PARTICLE = identifier("play_dust_particle");
     public static final Identifier PLAY_GLASS_BREAK_PARTICLE = identifier("play_glass_break_particle");
+    public static final Identifier PLAY_DUST_APPEARS_PARTICLE = identifier("play_dust_appears_particle");
     public static final ArrayList<Pair<Block,String>> REINFORCED_GLASS_BLOCKS;
 
     public static Identifier identifier(String path) {
