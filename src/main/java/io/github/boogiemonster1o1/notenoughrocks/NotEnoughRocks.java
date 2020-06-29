@@ -231,7 +231,7 @@ public class NotEnoughRocks implements ModInitializer {
     public void registerReinforcedGlass(List<Pair<Block,String>> dataPair){
         dataPair.forEach((pair)->{
             Registry.register(Registry.BLOCK,identifier(pair.getRight()),pair.getLeft());
-            Registry.register(Registry.ITEM,identifier(pair.getRight()),new BlockItem(pair.getLeft(),NER_DEFAULT.maxCount(64).rarity(Rarity.COMMON)));
+            Registry.register(Registry.ITEM,identifier(pair.getRight()),new BlockItem(pair.getLeft(),NER_DEFAULT));
         });
     }
 

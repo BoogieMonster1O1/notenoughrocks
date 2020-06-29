@@ -1,5 +1,6 @@
 package io.github.boogiemonster1o1.notenoughrocks.blocks;
 
+import io.github.boogiemonster1o1.notenoughrocks.world.CrushedLimestoneDesertBiome;
 import io.netty.buffer.Unpooled;
 import net.fabricmc.fabric.api.network.ServerSidePacketRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -33,11 +34,15 @@ public class CrushedLimestoneBlock extends FallingBlock {
             int lucky = rand.nextInt(16);
             if(lucky == 1){
                 if(!world.isClient()){
-                    world.spawnEntity(new ItemEntity(world,entity.getX(),entity.getY(),entity.getZ(),new ItemStack(FINE_DUST)));
-                    Stream<PlayerEntity> players = PlayerStream.watching(world,pos);
-                    PacketByteBuf clientData = new PacketByteBuf(Unpooled.buffer());
-                    clientData.writeBlockPos(pos);
-                    players.forEach(player -> ServerSidePacketRegistry.INSTANCE.sendToPlayer(player,PLAY_DUST_APPEARS_PARTICLE,clientData));
+                    if(world.getBiome(pos) instanceof CrushedLimestoneDesertBiome){
+                        if(entity.isSprinting()){
+                            world.spawnEntity(new ItemEntity(world, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(FINE_DUST)));
+                            Stream<PlayerEntity> players = PlayerStream.watching(world, pos);
+                            PacketByteBuf clientData = new PacketByteBuf(Unpooled.buffer());
+                            clientData.writeBlockPos(pos);
+                            players.forEach(player -> ServerSidePacketRegistry.INSTANCE.sendToPlayer(player, PLAY_DUST_APPEARS_PARTICLE, clientData));
+                        }
+                    }
                 }
             }
         }
