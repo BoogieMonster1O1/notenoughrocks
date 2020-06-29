@@ -10,6 +10,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Pair;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.Logger;
 
@@ -228,7 +229,7 @@ public class NotEnoughRocks implements ModInitializer {
     public void registerReinforcedGlass(List<Pair<Block,String>> dataPair){
         dataPair.forEach((pair)->{
             Registry.register(Registry.BLOCK,identifier(pair.getRight()),pair.getLeft());
-            Registry.register(Registry.ITEM,identifier(pair.getRight()),new BlockItem(pair.getLeft(),NER_DEFAULT));
+            Registry.register(Registry.ITEM,identifier(pair.getRight()),new BlockItem(pair.getLeft(),NER_DEFAULT.maxCount(64).rarity(Rarity.COMMON)));
         });
     }
 

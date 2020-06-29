@@ -23,7 +23,7 @@ import static io.github.boogiemonster1o1.notenoughrocks.NotEnoughRocks.PLAY_GLAS
 
 public class ReinforcedGlassBlock extends Block {
     public ReinforcedGlassBlock(MaterialColor color) {
-        super(FabricBlockSettings.of(new Material(color,false,true,false,false,false,false, PistonBehavior.IGNORE)).breakByTool(FabricToolTags.PICKAXES).breakByHand(false).breakByTool(FabricToolTags.PICKAXES).resistance(8.0f).hardness(1.0f).nonOpaque());
+        super(FabricBlockSettings.of(new Material(color,false,true,false,false,false,false, PistonBehavior.IGNORE)).breakByTool(FabricToolTags.PICKAXES).breakByHand(false).breakByTool(FabricToolTags.PICKAXES,2).requiresTool().resistance(15.0f).hardness(10.0f).nonOpaque());
     }
 
     @Override
