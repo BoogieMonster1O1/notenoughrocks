@@ -157,10 +157,12 @@ public class Elements {
 
     public static final Biome LIMESTONE_RIFTS;
     public static final Biome LIMESTONE_RIFTS_EDGE;
+    public static final Biome CRUSHED_LIMESTONE_DESERT;
 
     static {
         LIMESTONE_RIFTS = Registry.register(Registry.BIOME, identifier("limestone_rifts"), new LimestoneRiftsBiome());
         LIMESTONE_RIFTS_EDGE = Registry.register(Registry.BIOME, identifier("limestone_rifts_edge"), new LimestoneRiftsEdgeBiome());
+        CRUSHED_LIMESTONE_DESERT = Registry.register(Registry.BIOME,identifier("crushed_limestone_desert"), new LimestoneRiftsEdgeBiome());
     }
 
 }
