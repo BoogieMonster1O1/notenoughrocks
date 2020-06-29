@@ -5,11 +5,10 @@ import io.github.prospector.modmenu.api.ModMenuApi;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 
-@Environment(EnvType.CLIENT)
 public class ModMenuImpl implements ModMenuApi {
-
     @Override
     @Deprecated
+    @SuppressWarnings("deprecation")
     public String getModId() {
         return NotEnoughRocks.MOD_ID;
     }
