@@ -2,10 +2,7 @@
 A fabric mod that adds rocks and rock themed stuff
 
 ## License
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
-This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
-Check out the mod on curseforge for more information.  
+This mod is licensed under the Apache License, version 2.0
 
 ### Attribution
 Credits to Team Reborn, who wrote Reborn core's custom ore generation code, which I use in this mod.
