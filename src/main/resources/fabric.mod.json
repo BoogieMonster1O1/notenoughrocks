@@ -13,7 +13,7 @@
     "sources": "https://github.com/BoogieMonster1O1/notenoughrocks",
     "issues": "https://github.com/boogieMonster1O1/notenoughrocks/issues"
   },
-  "license": "CC-BY 4.0",
+  "license": "Apache-2.0",
   "icon": "pack.png",
   "environment": "*",
   "entrypoints": {
